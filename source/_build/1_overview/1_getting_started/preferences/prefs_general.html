@@ -79,10 +79,10 @@ if (window.name != "content")
 <li><b>ショートカットでタブを閉じる</b>: このオプションをオフにすると、開いているタブを閉じるキーボード ショートカット <img style="vertical-align:middle" src="../../../images/icon_ctrl.png">/<img style="vertical-align:middle" src="../../../images/icon_cmd.png"> + <b><tt>W</tt></b> が無効化されます。デフォルトではオンになっています。<br>
 <br></li>
 
-<li><b>IDE にファイルをドラッグして新規リソースを編集する</b>: 一部のリソース (スプライトやサウンド) を <i>GameMaker Studio 2</i> IDE のメイン ワークスペースへドラッグすると、新しいリソースとしてリソース ツリーへ追加されます。このとき、対応するエディターが自動的に開かれますが、このオプションをオフにするとエディターが開かなくなり、手動で開く必要があります。<br>
+<li><b>IDE にファイルをドラッグしたときにエディターを開く</b>: 一部のリソース (スプライトやサウンド) を <i>GameMaker Studio 2</i> IDE のメイン ワークスペースへドラッグすると、新しいリソースとしてリソース ツリーへ追加されます。このとき、対応するエディターが自動的に開かれますが、このオプションをオフにするとエディターが開かなくなり、手動で開く必要があります。<br>
 <br></li>
 
-<li><b>作成時に新規リソースを編集する</b>: リソース ツリーで新しいリソースを作成する際に、対応するリソース エディターを自動で開きます。デフォルトでオンになっており、オフにすると、新規作成されたすべてのリソースを手動で開く必要があります。<br>
+<li><b>新規リソース作成時にエディターを開く</b>: リソース ツリーで新しいリソースを作成する際に、対応するリソース エディターを自動で開きます。デフォルトでオンになっており、オフにすると、新規作成されたすべてのリソースを手動で開く必要があります。<br>
 <br></li>
 
 <li><b>変更されたファイルを自動で再読み込み</b>: ファイルを自動的にスキャンおよびチェックして、<i>GameMaker Studio 2</i> の外部でファイルが変更されているかどうかを検出し、変更されていれば再読み込みします。<br>
@@ -91,7 +91,7 @@ if (window.name != "content")
 <li><b>IDE アニメーション効果の無効化</b>: <i>GameMaker Studio 2</i> IDE には、ウィンドウを開いたときなど、多くのアニメーション効果が用意されています。しかし、アニメーション効果を好まない人も少なくはなく、また古かったり性能の低いマシンで実行している場合はパフォーマンスに影響を与えることがあります。このオプションでそれらのアニメーション効果をオフにすることができます。<br>
 <br></li>
 
-<li><b>フィードバック調査へのオプトイン</b>: フィードバック調査へ参加することを <i>GameMaker Studio 2</i> へ伝えます。作業中にそれぞれの領域へ関するメッセージが表示され、評価とフィードバックを要求するようになります。デフォルトではオンになっています。</li>
+<li><b>フィードバック調査へのオプトイン</b>: フィードバック調査へ参加することを <i>GameMaker Studio 2</i> へ伝えます。作業中にそれぞれの領域へ関するメッセージが表示され、評価とフィードバックを要求するようになります。デフォルトではオンになっています</li>
 </ul>
 
 <p>上記の設定は <b>一般</b> 設定から利用できるものですが、次のサブカテゴリにいくつか追加の設定があります:</p>
@@ -134,283 +134,150 @@ if (window.name != "content")
 <li><i>スクリーン ストレッチ</i> - ウィンドウの領域全体を覆うようにして表示され、ドックを開いたり閉じたりすると画像が部分的にトリミングされたり拡張されたりします</li>
 </ul></li>
 
-<li><b>ワークスペースへ背景画像を表示する</b>: 選択した背景画像を表示するかどうかを指定します。デフォルトではオンになっています。</li>
+<li><b>ワークスペースへ背景画像を表示</b>: 選択した背景画像を表示するかどうかを指定します。デフォルトではオンになっています。</li>
 </ul>
 </div>
 <br>
 <a name="prefs_compiling" id="prefs_compiling"></a> <label class=
-"collapse" for="three">Compiling</label> <input id="three" type=
+"collapse" for="three">コンパイル</label> <input id="three" type=
 "checkbox">
 <div class="index_list"><img class="center" src=
 "images/general_compiling_prefs.png" alt=
-"The Compiler Preferences">
-<p>The Compiling preferences deal with certain options related to
-the output when compiling your game for testing or creating a
-package, as well as certain areas of the compiling process. The
-options are:<br>
+"コンパイラーの環境設定">
+<p>テストまたはパッケージの作成のためにゲームをコンパイルするときに関連する設定や、コンパイル プロセスの設定を行います。オプションは次のとおりです:<br>
 <br></p>
 
 <ul>
-<li><b>Automatically open syntax error window on detection</b>:
-Enable or disable syntax error notification when compiling. This is
-off by default.<br>
+<li><b>シンタックス エラーの検出時に自動でウィンドウを開く</b>: コンパイル時のシンタックス エラー通知を有効にします。デフォルトではオフになっています。<br>
 <br></li>
 
-<li><b>Show the compile window during compilation</b>: By default
-the compile window will be shown when you compile your projects,
-even if the compile doc is closed (it will open for the compile).
-Unchecking this will switch this behavior off and the compile
-window will on be visible if open.<br>
+<li><b>コンパイル中にコンパイル ウィンドウを表示</b>: デフォルトでは、プロジェクトのコンパイルを開始すると自動的にコンパイル ウィンドウが表示されます。オフにすると、コンパイル ウィンドウを手動で開く必要があります。<br>
 <br></li>
 
-<li><b>Show compiler commands in compile output</b>: This is
-checked by default and forces the compiler to show all relevant
-commands in the compile window. Un-checking this will make the
-output smaller and have less information.<br>
+<li><b>コンパイル中にコンパイラー コマンドを表示</b>: コンパイラーへコンパイルに関連するコマンドを表示させるよう指示します。これではデフォルトでオンになっており、オフにすると、出力量が減り情報が少なくなります。<br>
 <br></li>
 
-<li><b>Show verbose compiler output</b>: Checking this will force
-the compiler to show extra commands related to the compilation
-process. In general this is only required when debugging and may be
-requested by support should you have an issue. It is off by default
-(and this is the recommended setting).<br>
+<li><b>より詳細なコンパイラー出力の表示</b>: コンパイラーへコンパイル プロセスに関連する追加のコマンドを表示させるよう指示します。一般にこれはデバッグ時にのみ有用であり、デフォルトではオフになっています (これが推奨設定です)。<br>
 <br></li>
 
-<li><b>Use <tt>Subst</tt> for drive paths</b>: When this is
-checked, <i>GameMaker Studio 2</i> will create - and remove again
-when no longer required - virtual drives to use as a substitution
-for full file paths. These virtual drives bypass any potential
-issue with file paths being too long for the OS (particularly when
-compiling for Android or using extensions) and it is recommended to
-have this enabled. However, if you are having issues with
-<i>GameMaker Studio 2</i> creating virtual drives like this, you
-can disable the option. By default, this is enabled.<br>
+<li><b>ドライブ パスに <tt>Subst</tt> を使用</b>: この項目がオンになっていると、<i>GameMaker Studio 2</i> は完全なファイル パスの代わりに使用する仮想ドライブを作成し、不要になれば削除します。仮想ドライブは、ファイル パスが長すぎることによって引き起こされる OS の潜在的な問題 (特に Android 向けにコンパイルしたり拡張機能を使うケース) を回避します。もしこの機能によって <i>GameMaker Studio 2</i> に何らかの問題が発生している場合はオフにすることができます。デフォルトではオンになっています。<br>
 <br></li>
 
-<li><b>Show package in explorer on build completion</b>: Checking
-this will make <i>GameMaker Studio 2</i> open the OS explorer
-window at the location where the final executable package has been
-created. It is on by default.<br>
+<li><b>ビルド完了時にパッケージをエクスプローラーで開く</b>: 実行可能パッケージのビルドが完了したときに作成場所を OS のエクスプローラー ウィンドウで開くよう <i>GameMaker Studio 2</i> へ指示します。デフォルトではオンになっています。<br>
 <br></li>
 
-<li><b>Clear output window on compile start</b>: By default the
-compiler window will clear all previous messages from the compile
-output window at the start of each build, however un-checking this
-will maintain previous compiler logs. This is on by default and is
-the recommended configuration since large compiler logs can slow
-down compile times.<br>
+<li><b>コンパイル開始時に出力ウィンドウをクリア</b>: デフォルトでは、ビルド開始時にコンパイル出力ウィンドウの以前のメッセージがすべて消去されます。オフにすることで、以前のコンパイラー ログが保持されるようになります。巨大なコンパイラー ログはコンパイル パフォーマンスへ影響を与える可能性があり、オンにすることを推奨します。<br>
 <br></li>
 
-<li><b>Maximum parallel compile jobs</b>: This value sets the
-<i>maximum</i> number of CPU cores to dedicate to compiling a
-project. The default value is 8 and in general you shouldn't have
-to change this, but if you are on a laptop or a lower end machine
-you may want to lower this value. The default is set to 8.<br>
+<li><b>並列コンパイルの最大ジョブ数</b>: プロジェクトをコンパイルする際に使用される CPU コアの <i>最大</i> 数を指定します。デフォルト値は 8 で、一般に変更する必要はありません。ノートパソコンまたは性能の低いマシンを使用している場合は、必要に応じてこの値を小さくすることをおすすめします。<br>
 <br></li>
 </ul>
 </div>
 <br>
 <a name="prefs_confirm" id="prefs_confirm"></a> <label class=
-"collapse" for="nine">Confirm Dialogues</label> <input id="nine"
+"collapse" for="nine">ダイアログの確認</label> <input id="nine"
 type="checkbox">
 <div class="index_list"><img class="center" src=
-"images/general_confirm_prefs.png" alt="The Confirm Preferences">
-<p>The Confirm Dialogue preferences deal with some of the general
-confirmation pop-ups that will appear when performing certain
-actions in the <i>GameMaker Studio 2</i> IDE. The options are:<br>
+"images/general_confirm_prefs.png" alt="確認の環境設定">
+<p><i>GameMaker Studio 2</i> IDE で特定の操作を実行する際に表示される一般的な確認ポップアップの設定を行います。オプションは次のとおりです:<br>
 <br></p>
 
 <ul>
-<li><b>Automatic response to closing a workspace via keyboard
-shortcut</b>: The keyboard shortcut mentioned above can be used to
-close any open tab, but sometimes you may accidentally close an
-empty tab that you require. To prevent this you can set this option
-to "Show message" (the default option) to ask if you really want to
-close that empty tab. The other settings are "No", to simply do
-nothing if the shortcut is used, or "Okay" to close the tab without
-any message.<br>
+<li><b>キーボード ショートカットを使用してワークスペースを閉じる際の自動応答</b>: 先述したキーボード ショートカットを使用すると開いているタブを閉じることができますが、誤って必要なタブを閉じてしまうことがあります。このオプションを "メッセージを表示する" (これがデフォルトです) に設定することで、本当にタブを閉じるかどうかを尋ねます。"いいえ" に設定すると、ショートカットが実行されても何も起こらないようになり、"はい" に設定すると、メッセージが表示されることなくタブを閉じるようになります。<br>
 <br></li>
 
-<li><b>Automatic response to restarting a running build</b>: When
-you restart a build and another previous one is still running, you
-will be asked whether you want to stop the current build first. Un
-checking this message will suppress that message and force
-<i>GameMaker Studio 2</i> to assume you had clicked "Okay" as a
-response. This option is set to "Show Message" by default.<br>
+<li><b>ビルドの再実行時の自動応答</b>: ビルド タスクを再実行する際、まだ以前のビルドが終わっていない場合にそれを停止するかどうかを尋ねられます。このとき、メッセージのチェックボックスを外すと、それ以降 <i>GameMaker Studio 2</i> は "OK" を選択したとみなしてメッセージが表示されなくなります。デフォルトでは "メッセージを表示する" に設定されています。<br>
 <br></li>
 
-<li><b>Automatic response to warning when attempting to debug
-YYC</b>: The YYC target compiles to native code and as such cannot
-be debugged using the built in debugger. When you try to use the
-debugger on the YYC target, you will get a warning informing you of
-this, and the fact that the project will be compiled using the VM
-instead. This option is set to "Show Message" by default, but
-setting it to "OK" will suppress this warning.<br>
+<li><b>YYC をデバッグしようとしたときの警告への自動応答</b>: YYC ターゲットはネイティブ コードへコンパイルされるため、組み込みのデバッガーを使用してデバッグすることはできません。したがって、YYC ターゲットでデバッガーを使用しようとすると、代わりに VM を使用してコンパイルされる旨が通知されます。デフォルトでは "メッセージを表示する" に設定されていますが、"OK" に設定するとこの警告が表示されなくなります。<br>
 <br></li>
 
-<li><b>Automatic response to resetting the project layout</b>: When
-you select to reset the project layout (from the <a href=
-"../../2_quick_start/menus/layouts_menu.html">Layouts Menu</a>) you
-will, by default, be shown a warning message about how this will
-close any open resource windows. However you can suppress this
-message and automatically reset the layout by selecting "Okay", or
-have it do nothing by selecting "No". The default value is to have
-"Show Message".<br>
+<li><b>プロジェクト レイアウトのリセット時の自動応答</b>: デフォルトでは、(<a href="../../2_quick_start/menus/layouts_menu.html">レイアウト メニュー</a> から) プロジェクト レイアウトをリセットしようとすると、現在開いているリソース ウィンドウを閉じる方法についての警告メッセージが表示されます。ここで、"はい" に設定してレイアウトを自動的にリセットするようにするか、"いいえ" に設定して何もしないようにすることができます。デフォルトでは "メッセージを表示する" になっています。<br>
 <br></li>
 
-<li><b>Automatic response to turning off anonymous statistics</b>:
-When you disable anonymous game statistics in the <a href=
-"../../../2_interface/3_settings/game_options/index.html">General
-Game options</a>, you will be shown a warning message asking you to
-consider the option carefully. You can suppress this message by
-selecting "Okay" here, or have it do nothing by selecting "No". The
-default value is to have "Show Message".</li>
+<li><b>匿名統計をオフにしたときの自動応答</b>: <a href="../../../2_interface/3_settings/game_options/index.html">一般のゲーム オプション</a> で匿名のゲーム統計を無効化しようとすると、このオプションを慎重に検討するよう促す警告メッセージが表示されます。ここで、"はい" に設定してメッセージを表示しないようにしたり、"いいえ" に設定して何もしないようにすることができます。デフォルトでは "メッセージを表示する" になっています。</li>
 </ul>
 </div>
 <br>
 <a name="prefs_debugging" id="prefs_debugging"></a> <label class=
-"collapse" for="ten">Debugging</label> <input id="ten" type=
+"collapse" for="ten">デバッグ</label> <input id="ten" type=
 "checkbox">
 <div class="index_list"><img class="center" src=
-"images/general_debugging.png" alt="The Debugging Preferences">
-<p>The preferences here are related to the <i>GameMaker Studio
-2</i> Debugger and you have the following options:<br>
+"images/general_debugging.png" alt="デバッグの環境設定">
+<p><i>GameMaker Studio 2</i> デバッガーの動作に関する設定を行います。オプションは次のとおりです:<br>
 <br></p>
 
 <ul>
-<li><b>Automatic response to closing the debugger</b>: This option
-permits you to set the automatic response when closing the
-debugger. If set to "Show message", you will be shown the dialogue
-when you want to close the debugger, while setting it to "Yes" or
-"No" will not show this dialogue and perform the task as
-indicated.<br>
+<li><b>デバッガーを閉じるときの自動応答</b>: デバッガーを閉じるときの自動応答を指定できます。"メッセージを表示する" に設定すると、デバッガーを閉じたときにダイアログが表示されます。"はい" または "いいえ" に設定すると、指定どおりの操作が行われダイアログは表示されなくなります。<br>
 <br></li>
 
-<li><b>Enable real-time debugging</b>: Checking this option will
-permit you to debug your game projects in real time as you run them
-from the IDE. This is checked by default.<br>
+<li><b>リアルタイム デバッグの有効化</b>: ゲーム プロジェクトを IDE から実行しながらリアルタイムでデバッグできるようにします。デフォルトではオンになっています。<br>
 <br></li>
 
-<li><b>Debugger port</b>: This sets the port number for the Debug
-Module to use. The default value is 6509.<br>
+<li><b>デバッガーのポート番号</b>: デバッグ モジュールが使用するポート番号を指定します。デフォルト値は 6509 です。<br>
 <br></li>
 
-<li><b>Show event icons in Debugger Resource View</b>: Set whether
-icons should be shown in the Debugger resource view. This is
-checked by default.</li>
+<li><b>デバッガーのリソース ビューへイベント アイコンを表示</b>: デバッガーのリソース ビューへアイコンを表示するかどうかを指定します。デフォルトではオンになっています。</li>
 </ul>
 </div>
 <br>
 <a name="prefs_goto" id="prefs_goto"></a> <label class="collapse"
-for="four">Go To</label> <input id="four" type="checkbox">
+for="four">ジャンプ</label> <input id="four" type="checkbox">
 <div class="index_list"><img class="center" src=
-"images/general_goto_prefs.png" alt="The Go To Preferences">
-<p>The preferences here are for <b>Go To</b> window, which you can
-open using the keyboard shortcut <img style="vertical-align:middle"
-src="../../../images/icon_ctrl.png">/<img style=
-"vertical-align:middle" src="../../../images/icon_cmd.png"> +
-<b><tt>T</tt></b>.<br>
+"images/general_goto_prefs.png" alt="ジャンプの環境設定">
+<p>キーボード ショートカット <img style="vertical-align:middle" src="../../../images/icon_ctrl.png">/<img style="vertical-align:middle" src="../../../images/icon_cmd.png"> + <b><tt>T</tt></b> で開くことができる <b>ジャンプ</b> ウィンドウに関する設定です。<br>
 <br></p>
 
 <ul>
-<li><b>Maximum number of search results to display</b>: This option
-controls the maximum number of returned results when you use the Go
-To search window.</li>
+<li><b>表示する検索結果の最大数</b>: ジャンプ先を検索するウィンドウで表示される検索結果の最大数を指定します。</li>
 </ul>
 </div>
 <br>
 <a name="prefs_help" id="prefs_help"></a> <label class="collapse"
-for="five">Help</label> <input id="five" type="checkbox">
+for="five">ヘルプ</label> <input id="five" type="checkbox">
 <div class="index_list"><img class="center" src=
-"images/general_help_prefs.png" alt="The Help Preferences">
-<p>The helpfile is designed to operate like a web page and as such
-requires the use of the <i>GameMaker Studio 2</i> micro web server,
-or the use of an external browser. These settings can be changed
-here:<br>
+"images/general_help_prefs.png" alt="ヘルプの環境設定">
+<p>ヘルプ ファイルは Web ページのように動作するよう設計されているため、<i>GameMaker Studio 2</i> マイクロ Web サーバーを使用するか、外部のブラウザーを使用する必要があります。これに関する設定はここで変更できます:<br>
 <br></p>
 
 <ul>
-<li><b>Manual Language</b>: This sets language for the IDE to use.
-The default is "English".<br>
+<li><b>マニュアルの言語</b>: ここでは IDE で使用する言語を設定します。デフォルトは "English" です。<br>
 <br></li>
 
-<li><b>Help manual port</b>: This sets the port number for the
-manual micro web server to use. The default value is 51291.<br>
+<li><b>ヘルプ マニュアルのポート番号</b>: マイクロ Web サーバーが使用するポート番号を指定します。デフォルト値は 51291 です。<br>
 <br></li>
 
-<li><b>Use an external browser for help</b>: If this is checked
-then opening the help file will open it using the default browser
-for your system. This is on by default, and switching it off will
-force the help file to open in workspace within the IDE.</li>
+<li><b>ヘルプに外部ブラウザーを使用</b>: ヘルプ ファイルを開く際に、システムの既定のブラウザーでヘルプを開くようにします。これはデフォルトでオンになっており、オフにすると、ヘルプ ファイルが IDE 内のワークスペースで開かれるようになります。</li>
 </ul>
 </div>
 <br>
 <a name="prefs_input" id="prefs_input"></a> <label class="collapse"
-for="six">Input</label> <input id="six" type="checkbox">
+for="six">入力</label> <input id="six" type="checkbox">
 <div class="index_list"><img class="center" src=
-"images/general_input_prefs.png" alt="The Input Preferences">
-<p>The Input preferences control certain aspects of the mouse and
-keyboard input within the IDE. The available options are:<br>
+"images/general_input_prefs.png" alt="入力の環境設定">
+<p>IDE 内のマウスおよびキーボード入力についての設定を行います。利用可能なオプションは次のとおりです:<br>
 <br></p>
 
 <ul>
-<li><b>Slow double click time (ms)</b>: Some areas of the IDE
-require a slower double click to work correctly, for example when
-renaming a resource (a fast double click will open the resource
-editor, while a slow double click will permit you to rename it).
-This option permits you to set the detection speed, with a default
-value of 500ms.<br>
+<li><b>遅いダブルクリックの時間 (ミリ秒)</b>: IDE の一部の領域では、たとえばリソース名を変更するときなど、遅いダブルクリックを求められる場面があります (速いダブルクリックならリソース エディターが開き、遅いダブルクリックなら名前を変更できます)。このオプションでは、遅いダブルクリックの検出速度を指定できます。デフォルト値は 500 ミリ秒です。<br>
 <br></li>
 
-<li><b>Scroll lock time (ms)</b>: This option deals with the time
-that <i>GameMaker Studio 2</i> should wait between scrolling
-windows that are overlapping. Essentially, When you're scrolling in
-window "A", the cursor might hover over another scrollable area in
-window "B", so this preference defines how long you have to wait
-after you stop scrolling "A" before you can then scroll "B", so you
-don't accidentally start scrolling different panels. The default
-value is 500ms.<br>
+<li><b>スクロール停止時間 (ミリ秒)</b>: 異なるスクロール ウィンドウが重なっているときに <i>GameMaker Studio 2</i> が待機する時間を指定します。例えば、ウィンドウ "A" でスクロールをしているあいだに、マウス カーソルが別のスクロール可能なウィンドウ "B" の領域に乗ってしまったようなケースにおいて、"A" のスクロールが停止され次に "B" でスクロールが可能になるまでの待機時間をここで定義します。こうすることで、誤って別のパネルをスクロールしてしまう問題を防ぎます。デフォルト値は 500 ミリ秒です。<br>
 <br></li>
 
-<li><b>Scroll speed</b>: This controls the scrolling speed within
-the different workspaces. The default value is 1.<br>
+<li><b>スクロール速度</b>: ワークスペース内でのスクロール速度を指定します。デフォルト値は 1 です。<br>
 <br></li>
 
-<li><b>Tab drag distance to un-maximise desktop (px)</b>: When you
-drag a workspace tab away from its default position within the IDE,
-if there is only one workspace active at that time then the
-<i>GameMaker Studio 2</i> window will un-maximise and move with the
-mouse (if you have more than one workspace active a new instance of
-the IDE will be created to hold the workspace). This setting
-controls how far you have to drag the tab before the workspace
-recognises it, and the default value is 50px.<br>
+<li><b>デスクトップの最大化を解除するまでのタブのドラッグ距離 (px)</b>: IDE でアクティブなワークスペースが1つしかないときにワークスペース タブをドラッグすると、<i>GameMaker Studio 2</i> ウィンドウの最大化が解除されマウスに合わせ移動します (複数のワークスペースがアクティブな場合は、ワークスペースを保持するために IDE の新しいインスタンスが作成されます)。このオプションでは、ワークスペースがタブのドラッグを認識するために必要なドラッグ距離を指定します。デフォルト値は 50px です。<br>
 <br></li>
 
-<li><b>Minimum zoom level for interacting with window contents
-(%)</b>: This option controls the zoom cut-off point at which the
-mouse will no longer be able to interact with workspace windows
-(ie: add nodes, drag windows, etc...). The default value is 40.<br>
+<li><b>ウィンドウ コンテンツを操作可能な最小拡大率 (%)</b>: マウスがワークスペース ウィンドウでの操作 (ノードの追加、ウィンドウのドラッグなど) ができなくなるまでの拡大率を指定します。デフォルト値は 40 です。<br>
 <br></li>
 
-<li><b>Mouse wheel zoom requires Ctrl key</b>: When this is checked
-all editors (and the main workspace) will have zoom enabled with
-<img style="vertical-align:middle" src=
-"../../../images/icon_ctrl.png">/<img style="vertical-align:middle"
-src="../../../images/icon_cmd.png"> + the mouse wheel <img style=
-"vertical-align:middle" src="../../../images/icon_mmb.png">, while
-un-checking it will enable zoom with <i>only</i> the mouse wheel
-<img style="vertical-align:middle" src=
-"../../../images/icon_mmb.png">.<br>
+<li><b>マウス ホイールでの拡大・縮小に Ctrl を使う</b>: すべてのエディター (およびメイン ワークスペース) で<img style="vertical-align:middle" src="../../../images/icon_ctrl.png">/<img style="vertical-align:middle" src="../../../images/icon_cmd.png"> + マウス ホイール <img style="vertical-align:middle" src="../../../images/icon_mmb.png"> を使って拡大・縮小ができるようにします。オフにすると、マウス ホイール <img style="vertical-align:middle" src="../../../images/icon_mmb.png"> <i>だけ</i> で拡大・縮小ができるようになります。<br>
 <br></li>
 
-<li><b>Ctrl + MMB to open the inherited event instead of the
-manual</b>: When this is checked, holding <img style=
-"vertical-align:middle" src=
-"../../../images/icon_ctrl.png">/<img style="vertical-align:middle"
-src="../../../images/icon_cmd.png"> key + the middle mouse button
-<img style="vertical-align:middle" src=
-"../../../images/icon_mmb.png"> in an object will open the objects
-inherited event (if it has one) rather than the manual.<br>
+<li><b>Ctrl + 中クリックでマニュアルの代わりに継承されたイベントを開く</b>: オブジェクト上で <img style="vertical-align:middle" src="../../../images/icon_ctrl.png">/<img style="vertical-align:middle" src="../../../images/icon_cmd.png"> キー + マウスの中ボタン <img style="vertical-align:middle" src="../../../images/icon_mmb.png"> を押すと、(もしあれば) 継承されたオブジェクトのイベントを開くようにします。オフにすると、マニュアルを開くようになります。<br>
 <br></li>
 
 <li><b>Add bias to text selection to prevent line jumping</b>: When
