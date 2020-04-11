@@ -82,16 +82,16 @@ if (window.name != "content")
 <li><b>IDE にファイルをドラッグしたときにエディターを開く</b>: 一部のリソース (スプライトやサウンド) を <i>GameMaker Studio 2</i> IDE のメイン ワークスペースへドラッグすると、新しいリソースとしてリソース ツリーへ追加されます。このとき、対応するエディターが自動的に開かれますが、このオプションをオフにするとエディターが開かなくなり、手動で開く必要があります。<br>
 <br></li>
 
-<li><b>新規リソース作成時にエディターを開く</b>: リソース ツリーで新しいリソースを作成する際に、対応するリソース エディターを自動で開きます。デフォルトでオンになっており、オフにすると、新規作成されたすべてのリソースを手動で開く必要があります。<br>
+<li><b>新規リソース作成時にエディターを開く</b>: リソース ツリーで新しいリソースを作成する際に、対応するリソース エディターを自動で開くようにします。デフォルトでオンになっており、オフにすると、新規作成されたすべてのリソースを手動で開く必要があります。<br>
 <br></li>
 
-<li><b>変更されたファイルを自動で再読み込み</b>: ファイルを自動的にスキャンおよびチェックして、<i>GameMaker Studio 2</i> の外部でファイルが変更されているかどうかを検出し、変更されていれば再読み込みします。<br>
+<li><b>変更されたファイルを自動で再読み込み</b>: ファイルを自動的にスキャンおよびチェックして、<i>GameMaker Studio 2</i> の外部でファイルが変更されているかどうかを検出し、変更されていれば再読み込みするようにします。<br>
 <br></li>
 
 <li><b>IDE アニメーション効果の無効化</b>: <i>GameMaker Studio 2</i> IDE には、ウィンドウを開いたときなど、多くのアニメーション効果が用意されています。しかし、アニメーション効果を好まない人も少なくはなく、また古かったり性能の低いマシンで実行している場合はパフォーマンスに影響を与えることがあります。このオプションでそれらのアニメーション効果をオフにすることができます。<br>
 <br></li>
 
-<li><b>フィードバック調査へのオプトイン</b>: フィードバック調査へ参加することを <i>GameMaker Studio 2</i> へ伝えます。作業中にそれぞれの領域へ関するメッセージが表示され、評価とフィードバックを要求するようになります。デフォルトではオンになっています</li>
+<li><b>フィードバック調査へのオプトイン</b>: <i>GameMaker Studio 2</i> のフィードバック調査へ参加します。作業中にそれぞれの領域へ関するメッセージが表示され、評価とフィードバックが求められるようになります。デフォルトではオンになっています</li>
 </ul>
 
 <p>上記の設定は <b>一般</b> 設定から利用できるものですが、次のサブカテゴリにいくつか追加の設定があります:</p>
@@ -283,226 +283,144 @@ for="six">入力</label> <input id="six" type="checkbox">
 <li><b>テキスト選択にバイアスをかけ誤選択を防ぐ</b>: テキスト ウィンドウで複数行を選択する際に、現在選択している行の高さへわずかに余白を追加することで、誤ったテキスト行選択を減らします。デフォルトではオンになっています。<br>
 <br></li>
 
-<li><b>Enable laptop mode on all devices</b>: Checking this will
-show the <a href="../8_input.html">Laptop Mode</a> button on the
-IDE, enabling you to switch it on or off as required regardless of
-whether the device running <i>GameMaker Studio 2</i> is a laptop or
-not. This is unchecked by default.<br>
+<li><b>すべてのデバイスでノートパソコン モードを有効化</b>: このオプションをオンにすると、IDE に <a href="../8_input.html">ノートパソコン モード</a> のボタンが表示され、<i>GameMaker Studio 2</i> をどんなデバイスで起動しているかにかかわらず必要に応じてオン/オフを切り替えられるようになります。デフォルトではオフになっています。<br>
 <br></li>
 </ul>
 </div>
 <br>
 <a name="prefs_output_windows" id="prefs_output_windows"></a>
-<label class="collapse" for="twelve">Output Windows</label>
+<label class="collapse" for="twelve">出力ウィンドウ</label>
 <input id="twelve" type="checkbox">
 <div class="index_list"><img class="center" src=
 "images/general_outputwindow_prefs.png" alt=
-"The Output Window Preferences">
-<p>The Output Window preferences control the different colour and
-formatting options for the various different output windows in the
-IDE. Each of the different windows has the same set of options,
-which are listed below:<br>
+"出力ウィンドウの環境設定">
+<p>IDE の様々な出力ウィンドウにおける色や書式についての設定を行います。異なるウィンドウにはそれぞれ異なるオプションが用意されており、次にリストアップされています:<br>
 <br></p>
 
 <ul>
-<li><b>Colour</b>: The default colour for the text being written to
-the window.<br>
+<li><b>色</b>: ウィンドウに書き込まれるテキストのデフォルトの色です。<br>
 <br></li>
 
-<li><b>Font Name</b>: The name of the font to use (available fonts
-will depend on those installed on your system).<br>
+<li><b>フォント名</b>: 使用するフォント名 (使用可能なフォントは、システムにインストールされているフォントに依存します) です。<br>
 <br></li>
 
-<li><b>Style</b>: The font style to use, like <b>bold</b> or
-<i>italics</i> (note that not all windows will permit the same
-styles and it will also depend on the font used).<br>
+<li><b>スタイル</b>: <b>太字</b> や <i>斜体</i> など、使用するフォント スタイル (必ずしもすべてのウィンドウで同じスタイルが使えるわけではなく、また使用するフォントにも依存します) です。<br>
 <br></li>
 
-<li><b>Size</b>: The size to set the font to for the given output
-window.<br>
+<li><b>サイズ</b>: 出力ウィンドウのフォント サイズです。<br>
 <br></li>
 
-<li><b>Anti-Aliasing</b>: Here you can set the anti-aliasing mode
-for the output windows font rendering. You can choose to let the
-IDE decide by selecting <i>Use Default</i>, or you can force it
-<i>On</i> or <i>Off</i> by selecting either of those options.</li>
+<li><b>アンチエイリアシング</b>: 出力ウィンドウのフォント レンダリングでアンチエイリアスを使用するかどうかを指定します。<i>デフォルト設定を使用</i> に設定して IDE の設定に従わせるか、<i>オン</i> または <i>オフ</i> に設定して強制的にオン/オフさせることもできます。</li>
 </ul>
 </div>
 <br>
 <a name="prefs_paths" id="prefs_paths"></a> <label class="collapse"
-for="seven">Paths</label> <input id="seven" type="checkbox">
+for="seven">パス</label> <input id="seven" type="checkbox">
 <div class="index_list"><img class="center" src=
-"images/general_paths_prefs.png" alt="The Path Preferences">
-<p>The Path preferences control the different file paths required
-by elements in the <i>GameMaker Studio 2</i> IDE as well as for any
-external editors that you require. The following options exist for
-the IDE:<br>
+"images/general_paths_prefs.png" alt="パスの環境設定">
+<p><i>GameMaker Studio 2</i> IDE の各要素や外部エディターに必要な様々なファイル パスについての設定を行います。IDE については次のようなオプションが用意されています:<br>
 <br></p>
 
 <ul>
-<li><b>Temp directory</b>: The location for saving all the
-temporary folders. By default this is
-<tt>\Users\&lt;Username&gt;\AppData\Local\Temp\GameMakerStudio2</tt>.<br>
+<li><b>一時ディレクトリー</b>: すべての一時ファイルを保存する場所です。デフォルトでは <tt>\Users\&lt;Username&gt;\AppData\Local\Temp\GameMakerStudio2</tt> に設定されています。<br>
 
 <br></li>
 
-<li><b>IDE cache directory</b>: The location for saving the IDE
-cache. By default this is
-<tt>\Users\&lt;Username&gt;\AppData\Roaming\GameMakerStudio2-Dev\Cache</tt>.<br>
+<li><b>IDE キャッシュ ディレクトリー</b>: IDE キャッシュを保存する場所です。デフォルトでは <tt>\Users\&lt;Username&gt;\AppData\Roaming\GameMakerStudio2-Dev\Cache</tt> に設定されています。<br>
 
 <br></li>
 
-<li><b>Asset cache directory</b>: The location for saving the asset
-cache for each project. By default this is
-<tt>\Users\&lt;Username&gt;\AppData\Roaming\GameMakerStudio2-Dev\Cache</tt>.<br>
+<li><b>アセット キャッシュ ディレクトリー</b>: プロジェクトのアセット キャッシュを保存する場所です。デフォルトでは <tt>\Users\&lt;Username&gt;\AppData\Roaming\GameMakerStudio2-Dev\Cache</tt> に設定されています。<br>
 
 <br></li>
 
-<li><b>"My Projects" Location</b>: The location where <i>GameMaker
-Studio 2</i> will initially create new projects. By default this is
-<tt>\Users\&lt;Username&gt;\Documents\GameMakerStudio2</tt>.<br>
+<li><b>"マイ プロジェクト" の場所</b>: <i>GameMaker Studio 2</i> が最初に新規プロジェクトを作成する場所です。デフォルトでは <tt>\Users\&lt;Username&gt;\Documents\GameMakerStudio2</tt> に設定されています。<br>
 <br></li>
 
-<li><b>Automatically delete temp directory on close</b>: Checking
-this will force <i>GameMaker Studio 2</i> to automatically delete
-the Temp folder that it creates per project for compiling etc...
-This setting is on by default, and un-checking it will switch it
-off (meaning that you will have to manually remove any temp files
-later).<br>
+<li><b>終了時に一時ディレクトリーを削除</b>: <i>GameMaker Studio 2</i> がコンパイルなどのために作成する一時フォルダーを、自動的に削除するようにします。デフォルトではオンになっており、オフにすると一時ファイルを手動で削除する必要があります。<br>
 <br></li>
 
-<li><b>Automatically delete asset cache on close</b>: If this is
-checked then the asset compiler cache folder will be removed when
-you quit <i>GameMaker Studio 2</i>. This is off by default, and
-enabling it will mean that every time you load and run any project
-the cache will need to be rebuilt (which can take time depending on
-the size of the game).<br>
+<li><b>終了時にアセット キャッシュを削除</b>: <i>GameMaker Studio 2</i> の終了時に、自動的にアセット コンパイラーのキャッシュ フォルダーを削除するようにします。デフォルトではオフになっており、オンにすると、プロジェクトを読み込んで実行するたびにキャッシュを再構築するようになります (ゲームのサイズによっては時間がかかります)。<br>
 <br></li>
 
-<li><b>Automatically delete IDE cache on close</b>: If this is
-checked then the IDE compiler cache folder will be removed when you
-quit <i>GameMaker Studio 2</i>. This is off by default, and
-enabling it will mean that every time you start <i>GameMaker Studio
-2</i> the cache will need to be rebuilt.<br>
+<li><b>終了時に IDE キャッシュを削除</b>: <i>GameMaker Studio 2</i> の終了時に、自動的に IDE コンパイラーのキャッシュ フォルダーを削除するようにします。デフォルトではオフになっており、オンにすると、 <i>GameMaker Studio 2</i> を起動するたびにキャッシュを再構築する必要があります。<br>
 <br></li>
 
-<li><b>Delete Temp Folder</b>: Clicking this button will delete the
-temp folder for the project.<br>
+<li><b>一時フォルダーの削除</b>: このボタンをクリックすると、プロジェクトの一時フォルダーが削除されます。<br>
 <br></li>
 
-<li><b>Delete Asset Cache</b>: Clicking this button will delete the
-compiler asset cache for the project.<br>
+<li><b>アセット キャッシュの削除</b>: このボタンをクリックすると、プロジェクトのアセット コンパイラーのキャッシュが削除されます。<br>
 <br></li>
 
-<li><b>Delete IDE Cache</b>: Clicking this button will delete the
-IDE cache.</li>
+<li><b>IDE キャッシュの削除</b>: このボタンをクリックすると、IDE のキャッシュが削除されます。</li>
 </ul>
 
-<p>The following options exist for setting paths to external
-editors:<br>
+<p>外部エディターへのパスについての設定には、次のようなオプションがあります:<br>
 <br></p>
 
 <ul>
-<li><b>Path to external editor/viewer for SWF files</b>: If you are
-working with SWF format sprites, you can set this to the path of
-your preferred viewer/editor and when you click the <i>Edit
-Image</i> button in the Sprite Editor then it will open the given
-program. The default value here is to have no path.<br>
+<li><b>外部 SWF エディター/ビューアーのパス</b>: もしあなたが SWF 形式のスプライトを使用している場合は、任意のビューアー/エディターのパスを指定してそれを使うようにすることができます。スプライト エディターの <i>画像の編集</i> ボタンをクリックすると、指定されたプログラムが起動します。デフォルトではパスは指定されていません。<br>
 <br></li>
 
-<li><b>Path to external editor/viewer for Spine files</b>: If you
-are working with Spine format sprites, you can set this to the path
-of your preferred viewer/editor and when you click the <i>Edit
-Image</i> button in the Sprite Editor then it will open the given
-program. The default value here is to have no path.<br>
+<li><b>外部 Spine エディター/ビューアーのパス</b>: もしあなたが Spine 形式のスプライトを使用している場合は、任意のビューアー/エディターのパスを指定してそれを使うようにすることができます。スプライト エディターの <i>画像の編集</i> ボタンをクリックすると、指定されたプログラムが起動します。デフォルトではパスは指定されていません。<br>
 <br></li>
 </ul>
 </div>
 <br>
 <a name="prefs_power" id="prefs_power"></a> <label class="collapse"
-for="eleven">Power Saving</label> <input id="eleven" type=
+for="eleven">省電力</label> <input id="eleven" type=
 "checkbox">
 <div class="index_list"><img class="center" src=
 "images/general_power_prefs.png" alt=
-"The Power Saving Preferences">
-<p>The Power Saving preferences here will affect how much CPU power
-and GPU power will be used to generate the <i>GameMaker Studio
-2</i> IDE (essentially this will lower the base framerate at which
-the program runs and so lower power consumption). Note that some of
-these are specific to the <b>File Watcher</b> background process.
-The File Watcher scans the project folders for external changes -
-for example if you change a gml script in Notepad++ then the file
-watcher will detect this change and ask you if you want to reload
-it or discard it - and as such the frequency that this scan happens
-can severely impact performance and power consumption.</p>
+"省電力の環境設定">
+<p>ここでの省電力設定とは、<i>GameMaker Studio 2</i> IDE の描画や動作に必要な CPU や GPU のパフォーマンスに影響するものです (主にプログラムが動作するベース フレームレートを低下させ消費電力を減らします)。その一部は、<b>ファイル ウォッチャー</b> のバックグラウンド動作固有のものであることに注意してください。ファイル ウォッチャーは、プロジェクト フォルダーをスキャンして外部による変更がなされているかどうかを検出します。例えば、あなたが Notepad++ で gml スクリプトを編集した場合、ファイル ウォッチャーはこれを検出し、再読み込みするか変更を破棄するかを尋ねます。このスキャンが発生する頻度は、パフォーマンスと電力の消費に大きな影響を与えることがあります。</p>
 
-<p>The options here are:<br>
+<p>オプションは次のとおりです:<br>
 <br></p>
 
 <ul>
-<li><b>AC power framerate (%)</b>: The base IDE framerate modifier
-when connected to a power input. Default is 100%.<br>
+<li><b>AC 電源時のフレームレート (%)</b>: 電源に接続されている場合のベース IDE フレームレートに対する割合です。デフォルト値は 100% です。<br>
 <br></li>
 
-<li><b>Battery power framerate (%)</b>: The base IDE framerate
-modifier when using battery to power the machine. Default is
-35%.<br>
+<li><b>バッテリー時にフレームレート (%)</b>: マシンがバッテリーを使用している場合のベース IDE フレームレートに対する割合です。デフォルト値は 35% です。<br>
 <br></li>
 
-<li><b>Background framerate (%)</b>: The base IDE framerate
-modifier when <i>GameMaker Studio 2</i> is not in focus (regardless
-of the power supply). Default is 15%.<br>
+<li><b>バックグラウンド時のフレームレート (%)</b>: (電源に接続されているかどうかにかかわらず) <i>GameMaker Studio 2</i> にフォーカスされていない場合のベース IDE フレームレートに対する割合です。。デフォルト値は 15% です。<br>
 <br></li>
 
-<li><b>File watcher frequency (ms)</b>: This is the frequency that
-the file watcher will run at when on desktop (or a docked laptop).
-Default is 2000.<br>
+<li><b>ファイル ウォッチャーの頻度 (ミリ秒)</b>: デスクトップ (または電源接続時のノートパソコン) マシンでファイル ウォッチャーが実行される頻度です。デフォルト値は 2000 です。<br>
 <br></li>
 
-<li><b>Laptop file watcher frequency (ms)</b>: This is the
-frequency that the file watcher will run at when in laptop mode.
-Default is 5000.</li>
+<li><b>ノートパソコンでのファイル ウォッチャーの頻度 (ミリ秒)</b>: ノートパソコン モードで実行されているときにファイル ウォッチャーが実行される頻度です。デフォルト値は 5000 です。</li>
 </ul>
 </div>
 <br>
 <a name="prefs_recent_windows" id="prefs_recent_windows"></a>
-<label class="collapse" for="fourteen">Recent Windows</label>
+<label class="collapse" for="fourteen">最近使用したウィンドウ</label>
 <input id="fourteen" type="checkbox">
 <div class="index_list"><img class="center" src=
 "images/general_recent_windows_prefs.png" alt=
-"The Recent Windows Preferences">
-<p>The preferences here contain options for how the <a href=
-"../../../2_interface/2_extras/recent_windows.html">Recent
-Windows</a> list will display items:<br>
+"最近使用したウィンドウの環境設定">
+<p>ここの設定には、<a href="../../../2_interface/2_extras/recent_windows.html">最近使用したウィンドウ</a> リストに表示する項目についてのオプションが含まれています:<br>
 <br></p>
 
 <ul>
-<li><b>Open automatically on Project load</b>: When enabled, the
-Recent Windows list will be shown when you load a new project.
-Default is disabled.</li>
+<li><b>プロジェクト読み込み時に自動で開く</b>: 新しくプロジェクトを読み込むときに最近使用したウィンドウのリストが表示されるようにします。デフォルトではオフになっています。</li>
 
 <li style="list-style: none"><br>
 </li>
 
-<li><b>Move focused windows to top</b>: When this is enabled and
-you click on any item in the Recent Window list, the selected item
-will be moved to the top of the list. By default this is
-disabled.</li>
+<li><b>選択したウィンドウを一番上へ移動</b>: 最近使用したウィンドウのリストにあるアイテムをクリックすると、その項目がリストの一番上に移動するようになります。デフォルトではオフになっています。</li>
 
 <li style="list-style: none"><br>
 </li>
 
-<li><b>Display only currently open windows</b>: Enabling this will
-make the Recent Windows list remove those items that are no longer
-open in a workspace (ie: closing any window will remove it from the
-list too). By default this is disabled.</li>
+<li><b>現在開いているウィンドウのみを表示</b>: 最近開いたウィンドウのリストに表示されている項目のうち、ワークスペースで開いていない項目が削除されるようにします (つまり、ウィンドウを閉じるとリストから削除されます)。デフォルトではオフになっています。</li>
 
 <li style="list-style: none"><br>
 </li>
 
-<li><b>Maximum windows to display</b>: This sets the maximum number
-of previously opened windows that will be shown within the Recent
-Windows list. Default is 10.</li>
+<li><b>表示するウィンドウの最大数</b>: 最近使用したウィンドウのリストへ表示される項目の最大数を指定します。デフォルト値は 10 です。</li>
 
 <li style="list-style: none"><br>
 </li>
@@ -510,97 +428,50 @@ Windows list. Default is 10.</li>
 </div>
 <br>
 <a name="prefs_resources" id="prefs_resources"></a> <label class=
-"collapse" for="thirteen">Resources</label> <input id="thirteen"
+"collapse" for="thirteen">リソース</label> <input id="thirteen"
 type="checkbox">
 <div class="index_list"><img class="center" src=
 "images/general_resources_prefs.png" alt=
-"The Resources Preferences">
-<p>The preferences here contain options for how certain resources
-will be drawn in your projects:<br>
+"リソースの環境設定">
+<p>この設定には、プロジェクトにおいて一部のリソースの描画方法についてのオプションが含まれています:<br>
 <br></p>
 
 <ul>
-<li><b>Initial default draw colour for new projects</b>: When you
-use a font or draw a shape using the <i>GameMaker Studio 2</i>
-functions or DnD™ actions without specifying a colour, the colour
-set here is the one that will be used. The default colour is white
-($FFFFFFFF).</li>
+<li><b>新規プロジェクトでのデフォルトの描画色</b>: <i>GameMaker Studio 2</i> の関数または DnD™ のアクションを使って図形を描画したりフォントを使用したりする際、色を明示的に指定しなかった場合はここで指定した色が使用されます。デフォルトの色は 白 ($FFFFFFFF) です。</li>
 
-<li><b>Initial default window colour for new projects</b>: This
-option is used to set the HTML page background colour for the HTML5
-target, as well as set the colour shown outside of rooms on all
-targets (including HTML5). The default colour is black
-($000000FF).</li>
+<li><b>新規プロジェクトでのデフォルトのウィンドウ色</b>: HTML5 ターゲットにおける HTML ページの背景色、またはすべてのターゲット (HTML5 を含む) においてルーム外へ表示される色を指定します。デフォルトの色は 黒 ($000000FF) です。</li>
 </ul>
 </div>
 <br>
 <a name="prefs_workspace" id="prefs_workspace"></a> <label class=
-"collapse" for="eight">Workspace</label> <input id="eight" type=
+"collapse" for="eight">ワークスペース</label> <input id="eight" type=
 "checkbox">
 <div class="index_list"><img class="center" src=
 "images/general_workspace_prefs.png" alt=
-"The Workspace Preferences">
-<p>The preferences here will affect how you move around within the
-different <i>GameMaker Studio 2</i> workspaces. The options
-are:<br>
+"ワークスペースの環境設定">
+<p>ここの設定は、<i>GameMaker Studio 2</i> の異なるワークスペースへの移動方法に影響します。オプションは次のとおりです:<br>
 <br></p>
 
 <ul>
-<li><b>Workspace keyboard navigation degree range</b>: Within a
-workspace you can have multiple windows open for different objects
-and resources, and so to move around quickly between them you can
-use the <a href="../../2_quick_start/8_shortcuts.html">keyboard
-shortcut</a> <img style="vertical-align:middle" src=
-"../../../images/icon_ctrl.png">/<img style="vertical-align:middle"
-src="../../../images/icon_cmd.png"> + <img style=
-"vertical-align:middle" src="../../../images/icon_alt.png"> +
-<tt>&lt;Arrow Keys&gt;</tt> to move between them. Given that the
-windows within a workspace are not grid aligned the IDE has to
-choose which window you mean when you press any of the possible 8
-directions, and this option permits you to set the "look angle"
-that is used. The default value is 40°.<br>
+<li><b>ワークスペースのキーボード ナビゲーション時の角度範囲</b>: ワークスペース内では、様々なオブジェクトやリソースのために複数のウィンドウを開いておくことができます。このとき、<a href="../../2_quick_start/8_shortcuts.html">キーボード ショートカット</a> <img style="vertical-align:middle" src="../../../images/icon_ctrl.png">/<img style="vertical-align:middle" src="../../../images/icon_cmd.png"> + <img style="vertical-align:middle" src="../../../images/icon_alt.png"> + <tt>&lt;矢印キー&gt;</tt> を使って、ウィンドウ間をすばやく移動できます。このオプションでは、ワークスペース内のウィンドウがグリッドに揃えられていない場合に、8方向のいずれかのうちウィンドウからみてどれだけの範囲を移動先に含めるかを指定します。デフォルト値は 40° です。<br>
 <br></li>
 
-<li><b>Workspace chain column padding (px)</b>: Workspace elements
-are often "chained" to each other (for example, the Code Editor is
-chained to the Event Editor is chained to the Object Editor), and
-this option permits you to set the horizontal distance between any
-two chained windows. The default value is 30px.<br>
+<li><b>ワークスペース チェインの水平余白 (px)</b>: 多くの場合、ワークスペースの各要素はたがいに "チェイン" されています (例えば、コード エディターはイベント エディターにチェインされており、そこからさらにオブジェクト エディターへチェインされています)。このオプションでは、2つのチェインされたウィンドウ間の水平距離を指定します。デフォルト値は 30px です。<br>
 <br></li>
 
-<li><b>Workspace chain row padding (px)</b>: As mentioned above,
-workspace elements are often "chained" to each other and this
-option permits you to set the vertical distance between any two
-chained windows. The default value is 20px.<br>
+<li><b>ワークスペース チェインの垂直余白 (px)</b>: 上述のとおり、ワークスペースの各要素はしばしばたがいに "チェイン" されています。このオプションでは。2つのチェインされたウィンドウ間の垂直距離を指定します。デフォルト値は 20px です。<br>
 <br></li>
 
-<li><b>Workspace chain rendering segment count</b>: Here you can
-set the maximum number of segments for render chains. Lowering this
-value may help performance on lower end machines. The default value
-is 20.<br>
+<li><b>ワークスペース チェインのレンダリング セグメント数</b>: 各チェインを最大で何等分してレンダリングするかを指定します。この値を小さくすることで、性能の低いマシンでのパフォーマンス向上が期待できます。デフォルト値は 20 です。<br>
 <br></li>
 
-<li><b>Workspace chain link colour</b>: This is the colour that
-will be used to display chains between workspace elements. Default
-colour is $99DD00 with an alpha of 153 ($99).<br>
+<li><b>ワークスペース チェイン リンクの色</b>: ワークスペースの各要素間をつなぐチェインの色を指定します。デフォルトの色は $99DD00 のアルファ値 153 ($99) です。<br>
 <br></li>
 
-<li><b>Workspace keyboard navigation resets zoom</b>: As mentioned
-above, you can skip from window to window within the workspace
-using keyboard shortcuts. You can also zoom the workspace in and
-out using the <img style="vertical-align:middle" src=
-"../../../images/icon_ctrl.png">/<img style="vertical-align:middle"
-src="../../../images/icon_cmd.png"> + the mouse wheel <img style=
-"vertical-align:middle" src="../../../images/icon_lmb.png">.
-Setting this option will mean that if you have the workspace zoomed
-and use the shortcuts to skip to another window, then the workspace
-will be returned to a 1:1 view and centered on the selected window.
-This option is off by default.<br>
+<li><b>ワークスペース キーボード ナビゲーション時に拡大率をリセット</b>: 上述したとおり、キーボード ショートカットを使うことでワークスペース内のウィンドウ間を移動できます。これに加えて、<img style="vertical-align:middle" src="../../../images/icon_ctrl.png">/<img style="vertical-align:middle" src="../../../images/icon_cmd.png"> + マウス ホイール <img style="vertical-align:middle" src="../../../images/icon_lmb.png"> でワークスペースを拡大または縮小することもできます。このオプションがオンになっていると、ショートカットを使用して別のウィンドウへ移動した際に、ワークスペースの拡大率を 1:1 にリセットしてから、移動先のウィンドウを中央に表示するようになります。デフォルトではオフになっています。<br>
 <br></li>
 
-<li><b>Workspace chains can overlap</b>: When enabled this option
-will permit workspace chains to cross and overlap. This is off by
-default.<br>
+<li><b>Workspace chains can overlap</b>: このオプションをオンになっていると、ワークスペース チェインが交差することを許可します。デフォルトではオフになっています。<br>
 <br></li>
 </ul>
 </div></blockquote>
@@ -612,10 +483,10 @@ default.<br>
 <div class="footer">
 <div class="buttons">
 <div class="clear">
-<div style="float:left">Back: <a href=
-"../7_preferences.html">Preferences Index</a></div>
+<div style="float:left">戻る: <a href=
+"../7_preferences.html">環境設定の目次</a></div>
 
-<div style="float:right">Next: <a href=
+<div style="float:right">進む: <a href=
 "prefs_draganddrop.html">Drag and Drop</a></div>
 </div>
 </div>
