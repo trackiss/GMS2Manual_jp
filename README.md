@@ -5,6 +5,284 @@ GMS2 そのものが独特で遠まわしな表現を使う傾向にあり、明
 
 ただし、実際の IDE 内のコンテンツに関する翻訳はなるべく原型を留めるよう努力している。
 
+<details>
+  <summary>進捗</summary>
+
+  <br>
+
+  - [ ] フレームやツリー周り
+  - [x] index
+
+  <br>
+
+  - [ ] **Overview**
+    - [x] **Getting Started**
+      - [x] *index*
+      - [x] Licenses
+      - [x] Installation
+      - [x] Updating
+      - [x] Release Notes
+      - [x] Require SDKs
+      - [x] Licensing
+      - [x] Preferences
+      - [x] Input
+      - [x] Error Reporting
+      - [ ] **Preferences**
+        - [x] *index*
+        - [x] General
+        - [x] Drag and Drop
+        - [x] Image Editor
+        - [x] Sprite Editor
+        - [x] Object Editor
+        - [x] Font Editor
+        - [x] Room Editor
+        - [ ] Spline Editor
+        - [ ] Tile Sets Editor
+        - [ ] Timeline
+        - [ ] Extension Editor
+        - [ ] Resource Tree
+        - [ ] Text Editor
+        - [ ] Languages
+        - [ ] Marketplace
+        - [ ] Platform Settings
+        - [ ] Plugins
+        - [ ] Runtime Feeds
+        - [ ] Beta Channel
+    - [ ] **Quick Start**
+      - [ ] *index*
+      - [ ] Introduction
+      - [ ] Start
+      - [ ] Workspaces
+      - [ ] Resources
+      - [ ] Workflow
+      - [ ] Compiling
+      - [ ] Debugging
+      - [ ] Shortcuts
+      - [ ] **Menus**
+        - [ ] *index*
+        - [ ] File
+        - [ ] Edit
+        - [ ] Build
+        - [ ] Windows
+        - [ ] Tools
+        - [ ] Marketplace
+        - [ ] Help
+        - [ ] Layouts
+      - [ ] **Workflow** 
+        - [ ] *index*
+        - [ ] Sprites
+        - [ ] Tile Sets
+        - [ ] Sounds
+        - [ ] Objects
+        - [ ] Rooms
+    - [ ] **Additional Information**
+      - [ ] *index*
+      - [ ] The File System
+      - [ ] Using Buffers
+      - [ ] Texture Pages
+      - [ ] Importing Non-Bitmap Sprites
+      - [ ] Command Line Parameters
+      - [ ] Bitwise Operators
+      - [ ] Compiler Errors
+      - [ ] JSDoc Script Comments
+      - [ ] Micro Web Server
+      - [ ] Obsolete Functions
+
+  <br>
+
+  - [ ] **Editors**
+    - [ ] *index*
+    - [ ] Sprites
+    - [ ] Images
+    - [ ] Tile Sets
+    - [ ] Sounds
+    - [ ] Paths
+    - [ ] Scripts
+    - [ ] Shaders
+    - [ ] Fonts
+    - [ ] Timelines
+    - [ ] Objects
+    - [ ] Rooms
+    - [ ] Notes
+    - [ ] Included Files
+    - [ ] Extensions
+    - [ ] Options
+    - [ ] Configurations
+    - [ ] **Events**
+      - [ ] *index*
+      - [ ] Draw Events
+      - [ ] Gesture Events
+      - [ ] Async Events
+  - [ ] **Extras**
+    - [ ] *index*
+    - [ ] Sound Mixer
+    - [ ] The Output Dock
+    - [ ] Device Manager
+    - [ ] Remote Workers
+    - [ ] Project Image Generator
+    - [ ] The Debug Module
+    - [ ] Source Control
+    - [ ] The Marketplace
+    - [ ] Recent Windows
+  - [ ] **Settings**
+    - [ ] *index*
+    - [ ] Platform Specific Preferences
+    - [ ] Game Options
+    - [ ] Texture Groups
+    - [ ] Audio Groups
+    - [ ] Configations
+    - [ ] **Game Options**
+      - [ ] *index*
+      - [ ] Windows
+      - [ ] Mac OS
+      - [ ] Ubuntu
+      - [ ] Windows UWP
+      - [ ] HTML5
+      - [ ] Amazon Fire
+      - [ ] Android
+      - [ ] iOS
+
+  <br>
+
+- [ ] **Scripting**
+  - [ ] *index*
+  - [ ] **Drag and Drop Overview**
+    - [ ] *index*
+    - [ ] Right Mouse Button Menu Options
+    - [ ] Constructing Action Block Code
+    - [ ] Applying Actions To Other Instances
+    - [ ] Action Block Scripts
+    - [ ] Changing DnD™ To Code
+  - [ ] **Drag and Drop References**
+    - [ ] *index*
+    - [ ] **Common Actions**
+    - [ ] **Instance Actions**
+    - [ ] **Mouse And Keyboard Actions**
+    - [ ] **Gamepad Actions**
+    - [ ] **Movement Actions**
+    - [ ] **Collision Actions**
+    - [ ] **Drawing Actions**
+    - [ ] **Tile Actions**
+    - [ ] **Audio Actions**
+    - [ ] **Loop Actions**
+    - [ ] **Switch Actions**
+    - [ ] **Data Structure Actions**
+    - [ ] **Buffer Actions**
+    - [ ] **File Actions**
+    - [ ] **Data Type Actions**
+    - [ ] **Random Actions**
+    - [ ] **Camera Actions**
+    - [ ] **Room Actions**
+    - [ ] **Path Actions**
+    - [ ] **Timeline Actions**
+    - [ ] **Game Actions**
+    - [ ] **Instance Variable Actions**
+    - [ ] **Miscellaneous Actions**
+    - [ ] **Particle Actions**
+  - [ ] **GML Overview**
+    - [ ] *index*
+    - [ ] Codes
+    - [ ] Functions
+    - [ ] Scripts
+    - [ ] Comments in Code
+    - [ ] Keywords
+    - [ ] Variables And Variable Scope
+    - [ ] Addressing Variables in Other Instances
+    - [ ] Evaluation Order
+    - [ ] Data Types
+    - [ ] Constructing Action Block Code
+    - [ ] Right Mouse Button Menu Options
+    - [ ] Applying Actions To Other Instances
+    - [ ] Action Block Scripts
+    - [ ] Changing DnD™ To Code
+    - [ ] **Arrays**
+    - [ ] **Built In Variables**
+    - [ ] **Checking Data Types**
+    - [ ] **Variable Functions**
+  - [ ] **GML References**
+    - [ ] *index*
+    - [ ] asset_get_index
+    - [ ] asset_get_type
+    - [ ] Compatibility Functions
+      - [ ] **Sprites**
+      - [ ] **Audio**
+      - [ ] **Paths**
+      - [ ] **Scripts**
+      - [ ] **Shaders**
+      - [ ] **Fonts**
+      - [ ] **Timelines**
+      - [ ] **Objects**
+      - [ ] **Instances**
+      - [ ] **Rooms**
+      - [ ] **General Game Functions**
+      - [ ] **Movement**
+      - [ ] **Motion Planning**
+      - [ ] **Collisions**
+      - [ ] **Colour**
+      - [ ] **GPU Control**
+      - [ ] **Drawing Basic Forms**
+      - [ ] **Drawing Sprites And Tiles**
+      - [ ] **Drawing Text**
+      - [ ] **Drawing And Creating Primitives**
+      - [ ] **Surfaces**
+      - [ ] **Particles**
+      - [ ] **Textures**
+      - [ ] **Shaders**
+      - [ ] **Cameras**
+      - [ ] **The Screen Display**
+      - [ ] **Keyboard Input**
+      - [ ] **Mouse Input**
+      - [ ] **Device Input**
+      - [ ] **Gesture Input**
+      - [ ] **Gamepad Input**
+      - [ ] **Virtual Keys And Virtual Keyboards**
+      - [ ] **Data Structures**
+      - [ ] **DS Stacks**
+      - [ ] **DS Queues**
+      - [ ] **DS Lists**
+      - [ ] **DS Maps**
+      - [ ] **DS Priority Queues**
+      - [ ] **DS Grids**
+      - [ ] **Variable Functions**
+      - [ ] **Array Functions**
+      - [ ] **Strings**
+      - [ ] **Date And Time**
+      - [ ] **Number Functions**
+      - [ ] **Vectors**
+      - [ ] **Matrix Functions**
+      - [ ] **Physics Overview**
+      - [ ] **The Physics World**
+      - [ ] **Fixtures**
+      - [ ] **Joints**
+      - [ ] **Forces**
+      - [ ] **Soft Body Particles**
+      - [ ] **Physics Variables**
+      - [ ] **In App Purchases**
+      - [ ] **Asynchronous Functions**
+      - [ ] **Facebook**
+      - [ ] **Achievements and Leaderboards**
+      - [ ] **Networking**
+      - [ ] **Web**
+      - [ ] **The Steam API**
+      - [ ] **Steam User Generated Content**
+      - [ ] **File System Overview**
+      - [ ] **File Handling**
+      - [ ] **File System Functions**
+      - [ ] **INI Files**
+      - [ ] **Text Files**
+      - [ ] **Binary Files**
+      - [ ] **Using Buffers**
+      - [ ] **Buffers**
+      - [ ] **UWP and Xbox Live**
+      - [ ] **Miscellaneous**
+      - [ ] **Debugging**
+
+</details>
+
+---
+
+#### 語句の統一例
+
 - Drag and Drop
   - 翻訳しない
 
