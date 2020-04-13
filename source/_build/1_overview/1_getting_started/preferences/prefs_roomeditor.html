@@ -7,7 +7,7 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 
 <meta name="generator" content="chm2web Pro 2.85 (unicode)" />
-<title>Preferences - Room Editor</title>
+<title>環境設定 - ルーム エディター</title>
 <meta http-equiv="X-UA-Compatible" content="IE=9">
 <link rel="stylesheet" href="../../../../../files/helpindex.css"
 type="text/css">
@@ -29,197 +29,102 @@ if (window.name != "content")
 <script type="text/JavaScript">
  if( typeof(chmtop.helpStyle) != 'undefined' ) { var linkNodes = document.getElementsByTagName("link");  for( var i=0; i < linkNodes.length; ++i ) { var link = linkNodes[i];    if( link.href.endsWith("default.css")) {    var style = link.href.replace("default.css", chmtop.helpStyle); document.write('<link id="newstyleLink" rel="stylesheet" href=' + style + ' type="text/css">');    break; } } } 
 </script>
-<h2>Preferences - Room Editor</h2>
+<h2>環境設定 - ルーム エディター</h2>
 
 <div class="body-scroll">
 <p><br>
 </p>
 
-<p><img class="center" src="images/room_editor_prefs.png" alt=
-"The Room Editor Preferences">
+<p><img class="center" src="images/room_editor_prefs.png" alt="ルーム エディターの環境設定">
 </p>
 
-<p>The <b>Room Editor Preferences</b> are used to define how the
-<a href="../../../2_interface/1_editors/rooms.html">room editor</a>
-will look and behave. The general settings are as follows:</p>
+<p><b>ルーム エディター</b> の環境設定は、<a href="../../../2_interface/1_editors/rooms.html">ルーム エディター</a> の外観と動作を定義するために使用されます。一般的なオプションは次のとおりです:</p>
 
 <ul>
-<li><b>Chain fade out start distance (px)</b>: Sets the distance
-from the parent window for the chain link to fade out from. Default
-is 10px.<br>
+<li><b>チェインがフェード アウトし始める距離 (px)</b>: チェイン リンクがフェード アウトするまでの親ウィンドウからの距離を指定します。デフォルト値は 10px です。<br>
 <br></li>
 
-<li><b>Chain fade out stop distance (px)</b>: Sets the distance
-from the parent window for the chain link to end fading out to.
-Default is 100px.<br>
+<li><b>チェインのフェード アウトが止まる距離 (px)</b>: チェイン リンクがフェード アウトが終わるまでの親ウィンドウからの距離を指定します。デフォルト値は 100px です。<br>
 <br></li>
 
-<li><b>Chain Minimum Alpha</b>: Sets the final alpha value after
-the fade out falloff point for the chain alpha. Default is 0.3.<br>
+<li><b>チェインの最小アルファ値</b>: チェインがフェード アウトしたあとのアルファ値を指定します。デフォルト値は 0.3 です。<br>
 <br></li>
 
-<li><b>Default layer depth spacing</b>: When you create multiple
-layers in the room editor they are automatically assigned a depth
-based on their position within the layer list. This depth is
-incremented by the amount given here. The default value is 100, so
-each layer will be previous layer + 100 in depth.<br>
+<li><b>デフォルトのレイヤーの深さの間隔</b>: ルーム エディター上で複数のレイヤーを作成すると、レイヤー リスト内の位置に基づいて自動的に深さが割り当てられます。このオプションでは、深さがいくつずつ加算されていくかを指定します。デフォルト値は 100 で、この場合、各レイヤーの深さは1つ前のレイヤーの深さに 100 を加算した値になります。<br>
 <br></li>
 
-<li><b>Default room width</b>: Sets the initial width that will be
-selected as the default for a new room. Default is 1024px.<br>
+<li><b>デフォルトのルームの幅</b>: 新規ルームのデフォルトの幅を指定します。デフォルト値は 1024px です。<br>
 <br></li>
 
-<li><b>Default room height</b>: Sets the initial height that will
-be selected as the default for a new room. Default is 768px.<br>
+<li><b>デフォルトのルームの高さ</b>: 新規ルームのデフォルトの高さを指定します。デフォルト値は 768px です。<br>
 <br></li>
 
-<li><b>Add default room layers</b> - When you create any new room
-resource, <i>GameMaker Studio 2</i> will generate a couple of
-"base" layers for you - a background layer and an instance layer.
-You can switch that behaviour off here so that new rooms will have
-no pre-made layers. This is on by default.<br>
+<li><b>デフォルトでルーム レイヤーを追加</b> - ルーム リソースを新規作成すると、<i>GameMaker Studio 2</i> はいくつかの "ベース" レイヤー (背景レイヤーとインスタンス レイヤー) を生成します。このオプションをオフにすると、新規ルームがレイヤーのない状態で作られるようになります。デフォルトではオンになっています。<br>
 <br></li>
 
-<li><b>Show room views</b>: If you have views active within a room,
-this is shown by an outline where the view boundaries would be
-within the room, and the visibility of this area can be toggled
-using the dedicated button in the editor itself. However you can
-choose to have view boundaries invisible when you open a room by
-un-checking this option (the button can still be used to show them
-again). The default value is on, making view boundaries visible
-when you open a room.</li>
+<li><b>ルーム ビューの表示</b>: ルーム内にアクティブなビューがあるとき、ビューの境界線がアウトラインとしてルーム内に表されます。この領域の表示/非表示は、エディターの切り替えボタンから切り替えることができます。このオプションをオフにすると、ルーム エディターを開いたときにビューの境界線が表示されないようになります (切り替えボタンから境界線を表示させることはできます)。デフォルトではオンになっており、ルーム エディターを開くとビューの境界線が表示されます。</li>
 </ul>
 
-<p>The rest of the general options are related to the different
-colours that are used throughout the room editor interface, and if
-you double click on any of the swatches you can edit the colour for
-that setting.</p>
+<p>残りのオプションは、ルーム エディターのインターフェース全般で使用される色についての設定に使用します。設定したい項目のスウォッチをダブル クリックして色を指定します。</p>
 
-<p>Further options are available for editing from the
-sub-categories listed below:</p>
+<p>次のサブ カテゴリーから追加のオプションが利用可能です:</p>
 
 <blockquote><a name="prefs_room_confirm" id=
-"prefs_room_confirm"></a> <label class="collapse" for="one">Confirm
-Dialogs</label> <input id="one" type="checkbox">
-<div class="index_list"><img class="center" src=
-"images/room_editor_confirm_prefs.png" alt=
-"The Room Editor Confirm Dialogs Preferences">
-<p>The <b>Confirm Dialogs</b> preferences are used to change the
-messages that are shown in the room editor when you perform certain
-actions. The messages you can change are:</p>
+"prefs_room_confirm"></a> <label class="collapse" for="one">ダイアログの確認</label> <input id="one" type="checkbox">
+<div class="index_list"><img class="center" src="images/room_editor_confirm_prefs.png" alt="ルーム エディターのダイアログの確認の環境設定">
+<p><b>ダイアログの確認</b> の設定では、特定の操作を実行したときにルーム エディターで表示されるメッセージについての設定を行います。設定できるメッセージは次のとおりです:</p>
 
 <ul>
-<li><b>Automatic response to updating layer depths</b> - When you
-change layer depths a message is shown to warn you that doing this
-will also automatically update all the other layer depths. With
-this option you can choose to have the message show, have it update
-the layers as if you'd clicked "Ok", or have it not update anything
-as if you'd clicked "No".<br>
+<li><b>レイヤーの深さの更新へ対する自動制御</b> - レイヤーの深さを変更しようとすると、ほかのすべてのレイヤーの深さも自動的に更新されることを警告するメッセージが表示されます。このオプションでは、これまでどおりメッセージを表示させるか、自動で "はい" をクリックしたときのようにレイヤーを更新させるか、または "いいえ" をクリックしたときのようになにも更新しないよう指定することもできます。<br>
 <br></li>
 
-<li><b>Automatic response to layer locked warning</b> - If you try
-to delete a layer in the room and it happens to be locked, you will
-be shown a message by default. However setting this option to "Ok"
-will not show the message and just not let you delete the
-layer.<br>
+<li><b>ロックされたレイヤーの警告へ対する自動制御</b> - デフォルトでは、ロックされたルーム レイヤーを削除しようとすると、メッセージが表示されます。このオプションを "OK" に設定すると、メッセージが表示されなくなり、ロックされたレイヤーを削除できなくなります。<br>
 <br></li>
 
-<li><b>Automatic response to item locked warning</b> - If you try
-to delete an item it happens to be locked, you will be shown a
-message by default. However setting this option to "Ok" will not
-show the message and just not let you delete the item.<br>
+<li><b>ロックされたアイテムの警告へ対する自動制御</b> - デフォルトでは、ロックされたルーム アイテムを削除しようとすると、メッセージが表示されます。このオプションを "OK" に設定すると、メッセージが表示されなくなり、ロックされたアイテムを削除できなくなります。<br>
 <br></li>
 
-<li><b>Automatic response to item owner layer locked warning</b> -
-If you try to delete an item on a layer and the layer happens to be
-locked (even if the item is not), then you will be shown a message
-by default to inform you that it can't be done. However setting
-this option to "Ok" will not show the message and just not let you
-delete the item.<br>
+<li><b>ロックされたレイヤー上のアイテムの警告へ対する自動制御</b> - デフォルトでは、ロックされたレイヤー上のアイテムを削除しようとすると、(アイテムそのものがロックされていない場合でも) アイテムを削除できないことを知らせるメッセージが表示されます。このオプションを "OK" に設定すると、メッセージが表示されなくなり、ロックされたレイヤー上のアイテムを削除できなくなります。<br>
 <br></li>
 
-<li><b>Automatic response to invalid resource drag error</b> - If
-you try to add a resource to a layer that is not designated as
-being for that resource type (like adding a sprite to a path
-layer), then you will be shown a message by default to inform you
-that it can't be done. However setting this option to "Ok" will not
-show the message and just not let you add the resource.<br>
+<li><b>無効なリソース追加エラーへ対する自動制御</b> - デフォルトでは、リソースの種類が異なるレイヤーへリソースを追加しようとする (例えば、パス レイヤーへスプライトを追加しようとしたときなど) と、レイヤーへリソースを追加できないことを知らせるメッセージが表示されます。このオプションを "OK" に設定すると、メッセージが表示されなくなり、レイヤーへの種類の異なるリソースの追加ができなくなります。<br>
 <br></li>
 
-<li><b>Automatic response to parent room item deletion</b> - Here
-you can choose what happens when you delete an item that is part of
-a parent room (and so present in all child rooms). The default is
-to show you a warning message and let you decide what to do, but
-you can set it to "Delete All" to suppress the message and go ahead
-with the item delete from the parent room and all its children, or
-you can select "Keep All" to suppress the message abort the
-delete.<br>
+<li><b>親ルームのアイテムを削除するときの自動制御</b> - 親ルームのアイテムを削除しようとしたときの動作を指定します。デフォルトでは、警告メッセージが表示されて任意の操作を選択できます。このオプションを "すべて削除" に設定すると、メッセージが表示されなくなり、自動で親ルームとそのすべての子ルームから該当するアイテムを削除するようになります。または、"すべて保持" に設定することで、メッセージを表示させないようにし、自動でアイテムの削除を中止させるようにすることもできます。<br>
 <br></li>
 
-<li><b>Automatic response to parent room layer deletion</b> - Here
-you can choose what happens when you delete a layer that is part of
-a parent room (and so present in all child rooms). The default is
-to show you a warning message and let you decide what to do, but
-you can set it to "Delete All" to suppress the message and go ahead
-with the layer delete from the parent room and all its children, or
-you can select "Keep All" to suppress the message abort the
-delete.<br>
+<li><b>親ルームのレイヤーを削除するときの自動制御</b> - 親ルームのレイヤーを削除しようとしたときの動作を指定します。デフォルトでは、警告メッセージが表示されて任意の操作を選択できます。このオプションを "すべて削除" に設定するとメッセージが表示されなくなり、自動で親ルームとそのすべての子ルームから該当するレイヤーを削除するようになります。または、"すべて保持" に設定することで、メッセージを表示させないようにし、自動でにレイヤーの削除を中止させるようにすることもできます。<br>
 <br></li>
 
-<li><b>Automatic response to invalid layer selection drag error</b>
-- Here you can choose what happens when you drag a resource onto
-the room editor when you have selected multiple layers in the layer
-editor (or have not selected any layer at all). The default is to
-show a warning message but you can set this option to "OK" to
-suppress the message and continue, without adding any
-resources.<br>
+<li><b>無効なレイヤー選択時のリソース追加エラーへ対する自動制御</b> - レイヤー エディター上で複数のレイヤーを選択した、またはなにも選択していない場合に、リソースをルーム エディターへドラッグしようとしたときの動作を指定します。デフォルトでは、警告メッセージが表示されます。このオプションを "OK" に設定すると、メッセージが表示されなくなり、自動でリソースの追加を中止するようになります。<br>
 <br></li>
 
-<li><b>Automatic response to locked or invisible layer drag
-error</b> - Here you can choose what happens when you drag a
-resource onto a layer that has been locked or is flagged as
-invisible. The default is to show a warning message but you can set
-this option to "OK" to suppress the message and continue, without
-adding any resources.</li>
+<li><b>ロック済みまたは非表示のレイヤーのリソース追加エラーへ対する自動制御</b> - ロックされているか非表示になっているレイヤーへリソースをドラッグしようとしたときの動作を指定します。デフォルトでは、警告メッセージが表示されます。このオプションを "OK" に設定すると、メッセージが表示されなくなり、自動でリソースの追加を中止するようになります。</li>
 </ul>
 </div>
 <br>
 <a name="prefs_room_grid" id="prefs_room_grid"></a> <label class=
-"collapse" for="two">Grid Settings</label> <input id="two" type=
+"collapse" for="two">グリッドの設定</label> <input id="two" type=
 "checkbox">
 <div class="index_list"><img class="center" src=
 "images/room_editor_grid_prefs.png" alt=
-"The Room Editor Grid Settings Preferences">
-<p>The <b>Grid Settings</b> preferences are used to change how the
-grid overlay works, with the following options available:</p>
+"ルーム エディターのグリッドの設定の環境設定">
+<p><b>グリッドの設定</b> の設定では、グリッドのオーバーレイ表示の動作についての設定を行います。次のようなオプションが利用可能です:</p>
 
 <ul>
-<li><b>Grid horizontal spacing (px)</b> - This will set the
-horizontal space for gird cells of the room grid in pixels. Default
-value is 32px.<br>
+<li><b>グリッドの水平間隔 (px)</b> - ルーム グリッドの水平線の間隔をピクセル単位で指定します。デフォルト値は 32px です。<br>
 <br></li>
 
-<li><b>Grid vertical spacing (px)</b> - This will set the vertical
-space for gird cells of the room grid in pixels. Default value is
-32px.<br>
+<li><b>グリッドの垂直間隔 (px)</b> - ルーム グリッドの垂直線の間隔をピクセル単位で指定します。デフォルト値は 32px です。<br>
 <br></li>
 
-<li><b>Display grid</b> - This option will toggle on or off the
-room grid when you first open a room. It is on by default, but even
-if it is switched off you can enable it again using the appropriate
-button in the room editor itself.<br>
+<li><b>グリッドの表示</b> - 新しくルームを開いたときに、ルーム グリッドを表示するようにします。デフォルトではオンになっています。このオプションがオフになっている場合でも、ルーム エディターの切り替えボタンから表示させることができます。<br>
 <br></li>
 
-<li><b>Snap to grid</b> - With this option you can set whether a
-room will have assets snap to the room grid by default or not when
-a room is initially opened. It is on by default, but even if it is
-switched off you can enable it again using the appropriate button
-in the room editor itself.<br>
+<li><b>グリッドへスナップ</b> - 新しくルームを開いたときに、アセットがルーム グリッドへスナップされるようにします。デフォルトではオンになっています。このオプションがオフになっている場合でも、ルーム エディターの切り替えボタンから表示させることができます。<br>
 <br></li>
 
-<li><b>Grid line colour</b> - This option permits you to set the
-colour (including the alpha component) of the room grid lines. The
-default value is (rgba) <tt>#FFFFFF30</tt>.</li>
+<li><b>グリッド線の色</b> - ルーム グリッドの線の (アルファ値を含む) 色を指定します。デフォルトの色は <tt>#FFFFFF30</tt> です。</li>
 </ul>
 </div></blockquote>
 
@@ -233,11 +138,11 @@ default value is (rgba) <tt>#FFFFFF30</tt>.</li>
 <div class="footer">
 <div class="buttons">
 <div class="clear">
-<div style="float:left">Back: <a href=
-"../7_preferences.html">Preferences Index</a></div>
+<div style="float:left">戻る: <a href=
+"../7_preferences.html">環境設定の目次</a></div>
 
-<div style="float:right">Next: <a href=
-"prefs_splineeditor.html">Spline Editor</a></div>
+<div style="float:right">進む: <a href=
+"prefs_splineeditor.html">スプライン エディター</a></div>
 </div>
 </div>
 
