@@ -7,7 +7,7 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 
 <meta name="generator" content="chm2web Pro 2.85 (unicode)" />
-<title>Preferences - Object Editor</title>
+<title>環境設定 - オブジェクト エディター</title>
 <meta http-equiv="X-UA-Compatible" content="IE=9">
 <link rel="stylesheet" href="../../../../../files/helpindex.css"
 type="text/css">
@@ -29,7 +29,7 @@ if (window.name != "content")
 <script type="text/JavaScript">
  if( typeof(chmtop.helpStyle) != 'undefined' ) { var linkNodes = document.getElementsByTagName("link");  for( var i=0; i < linkNodes.length; ++i ) { var link = linkNodes[i];    if( link.href.endsWith("default.css")) {    var style = link.href.replace("default.css", chmtop.helpStyle); document.write('<link id="newstyleLink" rel="stylesheet" href=' + style + ' type="text/css">');    break; } } } 
 </script>
-<h2>Preferences - Object Editor</h2>
+<h2>環境設定 - オブジェクト エディター</h2>
 
 <div class="body-scroll">
 <p><br>
@@ -39,74 +39,42 @@ if (window.name != "content")
 "Object Editor Preferences">
 </p>
 
-<p>The <b>Object Editor Preferences</b> are used to define certain
-properties for the <a href=
-"../../../2_interface/1_editors/objects.html">object editor</a>
-window. The main section contains the following option:</p>
+<p><b>オブジェクト エディターの環境設定</b> は、<a href="../../../2_interface/1_editors/objects.html">オブジェクト エディター</a> ウィンドウの一部のプロパティを定義するために使用されます。メイン セクションには次のようなオプションがあります:</p>
 
 <ul>
-<li><b>Click to open Event method</b>: This option controls whether
-you need to perform a double click or a single click on an object
-event to open it. By default this is set to double-click.<br>
+<li><b>イベント メソッドを開くクリックの種類</b>: オブジェクト イベントを開くときに、ダブルクリックとシングルクリックのどちらを使うかを指定します。デフォルトでは ダブルクリック に設定されています。<br>
 <br></li>
 
-<li><b>Inherited Events alpha</b>: This option permits you to
-change the alpha that any Â¡inherited events will be drawn with in
-the events list of the object. By default this is set to 0.5
-(values should be between 0 and 1).<br>
+<li><b>継承したイベントのアルファ値</b>: オブジェクトのイベント リストにおける継承したイベントのアルファ値を指定します。デフォルト値は 0.5 です (値は 0 から 1 の範囲である必要があります)。<br>
 <br></li>
 
-<li><b>Events label format</b>: Here you can enable or disable the
-different possible texts that can be applied to the event label in
-the object editor events list. By default the Event Description is
-enabled only.<br>
+<li><b>イベント ラベルの書式</b>: オブジェクト イベントのイベント リスト中のイベント ラベルに適用される情報のオン/オフを指定します。デフォルトでは イベントの概要 のみがオンになっています。<br>
 <br></li>
 
-<li><b>Add default event content</b>: By default this option is
-enabled and all it does is add a simple comment into the <i>code
-editor</i> for all new events to remind you that you can add your
-code there.<br>
+<li><b>デフォルトのイベント コンテンツを追加</b>: <i>コード エディター</i> の存在を強調するために、すべての新規イベントであらかじめ簡単なコメントを追加するようにします。<br>
 <br></li>
 
-<li><b>Default event content</b>: Here you can edit the comments
-that are added by default in the code window for new events.</li>
+<li><b>デフォルトのイベント コンテンツ</b>: 新規イベントのコード ウィンドウにデフォルトで追加されるコメントを指定します。</li>
 </ul>
 
-<p>The following sub-category also exists for the Object
-Editor:</p>
+<p>オブジェクト エディターには次のようなサブ カテゴリーもあります:</p>
 
 <blockquote><a name="prefs_object_confirm" id=
 "prefs_object_confirm"></a> <label class="collapse" for=
-"one">Confirm Dialogs</label> <input id="one" type="checkbox">
+"one">ダイアログの確認</label> <input id="one" type="checkbox">
 <div class="index_list"><img class="center" src=
 "images/object_editor_confirm_prefs.png" alt=
-"The Object Editor Confirm Dialog Preferences">
-<p>This section deals with the dialogs that may be be shown while
-using the Object Editor, with the following option available:</p>
+"オブジェクト エディターのダイアログの確認の環境設定">
+<p>このセクションでは、オブジェクト エディターを使用しているときに表示される可能性のあるダイアログについて説明します。次のようなオプションが利用可能です:</p>
 
 <ul>
-<li><b>Automatic response to DnD&amp;trad; conversion to Gamemaker
-Language</b>: You can use the right mouse button <img style=
-"vertical-align:middle" src="../../../images/icon_rmb.png"> within
-the Drag and Drop workspace to select the option to turn all Drag
-and Drop for that event into GML code. The default action here is
-to show a warning message asking if you want to continue, but you
-can set this to "Okay" and the dialog will not be shown before the
-conversion.<br>
+<li><b>DnD™ を GameMaker Language へ変換するときの自動応答</b>: Drug and Drop ワークスペースでは、イベントを右クリック <img style="vertical-align:middle" src="../../../images/icon_rmb.png"> しオプションを選ぶことで、そのイベント内のすべての Drug and Drop を GML コードに変換することができます。ここで、デフォルトでは操作を続行するかどうかを尋ねるメッセージが表示されますが、このオプションを "OK" に設定することで、ダイアログが表示されないようにすることができます。<br>
 <br></li>
 
-<li><b>Automatic response to exceeding physics vertex limit</b>:
-This option can be used to control the pop up message that is shown
-when you exceed the permitted vertex number in the physics shape
-editor. The default action here is to show a warning message, but
-you can set this to "Okay" and the dialog will not be shown.<br>
+<li><b>物理頂点の最大数を超えたときの自動応答</b>: 物理形状エディターで許可されている最大の頂点数を超えたときに表示されるポップアップ メッセージについてのオプションです。デフォルトでは警告メッセージが表示されますが、このオプションを "OK" に設定することで、ダイアログが表示されないようにすることができます。<br>
 <br></li>
 
-<li><b>Automatic choice on event deletion</b>: This option can be
-used to control the pop up message that is shown when you delete an
-event in the Object editor events list. The default action here is
-to show a warning message, but you can set this to "Okay" and the
-dialog will not be shown.<br>
+<li><b>Automatic choice on event deletion</b>: オブジェクト エディターのイベント リストからイベントを削除するときに表示されるポップアップ メッセージについてのオプションです。デフォルトでは警告メッセージが表示されますが、このオプションを "OK" に設定することで、ダイアログが表示されないようにすることができます。<br>
 <br></li>
 </ul>
 </div></blockquote>
@@ -118,11 +86,10 @@ dialog will not be shown.<br>
 <div class="footer">
 <div class="buttons">
 <div class="clear">
-<div style="float:left">Back: <a href=
-"../7_preferences.html">Preferences Index</a></div>
+<div style="float:left">戻る: <a href=
+"../7_preferences.html">環境設定の目次</a></div>
 
-<div style="float:right">Next: <a href="prefs_fonteditor.html">Font
-Editor</a></div>
+<div style="float:right">進む: <a href="prefs_fonteditor.html">フォント エディター</a></div>
 </div>
 </div>
 
