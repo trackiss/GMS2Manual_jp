@@ -7,7 +7,7 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 
 <meta name="generator" content="chm2web Pro 2.85 (unicode)" />
-<title>Preferences - Font Editor</title>
+<title>環境設定 - フォント エディター</title>
 <meta http-equiv="X-UA-Compatible" content="IE=9">
 <link rel="stylesheet" href="../../../../../files/helpindex.css"
 type="text/css">
@@ -29,73 +29,40 @@ if (window.name != "content")
 <script type="text/JavaScript">
  if( typeof(chmtop.helpStyle) != 'undefined' ) { var linkNodes = document.getElementsByTagName("link");  for( var i=0; i < linkNodes.length; ++i ) { var link = linkNodes[i];    if( link.href.endsWith("default.css")) {    var style = link.href.replace("default.css", chmtop.helpStyle); document.write('<link id="newstyleLink" rel="stylesheet" href=' + style + ' type="text/css">');    break; } } } 
 </script>
-<h2>Preferences - Font Editor</h2>
+<h2>環境設定 - フォント エディター</h2>
 
 <div class="body-scroll">
 <p><br>
 </p>
 
-<p><img class="center" src="images/fonteditor_prefs.png" alt=
-"Font Editor Preferences">
+<p><img class="center" src="images/fonteditor_prefs.png" alt="フォント エディターの環境設定">
 </p>
 
-<p>The <b>Font Editor</b> Preferences are used to define how the
-Font editor behaves. The different options available are listed
-below along with a description of what each one does.</p>
+<p><b>フォント エディター</b> の環境設定は、フォント エディターの動作を定義するために使用されます。利用可能なオプションとそれぞれの機能についての説明を次に示します。</p>
 
 <ul>
-<li><b>Update Fonts imported from GameMaker Studio 1 projects</b>:
-When this is checked, <i>GameMaker Studio 2</i> will attempt to
-update fonts and regenerate their texture. This will happen only
-if:
+<li><b>GameMaker Studio 1 プロジェクトのインポート時にフォントをアップグレード</b>: <i>GameMaker Studio 2</i> がフォントをインポートするとき、これをアップグレードしてテクスチャの再生成を試みるようにします。このプロセスが発生するのは、次の条件がいずれも満たされているときのみです:
 
 <ul>
-<li>This preference is enabled</li>
+<li>このオプションがオンになっている</li>
 
-<li>The font is available on the machine</li>
+<li>該当するフォントがコンピューターにインストールされている</li>
 
-<li><i>GameMaker Studio 2</i> can locate a matching face in the
-font family (this is the most likely cause of inconsistency on
-import)</li>
+<li><i>GameMaker Studio 2</i> がフォント ファミリーのなかから該当するフォント フェイスを見つけることができる (インポート時に引き起こされる問題はたいていこれが原因です)</li>
 </ul>
 
-<p>Note that it will also happen if the <i>GameMaker Studio 1</i>
-font does not have a cached font texture. If a legacy font cannot
-be updated, then <i>GameMaker Studio 2</i> will default to using
-the cached font texture, and the Font Editor will no longer permit
-you to edit the font, showing an option to backup and update to
-another: <img class="center" src="images/fonteditor_backup.png"
-alt="Font Editor Backup And Upgrade"></p>
+<p><i>GameMaker Studio 1</i> フォントにキャッシュされたテクスチャが含まれていなかった場合にも同様のプロセスが発生します。これらレガシー フォントを更新することができなかった場合、<i>GameMaker Studio 2</i> はキャッシュ済みのフォント テクスチャを使用します。このとき、フォント エディターから直接フォントを編集することができなくなるかわりに、別のフォントとしてバックアップしてからアップグレードするオプションが表示されるようになります。: <img class="center" src="images/fonteditor_backup.png" alt="フォント エディターのバックアップとアップグレード"></p>
 
-<p>Clicking this will enable you to edit the font, either adding
-the missing font or setting another one, and the backed up font is
-stored in the font resource's folder, as <tt>&lt;font
-name&gt;.yy.gms1</tt> and <tt>&lt;font name&gt;.png.gms1</tt>. To
-restore these files, manually delete the <tt>&lt;font
-name&gt;.yy</tt> files and replace them with these by removing the
-<tt>.gms1</tt> extension from the filenames. <b>Important!</b> All
-resources store their names in the <tt>.yy</tt> file, so you must
-edit these and put the right name of the resource in the
-&lt;name&gt; field as well (if different).<br>
+<p>これをクリックすると、不足しているフォントを追加するか、別のフォントを割り当てることでフォントの編集ができるようになります。バックアップされたフォントは、フォント リソースのあるフォルダーに <tt>&lt;フォント名&gt;.yy.gms1</tt> および <tt>&lt;フォント名&gt;.png.gms1</tt> として保存されます。これらのフォントを復元するには、手動で <tt>&lt;フォント名&gt;.yy</tt> ファイルを削除したのち、バックアップされたフォントのファイル名から <tt>.gms1</tt> 拡張子を削除したものに置き換えます。<b>重要！</b> すべてのリソースは、みずからのファイル名を <tt>.yy</tt> ファイルに格納しています。したがって、もし &lt;名前&gt; フィールドが異なる場合は正しいリソース名に修正する必要があります。<br>
 <br></p></li>
 
-<li><b>Automatic choice for failed content regeneration dialog</b>:
-When you go to regenerate a font resource texture, you are shown a
-warning. Setting this option to "OK" will mean that the font is
-regenerated without the warning being shown.<br>
+<li><b>フォント再生成時の自動制御</b>: フォント リソースのテクスチャを再生成しようとすると、警告が表示されます。このオプションを "OK" に設定することで、警告が表示されずにフォントを再生成するようになります。<br>
 <br></li>
 
-<li><b>Automatic choice for failed font regeneration dialog</b>:
-When regeneration of a font resource texture fails, you are shown a
-warning. Setting this option to "OK" will skip showing the
-message.<br>
+<li><b>フォントの再生成に失敗したときの自動制御</b>: フォント テクスチャの再生成に失敗すると、警告が表示されます。このオプションを "OK" に設定することで、警告が表示されなくなります。<br>
 <br></li>
 
-<li><b>Automatic choice for upgrading imported legacy fonts</b>:
-When you import a legacy project, you may get a warning about
-legacy fonts and the offer to upgrade. Setting this option to "OK"
-will okay the update automatically without showing this
-message.<br>
+<li><b>レガシー フォントのインポート時のアップグレードに対する自動制御</b>: レガシー プロジェクトをインポートすると、レガシー フォントのアップグレードを提案する警告が表示されることがあります。このオプションを "OK" に設定するとメッセージが表示されなくなり、自動でアップグレードが行われるようになります。<br>
 <br></li>
 </ul>
 
@@ -106,11 +73,10 @@ message.<br>
 <div class="footer">
 <div class="buttons">
 <div class="clear">
-<div style="float:left">Back: <a href=
-"../7_preferences.html">Preferences Index</a></div>
+<div style="float:left">戻る: <a href=
+"../7_preferences.html">環境設定の目次</a></div>
 
-<div style="float:right">Next: <a href="prefs_roomeditor.html">Room
-Editor</a></div>
+<div style="float:right">進む: <a href="prefs_roomeditor.html">ルーム エディター</a></div>
 </div>
 </div>
 
