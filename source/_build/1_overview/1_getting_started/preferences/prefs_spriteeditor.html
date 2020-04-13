@@ -7,7 +7,7 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 
 <meta name="generator" content="chm2web Pro 2.85 (unicode)" />
-<title>Preferences - Sprite Editor</title>
+<title>環境設定 - スプライト エディター</title>
 <meta http-equiv="X-UA-Compatible" content="IE=9">
 <link rel="stylesheet" href="../../../../../files/helpindex.css"
 type="text/css">
@@ -29,7 +29,7 @@ if (window.name != "content")
 <script type="text/JavaScript">
  if( typeof(chmtop.helpStyle) != 'undefined' ) { var linkNodes = document.getElementsByTagName("link");  for( var i=0; i < linkNodes.length; ++i ) { var link = linkNodes[i];    if( link.href.endsWith("default.css")) {    var style = link.href.replace("default.css", chmtop.helpStyle); document.write('<link id="newstyleLink" rel="stylesheet" href=' + style + ' type="text/css">');    break; } } } 
 </script>
-<h2>Preferences - Sprite Editor</h2>
+<h2>環境設定 - スプライト エディター</h2>
 
 <div class="body-scroll">
 <p><br>
@@ -39,88 +39,46 @@ if (window.name != "content")
 "The Sprite Editor Preferences">
 </p>
 
-<p>The <b>Sprite Editor</b> Preferences are used to define how the
-<a href="../../../2_interface/1_editors/sprites.html">sprite
-editor</a> looks and functions. The following option exists:</p>
+<p><b>スプライト エディター</b> の環境設定は、<a href="../../../2_interface/1_editors/sprites.html">スプライト エディター</a> の外観や操作感を定義するために使用されます。次のようなオプションがあります:</p>
 
 <ul>
-<li><b>Default sprite origin</b>: This option permits you to set
-the default origin position for any new sprite resources that you
-create. The default value is the Top Left.<br>
+<li><b>デフォルトのスプライト原点</b>: 新規スプライトでのデフォルトの原点の位置を指定します。デフォルトでは 左上 に設定されています。<br>
 <br></li>
 
-<li><b>Default sprite collision mask kind</b>: This option permits
-you to set the default kind of collision mask to use for new
-sprites. Choices are rectangle, rotated rectangle, ellipse,
-diamond, or precise (per frame). The default is rectangle.<br>
+<li><b>デフォルトのスプライト当たり判定の種類</b>: 新規スプライトで使用されるデフォルトの当たり判定を指定します。矩形、回転矩形、楕円形、ひし形またはアウトライン (フレームごと) の5種類から選択できます。デフォルトでは 矩形 に設定されています。<br>
 <br></li>
 
-<li><b>Default sprite animation mode</b>: This option permits you
-to set the default animation mode for sprites in the sprite editor.
-You can choose either "Frames per second" or "Frames per game
-frame", with the default setting being "Frames per second".<br>
+<li><b>デフォルトのスプライト アニメーション モード</b>: 新規スプライトのデフォルトのアニメーション モードを指定します。"フレーム/秒" または "フレーム/ゲーム フレーム" を設定できます。デフォルトでは "フレーム/秒" に設定されています。<br>
 <br></li>
 
-<li><b>Default sprite animation speed</b>: This option permits you
-to set the default animation speed value for when you create a new
-sprite resource. Note that this value is linked to the <i>animation
-mode</i> and - for example - 3 frames per second i <i>not</i> the
-same as 30 frames per game frame, so be sure to set this value
-correctly in reference to the preferred mode. Default value is
-30.<br>
+<li><b>デフォルトのスプライト アニメーション速度:</b>: 新規スプライトでのデフォルトのアニメーション速度を指定します。実際の速度は <i>アニメーション モード</i> に依存していることに注意してください。例えば、3フレーム/秒 と 30フレーム/ゲーム フレーム は等しく <i>ありません</i>。デフォルト値は 30 です。<br>
 <br></li>
 
-<li><b>Default sprite width</b>: This option permits you to set the
-default width for all new sprites created in the sprite editor.
-Default value is 64.<br>
+<li><b>デフォルトのスプライトの幅</b>: スプライト エディター上で作成されるすべての新規スプライトのデフォルトの幅を指定できます。デフォルト値は 64 です。<br>
 <br></li>
 
-<li><b>Default sprite height</b>: This option permits you to set
-the default height for all new sprites created in the sprite
-editor. Default value is 64.<br>
+<li><b>デフォルトのスプライトの高さ</b>: スプライト エディター上で作成されるすべての新規スプライトのデフォルトの高さを指定できます。デフォルト値は 64 です。<br>
 <br></li>
 
-<li><b>Apply resize and scale to sprite origin</b>: When checked
-this option will change the origin of the sprite when the sprite is
-resized or scaled, with the new origin being moved/scaled to match
-the new values for the sprite. Note that this is <i>only</i>
-applicable for custom sprite origins that are not locked in the
-sprite editor. If the origin is locked or the sprite uses one of
-the default positions - eg: "Center" or "Top Left", etc... - then
-this option will be grayed out and unavailable for changing.
-Default is enabled.<br>
+<li><b>サイズの変更と伸縮をスプライト原点へ適用</b>: スプライトのサイズの変更または伸縮時、それに合わせてスプライトの原点も移動または伸縮されるようにします。これは、カスタムかつロックされていない原点 <i>のみ</i> に適用されることに注意してください。原点がデフォルト位置のいずれか ("中央" や "左上" など) に設定されていたりロックされていたりすると、このオプションはグレー表示され使用できません。デフォルトではオンになっています。<br>
 <br></li>
 </ul>
 
-<p>The following sub-category also exists for the Sprite
-Editor:</p>
+<p>スプライト エディターには次のようなサブ カテゴリーがあります:</p>
 
 <blockquote><a name="prefs_sprite_confirm" id=
 "prefs_sprite_confirm"></a> <label class="collapse" for=
-"one">Confirm Dialogs</label> <input id="one" type="checkbox">
+"one">ダイアログの確認</label> <input id="one" type="checkbox">
 <div class="index_list"><img class="center" src=
 "images/sprite_editor_confirm_prefs.png" alt=
-"The Sprite Editor Confirm Dialog Preferences">
-<p>The options available here control the messages that pop up when
-are required to confirm an action. You can change these setting to
-show the message always or dismiss it with a specific action
-(either Yes or No) :</p>
+"スプライト エディターのダイアログの確認の環境設定">
+<p>操作の確認が必要なときにポップアップされるメッセージについて設定を行います。このオプションによって、メッセージを常に表示するかどうか、または特定の応答 (はい または いいえ) で自動的にメッセージを閉じることができるようになります:</p>
 
 <ul>
-<li><b>Automatic response to file import</b>: When you import a new
-image and one already exists, by default you will be prompted to
-continue importing and overwrite the existing image or cancel the
-operation. This option lets you suppress this message and always
-either cancel the import by selecting "No", or overwrite the
-current sprite by selecting "Yes". Default value is "Show
-Message".<br>
+<li><b>ファイルをインポートするかどうかの自動応答</b>: デフォルトでは、画像がすでに存在する状態で新しく画像をインポートしようとすると、操作を続行して既存の画像を上書きするかキャンセルするかを尋ねられます。このオプションを使用して、自動で "いいえ" を選択するようにして常にインポートをキャンセルするか、"はい" を選択して常に上書きするようにするかを指定してメッセージを表示しないようにします。デフォルトでは "メッセージを表示する" に設定されています。<br>
 <br></li>
 
-<li><b>Automatic response to image load failure</b>: When you
-import a new image and and the import fails, by default you will be
-shown a warning message informing you that there has been a
-failure. This option lets you suppress this message by selecting
-"Okay". Default value is "Show Message".<br>
+<li><b>画像読み込み失敗時の自動応答</b>: デフォルトでは、新しくイメージをインポートする際にインポートに失敗すると、インポート失敗の旨を知らせる警告メッセージが表示されます。ここで、自動的に "OK" が選択されるようにしてメッセージが表示されないようにすることができます。デフォルトでは "メッセージを表示する" に設定されています。<br>
 <br></li>
 </ul>
 </div></blockquote>
@@ -132,11 +90,11 @@ failure. This option lets you suppress this message by selecting
 <div class="footer">
 <div class="buttons">
 <div class="clear">
-<div style="float:left">Back: <a href=
-"../7_preferences.html">Preferences Index</a></div>
+<div style="float:left">戻る: <a href=
+"../7_preferences.html">環境設定の目次</a></div>
 
-<div style="float:right">Next: <a href=
-"prefs_objecteditor.html">Object Editor</a></div>
+<div style="float:right">進む: <a href=
+"prefs_objecteditor.html">オブジェクト エディター</a></div>
 </div>
 </div>
 
