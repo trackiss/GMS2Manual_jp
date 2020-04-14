@@ -36,8 +36,8 @@ GMS2 そのものが独特で遠まわしな表現を使う傾向にあり、明
         - [x] Object Editor
         - [x] Font Editor
         - [x] Room Editor
-        - [ ] Spline Editor
-        - [ ] Tile Sets Editor
+        - [x] Spline Editor
+        - [x] Tile Sets Editor
         - [ ] Timeline
         - [ ] Extension Editor
         - [ ] Resource Tree
