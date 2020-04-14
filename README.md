@@ -39,7 +39,7 @@ GMS2 そのものが独特で遠まわしな表現を使う傾向にあり、明
         - [x] Spline Editor
         - [x] Tile Sets Editor
         - [x] Timeline
-        - [ ] Extension Editor
+        - [x] Extension Editor
         - [ ] Resource Tree
         - [ ] Text Editor
         - [ ] Languages
@@ -450,3 +450,7 @@ GMS2 そのものが独特で遠まわしな表現を使う傾向にあり、明
   - さすがに修正
 - オート タイルのうしろへ表示される背景色
   - 正確にはオート タイル テンプレートの背景に使われる色
+
+#### 環境設定 - 拡張機能エディター
+
+- なぜかタイトルが "Preferences - Dialogue Editor" になっている
