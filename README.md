@@ -41,8 +41,8 @@ GMS2 そのものが独特で遠まわしな表現を使う傾向にあり、明
         - [x] Timeline
         - [x] Extension Editor
         - [x] Resource Tree
-        - [ ] Text Editor
-        - [ ] Languages
+        - [x] Text Editor
+        - [x] Languages
         - [ ] Marketplace
         - [ ] Platform Settings
         - [ ] Plugins
@@ -490,3 +490,24 @@ GMS2 そのものが独特で遠まわしな表現を使う傾向にあり、明
   - 廃止された関数の箇所とコード補完をカラー化
     - 項目名が間違っている。原文では "Colour coding/code completion for obsolete functions" だが、実際には "Colour coding/code completion enabled for obsolete functions"。enable が抜けている
     - ややわかりにくい説明になっているが、要は Colour セクションにある "Obsolete Symbols" の設定を適用するかどうか。デフォルトでは、廃止された関数が青色に表示されるようになる。これがオフになっていると、"Functions" の色設定が適用されるばかりでなく、コード補完での属性名も Obsolete から Function に変更される。つまりただの関数扱いになるのだ
+
+#### 環境設定 - 言語
+
+- ステータス バーへ引数の型を表示
+  - 原文では {} に囲まれて引数の型が表示されると書かれているが、実際には中かっこではなくただのかっこ () である。修正
+  - それに、オフに設定してもずっと表示されている
+  - 例を示しておこう。次のコード例のように JSDoc コメントを書くと、別のスクリプトから参照するときに `example_function( boolean, real, string)` と表示されるようになる。最低限 `@param` コメントがあればよい。カーソルの位置に応じて型の強調もしてくれる。当然だが型チェックが行われるわけではないし、なんなら適当にでっち上げた型名を書いてもオーケー。あくまでドキュメントである
+
+```gml:example_function.gml
+/// @param boolean a
+/// @param real b
+/// @param string c
+
+// 以下省略
+```
+
+- ステータス バーへ引数の説明を表示
+  - ここでいう説明とは、引数名のことである。知ってのとおり、GML では引数名を指定できない (`argument0` ～ `argument15`)。そのため、`@param` コメントで指定した引数名が使用される。前述のコード例であれば、`example_function( boolean - a, real - b, string - c)` と表示される。
+  - これはちゃんとオン/オフが反映される
+- システム関数のスペルをアメリカ英語にする
+  - 関数名へ適用されるので、日本語化環境でも多いに有用なオプションである。特に多くの日本人はイギリス英語よりもアメリカ英語に慣れているはずなので、オンにするとよいかもしれない
