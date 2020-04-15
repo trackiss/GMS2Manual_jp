@@ -40,7 +40,7 @@ GMS2 そのものが独特で遠まわしな表現を使う傾向にあり、明
         - [x] Tile Sets Editor
         - [x] Timeline
         - [x] Extension Editor
-        - [ ] Resource Tree
+        - [x] Resource Tree
         - [ ] Text Editor
         - [ ] Languages
         - [ ] Marketplace
@@ -461,3 +461,8 @@ GMS2 そのものが独特で遠まわしな表現を使う傾向にあり、明
 #### 環境設定 - 拡張機能エディター
 
 - なぜかタイトルが "Preferences - Dialogue Editor" になっている
+
+#### 環境設定 - リソース ツリー
+
+- 重複するグループ名をつけようとしたときの自動制御
+  - 原文では "folder" という表現を使っているが、IDE では "group" である。IDE に合わせ「グループ」と訳すことにする
