@@ -542,3 +542,8 @@ GMS2 そのものが独特で遠まわしな表現を使う傾向にあり、明
 
 - Git
   - "Add new User/Pass authentication" ではなく "Add User/Pass Authentication"。"Add a new SSH keypair authentication" も同様。なぜこんなところをわざわざ口語体にするのだろう
+
+#### 環境設定 - ランタイム フィード
+
+- "Automatically delete old runtimes" の説明なし
+- 最後の最後で句点のピリオドが2つ重なっている

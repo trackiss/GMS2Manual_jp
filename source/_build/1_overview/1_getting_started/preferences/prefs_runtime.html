@@ -7,7 +7,7 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 
 <meta name="generator" content="chm2web Pro 2.85 (unicode)" />
-<title>Preferences - Runtime Feeds</title>
+<title>環境設定 - ランタイム フィード</title>
 <meta http-equiv="X-UA-Compatible" content="IE=9">
 <link rel="stylesheet" href="../../../../../files/helpindex.css"
 type="text/css">
@@ -29,80 +29,36 @@ if (window.name != "content")
 <script type="text/JavaScript">
  if( typeof(chmtop.helpStyle) != 'undefined' ) { var linkNodes = document.getElementsByTagName("link");  for( var i=0; i < linkNodes.length; ++i ) { var link = linkNodes[i];    if( link.href.endsWith("default.css")) {    var style = link.href.replace("default.css", chmtop.helpStyle); document.write('<link id="newstyleLink" rel="stylesheet" href=' + style + ' type="text/css">');    break; } } } 
 </script>
-<h2>Preferences - Runtime Feeds</h2>
+<h2>環境設定 - ランタイム フィード</h2>
 
 <div class="body-scroll">
 <p><br>
 </p>
 
-<p><img class="center" src="images/runtime_prefs.png" alt=
-"The Runtime Feeds Preferences">
+<p><img class="center" src="images/runtime_prefs.png" alt="The ランタイム フィードの環境設定">
 </p>
 
-<p>The <b>Runtime Feeds Preferences</b> are used to display and
-change the currently installed runtimes as well as the runtime in
-current use. <i>GameMaker Studio 2</i> can have several different
-runtime tools installed at any one time and you can set which one
-to use from this preference. Ideally you want to be using the most
-up-to-date runtime, but sometimes it may have an issue, or you may
-be required to use an older one for comparability, etc... and so
-you can change the runtime tools that <i>GameMaker Studio 2</i>
-uses to build your game here.</p>
+<p><b>ランタイム フィードの環境設定</b> は、現在インストールされているランタイムや使用しているランタイムを表示または変更するために使用されます。<i>GameMaker Studio 2</i> では、同時に複数の異なるランタイム ツールがインストールされていることがあり、どのランタイム ツールを使用するかどうかを指定することができます。常に最新のランタイムを使用することが最も理想的ではありますが、なんらかの問題が発生する場合や、新旧比較をするために古いランタイムを使用しなければならないケースもあります。そういった状況に対応するために、<i>GameMaker Studio 2</i> がゲームのビルドへ使用するランタイム ツールを変更できるようになっています。</p>
 
-<p>The initial section of this preference is related to where you
-pull the runtime tools from and requires you to input a URL to an
-RSS feed. This feed will then be scanned for updates to the runtime
-tools which can then be downloaded and installed. This section will
-show the Master runtime feed URL by default, but you can click the
-<i>Add</i> button to create a new Runtime Feed where you give the
-name and the URL for the RSS feed, and then click <i>Apply</i> to
-tell <i>GameMaker Studio 2</i> to access it. You will need to close
-and re-open the Preferences window for the new feed to be shown.
-Note that if you have opted into the Beta releases, then the Beta
-runtime feed will be shown here too.</p>
+<p>最初のセクションはランタイム ツールを取得する場所についての設定で、RSS フィードへの URL を入力します。このフィードはランタイム ツールのアップデートをスキャンし、ダウンロードしてインストールすることができます。デフォルトでは Master ランタイム フィードの URL が入力されています。新しくランタイム フォードを作成してアクセスするよう <i>GameMaker Studio 2</i> に指定するには、<i>追加</i> ボタンをクリックして RSS フィードの名前と URL を入力し、<i>適用</i> をクリックします。新しく追加したフィードを表示させるには、環境設定ウィンドウをいったん閉じて再度開く必要があります。ベータ版リリースを使用している場合は、ベータ版のランタイム フィードも表示されるようになります。</p>
 
-<div class="note"><b>NOTE</b>: if you opt into the <a href=
-"prefs_betachannel.html">Beta Channel</a>, then the Beta Channel
-runtimes will be shown in a "Beta" feed along with "Master" and you
-can change between the two at any time.</div>
+<div class="note"><b>注</b>: <a href="prefs_betachannel.html">ベータ チャンネル</a> にオプトインしている場合は、"Master" とともに "Beta" フィードとしてベータ チャンネル ランタイムも表示されるようになります。この2つはいつでも自由に切り替えることができます。</div>
 
 <p><br>
-Once a Runtime Feed has been created it will be listed in this
-section as a sub-category, and you should always have at least one
-feed listed (by default this would be the Master feed). Regardless
-of the runtime being used, they will all have the same features,
-outlined below using the <i>Master</i> feed as an example:
-<img class="center" src="images/runtime_master_prefs.png" alt=
-"The Runtime Feed Master Preferences"></p>
+作成されたランタイム フィードは、サブ カテゴリーとしてこのセクションへリストアップされていきます。このセクションには少なくとも1つ以上のフィードが表示されている必要があり、デフォルトでは Master フィードが表示されています。ここでは <i>Master</i> フィードを例にとって説明しますが、次に説明する機能はランタイムの種類にかかわらず使用できます:
+<img class="center" src="images/runtime_master_prefs.png" alt="ランタイム フィードの Master の環境設定"></p>
 
-<p>The <b>Runtime Feed</b> preferences are used to select, install
-and un-install the different runtime tools. At the top you have the
-current runtime tools being used, the date it was created, and the
-location that it is stored in on the hard drive. Beneath these
-details you can find a list of all the available runtimes, and you
-can choose any one from this list to change to being the "running"
-runtime used for compiling your projects.</p>
+<p><b>ランタイム フィード</b> の環境設定は、各ランタイム ツールの切り替えやインストール、アンインストールに使用されます。上部には、現在使用しているランタイム ツールのバージョン、インストール日、ハード ドライブ上の保存場所が表示されます。その下には、利用可能なすべてのランタイムのリストがあります。このリストの中からプロジェクトのコンパイルに使用するランタイムを選択し、"実行中" に切り替えることができます。.</p>
 
-<p>To select a different runtime to use, simply find it in the list
-and then double click <img align="middle" src=
-"../../../images/icon_lmb.png"> on it. If the runtime has not been
-downloaded and installed, then you will be prompted to do so, and
-once it has been installed you will be prompted to close and
-restart the IDE so that the new runtime can be initialised.</p>
+<p>別のランタイムを選択するには、リストの中からランタイムを探してダブルクリック <img align="middle" src="../../../images/icon_lmb.png"> します。ランタイムがまだダウンロードおよびインストールされていない場合は、ダウンロードまたはインストールが始まります。インストールが完了すると、ランタイムを初期化するために IDE の再起動を求められます。</p>
 
-<p>This runtime list details all the available runtimes, their
-version number, the date they were released, and, if it they are
-installed, the path to where they have been installed to. The right
-hand side also shows the different status icons which are as
-follows:</p>
+<p>このランタイム リストには、利用可能なすべてのランタイムとそのバージョン、リリース日、そしてインストール済みであれば保存先のパスが表示されます。右側には、次のようなステータス アイコンが表示されます:</p>
 
 <table class="icons">
 <tr>
-<td class="icons"><img align="middle" src="images/icon_running.png"
-alt="Status Running">
+<td class="icons"><img align="middle" src="images/icon_running.png" alt="実行中ステータス">
 </td>
-<td class="text">This marks the current runtime that has been
-selected for use when building your projects.</td>
+<td class="text">このランタイムが、現在プロジェクトのビルドに使用されているランタイムであることを示します。</td>
 </tr>
 
 <tr>
@@ -111,12 +67,9 @@ selected for use when building your projects.</td>
 </tr>
 
 <tr>
-<td class="icons"><img align="middle" src=
-"images/icon_download.png" alt="Status Download">
+<td class="icons"><img align="middle" src="images/icon_download.png" alt="ダウンロード ステータス">
 </td>
-<td class="text">Clicking this will initiate the download and
-installation of the selected runtime (a status bar will be shown in
-the top right of the IDE).</td>
+<td class="text">これをクリックすると、そのランタイムのダウンロードとインストールが始まります。このとき、進捗状況が IDE 右上に表示されます。</td>
 </tr>
 
 <tr>
@@ -125,18 +78,13 @@ the top right of the IDE).</td>
 </tr>
 
 <tr>
-<td class="icons"><img align="middle" src="images/icon_delete.png"
-alt="Status Delete">
+<td class="icons"><img align="middle" src="images/icon_delete.png" alt="削除ステータス">
 </td>
-<td class="text">Clicking this will remove the selected runtime
-from your hard drive.</td>
+<td class="text">これをクリックすると、そのランタイムがハード ドライブから削除されます。</td>
 </tr>
 </table>
 
-<p>You can update the runtime list at any time from the given RSS
-feed clicking the refresh button <img style="vertical-align:middle"
-src="images/icon_refresh.png">, and you can clean your hard drive
-of old runtimes by clicking the "Clean Runtimes Now" button..</p>
+<p>更新ボタン <img style="vertical-align:middle" src="images/icon_refresh.png"> をクリックすると、RSS フィードからランタイム リストを更新できます。また、"ランタイムのクリーン アップ" ボタンをクリックして、ハード ドライブ上の古いランタイムをクリーン アップすることができます。</p>
 
 <p><br>
 </p>
@@ -145,11 +93,11 @@ of old runtimes by clicking the "Clean Runtimes Now" button..</p>
 <div class="footer">
 <div class="buttons">
 <div class="clear">
-<div style="float:left">Back: <a href=
-"../7_preferences.html">Preferences Index</a></div>
+<div style="float:left">戻る: <a href=
+"../7_preferences.html">環境設定の目次</a></div>
 
-<div style="float:right">Next: <a href=
-"prefs_betachannel.html">Beta Channel Preferences</a></div>
+<div style="float:right">進む: <a href=
+"prefs_betachannel.html">ベータ チャンネルの環境設定</a></div>
 </div>
 </div>
 
