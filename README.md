@@ -44,7 +44,6 @@ GMS2 そのものが独特で遠まわしな表現を使う傾向にあり、明
         - [x] Text Editor
         - [x] Languages
         - [x] Marketplace
-        - [ ] Platform Settings
         - [ ] Plugins
         - [ ] Runtime Feeds
         - [ ] Beta Channel
