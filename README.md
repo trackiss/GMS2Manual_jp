@@ -538,4 +538,7 @@ GMS2 そのものが独特で遠まわしな表現を使う傾向にあり、明
 - 確認ダイアログ
   - リソース ツリーの説明がコピペされている。それっぽく書いておく
 
-#### 環境設定 - 
+#### 環境設定 - プラグイン
+
+- Git
+  - "Add new User/Pass authentication" ではなく "Add User/Pass Authentication"。"Add a new SSH keypair authentication" も同様。なぜこんなところをわざわざ口語体にするのだろう

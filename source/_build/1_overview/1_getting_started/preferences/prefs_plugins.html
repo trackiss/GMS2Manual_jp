@@ -7,7 +7,7 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 
 <meta name="generator" content="chm2web Pro 2.85 (unicode)" />
-<title>Preferences - Plugins</title>
+<title>環境設定 - プラグイン</title>
 <meta http-equiv="X-UA-Compatible" content="IE=9">
 <link rel="stylesheet" href="../../../../../files/helpindex.css"
 type="text/css">
@@ -29,93 +29,62 @@ if (window.name != "content")
 <script type="text/JavaScript">
  if( typeof(chmtop.helpStyle) != 'undefined' ) { var linkNodes = document.getElementsByTagName("link");  for( var i=0; i < linkNodes.length; ++i ) { var link = linkNodes[i];    if( link.href.endsWith("default.css")) {    var style = link.href.replace("default.css", chmtop.helpStyle); document.write('<link id="newstyleLink" rel="stylesheet" href=' + style + ' type="text/css">');    break; } } } 
 </script>
-<h2>Preferences - Plugins</h2>
+<h2>環境設定 - プラグイン</h2>
 
 <div class="body-scroll">
 <p><br>
 </p>
 
-<p>The <b>Plugins Preferences</b> are used to control any extra
-plugins that have been added to the <i>GameMaker Studio 2</i> IDE.
-By default this has one section dedicated to the <b>Source
-Control</b> plugin for integrating <i>GameMaker Studio 2</i>
-projects with <a href="https://git-scm.com/" target=
-"_blank">Git</a>.</p>
+<p><b>プラグインの環境設定</b> は、<i>GameMaker Studio 2</i> IDE に追加されたプラグインの制御に使用されます。デフォルトでは、<i>GameMaker Studio 2</i> と <a href="https://git-scm.com/" target="_blank">Git</a> を統合する <b>ソース管理</b> プラグインについてのセクションがあります。</p>
 
 <blockquote><a name="prefs_plugins_git" id="prefs_plugins_git"></a>
-<label class="collapse" for="one">Source Control (Git)</label>
+<label class="collapse" for="one">ソース管理 (Git)</label>
 <input id="one" type="checkbox">
-<div class="index_list"><img class="center" src=
-"images/plugins_git_prefs.png" alt="Plugins Git SCM Preferences">
-<p>This section deals with the preferences that you are required to
-set to get the <b>Git SCM</b> plugin to work with <i>GameMaker
-Studio 2</i>. First you have the set of general options:</p>
+<div class="index_list"><img class="center" src="images/plugins_git_prefs.png" alt="Git SCM プラグインの環境設定">
+<p>このセクションでは、<b>Git SCM</b> プラグインを <i>GameMaker Studio 2</i> で動作させるために必要ないくつかの設定について説明します。まずは、一般的なオプションを次に示します:</p>
 
 <ul>
-<li><b>Automatically open source control output window</b>: When
-this is checked, the source control output window will be shown
-automatically when something changes. This is on by default.<br>
+<li><b>ソース管理の出力ウィンドウを自動的に開く</b>: プロジェクトが変更されたとき、出力ウィンドウのソース管理が自動で表示されるようにします。デフォルトではオンになっています。<br>
 <br></li>
 
-<li><b>Verbose Logging</b>: Enable verbose logging for the Git
-output log. This is off by default.<br>
+<li><b>詳細なログ</b>: より詳細な Git ログを出力させるようにします。デフォルトではオフになっています。<br>
 <br></li>
 </ul>
-Next is the <i>User Identity</i> section with the following fields
-which are required to be filled in:
+次の <i>ユーザー情報</i> セクションでは、次のようなフィールドへ入力する必要があります:
 
 <ul>
-<li><b>Username to commit as</b>: Here you must enter the username
-that you will be using to do any commits to Git with (this must be
-the same as the username specified when you set up your Git
-repository).<br>
+<li><b>コミット時のユーザー名</b>: Git へのコミットに使用するユーザー名を入力します。このとき、ユーザー名は Git リポジトリの作成時に指定したユーザー名と同じでなければなりません。<br>
 <br></li>
 
-<li><b>Email to commit as</b>: The email that is associated with
-this Git identity.<br>
+<li><b>コミット時のメールアドレス</b>: Git へのコミットに使用するメールアドレスを入力します。<br>
 <br></li>
 </ul>
 
-<p>After setting up the User Identity, you can then add a new
-username/password combination for authentication by clicking the
-button labelled <b>Add new User/Pass authentication</b>, which will
-open the following window with different fields for you to fill in:
-<img class="center" src="images/plugins_git_userpass.png" alt=
-"Plugins Git SCM Preferences - Add new User"></p>
+<p>ユーザー情報を設定したあと、<b>ユーザー名/パスワード 認証の追加</b> ボタンをクリックすると次のウィンドウが開き、認証に使用する新しいユーザー名とパスワードを追加できます:
+<img class="center" src="images/plugins_git_userpass.png" alt="Git SCM プラグインの環境設定 - 新規ユーザーの追加"></p>
 
-<p>You can also <b>Add a new SSH keypair authentication</b> by
-clicking the button with that label. This will open the following
-window for you to fill in: <img class="center" src=
-"images/plugins_git_sshkey.png" alt=
-"Plugins Git SCM Preferences - Add new SSH keypair"></p>
+<p>または、<b>SSH 鍵ペア 認証の追加</b> ボタンをクリックして新しい SSH 鍵ペア 認証を追加することもできます。次のようなウィンドウが開くので、情報を入力してください: <img class="center" src="images/plugins_git_sshkey.png" alt="Git SCM プラグインの環境設定 - SSH 鍵ペアの追加"></p>
 
-<p>Below these buttons you can then set up the <i>Merge Tool</i>
-and the <i>Diff Tool</i> for SCM with these options:</p>
+<p>さらにその下には、SCM に使用される <i>Merge ツール</i> と <i>Diff ツール</i> についてのオプションがあります:</p>
 
 <ul>
-<li><b>Path to Merge Tool</b>: Here you specify the full file path
-to the Git merge tool.<br>
+<li><b>Merge ツールのパス</b>: Git Merge ツールへの完全パスを指定します。<br>
 <br></li>
 
-<li><b>Options for Merge Tool</b>: In this field you can add any
-extra commands to be run whenever you use the Merge Tool.<br>
+<li><b>Merge ツールのオプション</b>: Merge ツールを使用するときに毎回実行される追加コマンドを指定します。<br>
 <br></li>
 
-<li><b>Path to Diff Tool</b>: Here you specify the full file path
-to the Git diff tool.<br>
+<li><b>Diff ツールのパス</b>: Git Diff ツールへの完全パスを指定します。<br>
 <br></li>
 
-<li><b>Options for Diff Tool</b>: In this field you can add any
-extra commands to be run whenever you use the Diff Tool.<br>
+<li><b>Diff ツールのオプション</b>: Diff ツールを使用するときに毎回実行される追加コマンドを指定します。<br>
 <br></li>
 </ul>
 
-<p>Finally, after setting those up you have one last option:</p>
+<p>これらの設定が終わると、最後に次のオプションがあります:</p>
 
 <ul>
-<li><b>Automatically enable source control</b>: When this is
-checked, source control will be enabled for all new projects
-automatically. This is off by default.<br>
+<li><b>自動的にソース管理を有効化</b>: すべての新規プロジェクトでソース管理を有効にします。デフォルトではオフになっています。<br>
 <br></li>
 </ul></div></blockquote>
 
@@ -126,11 +95,11 @@ automatically. This is off by default.<br>
 <div class="footer">
 <div class="buttons">
 <div class="clear">
-<div style="float:left">Back: <a href=
-"../7_preferences.html">Preferences Index</a></div>
+<div style="float:left">戻る: <a href=
+"../7_preferences.html">環境設定の目次</a></div>
 
-<div style="float:right">Next: <a href=
-"prefs_runtime.html">Runtimes</a></div>
+<div style="float:right">進む: <a href=
+"prefs_runtime.html">ランタイム</a></div>
 </div>
 </div>
 
