@@ -27,7 +27,7 @@ GMS2 そのものが独特で遠まわしな表現を使う傾向にあり、明
       - [x] Preferences
       - [x] Input
       - [x] Error Reporting
-      - [ ] **Preferences**
+      - [x] **Preferences**
         - [x] *index*
         - [x] General
         - [x] Drag and Drop
@@ -44,9 +44,9 @@ GMS2 そのものが独特で遠まわしな表現を使う傾向にあり、明
         - [x] Text Editor
         - [x] Languages
         - [x] Marketplace
-        - [ ] Plugins
-        - [ ] Runtime Feeds
-        - [ ] Beta Channel
+        - [x] Plugins
+        - [x] Runtime Feeds
+        - [x] Beta Channel
     - [ ] **Quick Start**
       - [ ] *index*
       - [ ] Introduction
@@ -366,6 +366,9 @@ GMS2 そのものが独特で遠まわしな表現を使う傾向にあり、明
 - Drag and Drop と GML について
   - 後者は文脈にもよるが、いずれもゲーム システム全体を指す言葉。狭義にはイベント (トリガー) とそのアクションの組み合わせ、要はスクリプトのことを指す
   - Drag and Drop だけでは意図が伝わりにくいと判断したときは、語句の補完として「Drag and Drop スクリプト」と表記してもよい
+
+- ベータ版について
+  - GameMaker Studio 2 Beta というバージョン名のような文脈では "Beta"、それ以外は「ベータ」でよい
 
 ---
 
