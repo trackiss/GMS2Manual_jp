@@ -48,8 +48,8 @@ GMS2 そのものが独特で遠まわしな表現を使う傾向にあり、明
         - [x] Runtime Feeds
         - [x] Beta Channel
     - [ ] **Quick Start**
-      - [ ] *index*
-      - [ ] Introduction
+      - [x] *index*
+      - [x] Introduction
       - [ ] Start
       - [ ] Workspaces
       - [ ] Resources
