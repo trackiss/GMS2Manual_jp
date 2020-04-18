@@ -7,7 +7,7 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 
 <meta name="generator" content="chm2web Pro 2.85 (unicode)" />
-<title>Workspaces</title>
+<title>ワークスペース</title>
 <meta http-equiv="X-UA-Compatible" content="IE=9">
 
 <link rel="stylesheet" href="../../../../files/helpindex.css" type=
@@ -30,186 +30,63 @@ if (window.name != "content")
 <script type="text/JavaScript">
  if( typeof(chmtop.helpStyle) != 'undefined' ) { var linkNodes = document.getElementsByTagName("link");  for( var i=0; i < linkNodes.length; ++i ) { var link = linkNodes[i];    if( link.href.endsWith("default.css")) {    var style = link.href.replace("default.css", chmtop.helpStyle); document.write('<link id="newstyleLink" rel="stylesheet" href=' + style + ' type="text/css">');    break; } } } 
 </script>
-<h2>Workspaces</h2>
+<h2>ワークスペース</h2>
 
 <div class="body-scroll">
 <p><br>
 </p>
 
-<p>After logging in and starting a new project, <i>GameMaker Studio
-2</i> will take you to the initial <b>workspace</b> with some basic
-windows docked to the IDE. In general, the workspace is simply an
-area where you can organise the different resources of your game
-while you are working: <img class="center" src=
-"images/qs_workspace.png" alt="Workspace"></p>
+<p>ログインして新規プロジェクトを開始すると、<i>GameMaker Studio 2</i> は、IDE に基本的なウィンドウ類がドッキングされたデフォルトの <b>ワークスペース</b> を表示させます。ワークスペースは、ゲーム制作で必要な様々なリソースを作業中に整理するための領域のことです: <img class="center" src="images/qs_workspace.png" alt="ワークスペース"></p>
 
-<p><a name="tabs" id="tabs"></a> As you can see, the initial
-workspace is on a tab at the top of the screen (and you can rename
-it by double clicking the tab), but you can create further
-workspaces for the project by clicking the <img style=
-"vertical-align:middle;width:20px;height:20px;" src=
-"images/icon_add.png"> to the side, giving you multiple possible
-workspaces for any single project. For example, maybe you are
-working on interactions between the player and several enemy
-objects, so you'd have the player on it's own workspace and the
-enemy objects in another, and perhaps another workspace only to
-show the scripts that both use.</p>
+<p><a name="tabs" id="tabs"></a> 見てわかるとおり、ワークスペースははじめ画面上部のタブに配置されています (タブをダブルクリックして名前を変更できます)。ここで、ワークスペース タブの横にある <img style=
+"vertical-align:middle;width:20px;height:20px;" src="images/icon_add.png"> をクリックしてワークスペースを追加できます。つまり、ひとつのプロジェクトで複数のワークスペースを使い分けることが可能なのです。例えば、あなたがプレイヤーといくつかの敵オブジェクトとをたがいに干渉させるための作業に取り組んでいるとしましょう。このとき、プレイヤーをひとつのワークスペースへ、敵オブジェクトは別のワークスペースへ配置し、両者が共通して使用するスクリプトはさらに別のワークスペースへ表示させる... といったような使い方が想定されます。</p>
 
-<p>Another important feature of workspaces is that you can click
-<img style="vertical-align:middle" src="../../images/icon_lmb.png">
-on the tab and - still holding the mouse button <img style=
-"vertical-align:middle" src="../../images/icon_lmb.png"> down -
-drag it off of the main IDE window into its own individual window,
-making it very easy to organise things if you are using - for
-example - multiple displays. You also merge these secondary
-workspace windows back into the main one by dragging the tab back
-onto the first window. Note that although you appear to have two
-instances of the IDE running when you do this, they are both for
-the same project and you cannot have one project in one and another
-ion the other unless you specifically open two instances of
-<i>GameMaker Studio 2</i>.</p>
+<p>ワークスペースには、もうひとつ重要な特徴があります。それは、タブを左クリック <img style="vertical-align:middle" src="../../images/icon_lmb.png"> しドラッグすることで、メインの IDE から独立したひとつのウィンドウとして使用できるようになることです。例えば、もしあなたがマルチ モニターの環境にあるのなら、この機能を使って IDE をかんたんに整理することができます。また、分離させたタブをメイン ウィンドウへドラッグして、2つのワークスペースを合成することも可能です。一見するとまるで IDE が2つ起動しているように見えるかもしれませんが、あくまでこれらはひとつのプロジェクトで使用されるものであることに注意してください。<i>GameMaker Studio 2</i> を明示的にもうひとつ起動しないかぎり、異なるプロジェクトを同時に開くことはできません。</p>
 
-<p>When you first start <i>GameMaker Studio 2</i>, your workspace
-will already be populated by a couple of windows which will be
-"docked" to the IDE. These are explained briefly below:</p>
+<p><i>GameMaker Studio 2</i> をはじめて起動すると、すでにいくつかのウィンドウが "ドッキングされた" 状態のワークスペースが表示されます。ここでは、これらのウィンドウについて簡単に説明していきます:</p>
 
 <blockquote><a name="output" id="output"></a> <label class=
-"collapse" for="two">Output</label> <input id="two" type=
+"collapse" for="two">出力</label> <input id="two" type=
 "checkbox">
-<div class="index_list">You can also see in the image above the
-<b>Output Window</b>. There are a number of sub tabs in this window
-related to <a href=
-"../../2_interface/2_extras/source_control.html">Source
-Control</a>, <a href="menus/edit_menu.html#scripts">Searching</a>
-and <a href="7_debugging.html">debugging</a>, with the initial tab
-being for the console/compiler output, which shows you what is
-happening when you are compiling a game for testing or when
-creating a final package for distribution. This will also show any
-debug messages that you choose to send from your project at
-runtime, and can be configured to show different quantities of
-information from the <a href=
-"../../1_overview/1_getting_started/preferences/prefs_general.html#prefs_settings">
-General Preferences</a>.<br>
+<div class="index_list">先ほどの画像に <b>出力ウィンドウ</b> が表示されているのが見えるでしょうか？ このウィンドウには、<a href="../../2_interface/2_extras/source_control.html">ソース管理</a> や <a href="menus/edit_menu.html#scripts">検索</a>、<a href="7_debugging.html">デバッグ</a> などに関連するいくつかのタブが備わっています。最初のタブはコンソール/コンパイラ出力用のタブで、主にゲームをテストするためにコンパイルしているときや、配布するためのパッケージを作成しているあいだに何が起こっているのかを表示します。また、プロジェクトから送信されるように設定した各種デバッグ メッセージも実行時に表示されます。ここで表示される情報の内容は、<a href="../../1_overview/1_getting_started/preferences/prefs_general.html#prefs_settings">全般の環境設定</a> から変更することができます。<br>
 <br>
-If you close the output window and wish to recover it you can use
-the <a href="menus/windows_menu.html">Windows Menu</a>.</div>
+閉じてしまった出力ウィンドウを再表示させるには、<a href="menus/windows_menu.html">ウィンドウ メニュー</a> を使用してください。</div>
 <br>
 <a name="resources" id="resources"></a> <label class="collapse"
-for="three">Resources</label> <input id="three" type="checkbox">
-<div class="index_list">On the right of the screen you can find the
-resource tree. Here is where you can create and edit the resources
-that your game uses, as well as generate and change configurations.
-Resources are created by right-clicking <img style=
-"vertical-align:middle" src="../../images/icon_rmb.png"> on the
-resource folder and selecting <b>Create</b>, or from the context
-menu at the top of the IDE which says <i>Resources</i>: <img class=
-"center" src="images/qs_resourcesmenu.png" alt="Resources Menu">
-Selecting any one of these options will create a new, empty
-resource of the given type for you. Note that while the resource
-tree is docked to the IDE by default, you can take it out and into
-its own window by clicking <img style="vertical-align:middle" src=
-"../../images/icon_lmb.png"> on the "Resources" text at the top and
-dragging. You can re-dock it again at any time by dragging it to
-the sides or bottom of the IDE. If you close the resources window
-and wish to recover it you can use the <a href=
-"menus/windows_menu.html">Windows Menu</a>.<br>
+for="three">リソース</label> <input id="three" type="checkbox">
+<div class="index_list">画面右側にはリソース ツリーがあります。このウィンドウでは、ゲーム中で使用する様々なリソースを作成および編集したり、構成を生成および変更したりすることができます。リソースを作成するには、リソース フォルダーを右クリック <img style="vertical-align:middle" src="../../images/icon_rmb.png"> して <b>作成</b> をクリックするか、IDE 上部の <i>リソース</i> メニューから作成します: <img class="center" src="images/qs_resourcesmenu.png" alt="リソース メニュー">
+いずれかを選択すると、指定した種類の新しい空のリソースが作成されます。リソース ツリーは、デフォルトでは IDE にドッキングされていますが、ドック上部の "リソース" の文字をクリック <img style="vertical-align:middle" src="../../images/icon_lmb.png"> してドラッグすることで、リソース ツリー ウィンドウを IDE から分離させることができます。分離したウィンドウを IDE の左右または下部へドラッグして、再度ドッキングできます。閉じたリソース ウィンドウを再度表示させたい場合は、<a href="menus/windows_menu.html">ウィンドウ メニュー</a> を使用します。<br>
 <br>
-For more section on the available resources please see the section
-on <a href=
-"../../2_interface/1_editors/index.html">Editors</a>.</div></blockquote>
+利用できるリソースの詳細については、<a href="../../2_interface/1_editors/index.html">エディター</a> のセクションを参照してください。</div></blockquote>
 
 <p><br>
 </p>
 
-<h2>Navigating The Workspace</h2>
+<h2>ワークスペースの移動</h2>
 
 <p><br>
 </p>
 
-<p>While within any workspace you can call up the <b>Right Button
-Menu</b> at any time by right-clicking <img style=
-"vertical-align:middle" src="../../images/icon_rmb.png"> anywhere,
-which will open the following menu: <img class="center" src=
-"images/qs_rmb_options.png" alt="RMB Menu"></p>
+<p>ワークスペースの任意の場所で右クリック <img style="vertical-align:middle" src="../../images/icon_rmb.png"> すると、<b>右クリック メニュー</b> を呼び出せます: <img class="center" src="images/qs_rmb_options.png" alt="RMB メニュー"></p>
 
-<p>Clicking <b>Resources</b> will open up a list of all the
-resources in the <a href="4_resources.html">Resource Tree</a> that
-you can create, and selecting any one of them will create that
-resource for you, and focus the workspace on the editor window for
-that resource. If you click the <b>Windows</b> option, you will be
-shown a list of all the currently open windows within the workspace
-and you can select any of them to have the workspace focus on that
-window. Finally you have the <b>Go to</b> option which will open
-the following window: <img class="center" src="images/qs_goto.png"
-alt="The Goto Window"></p>
+<p><b>リソース</b> をクリックすると、<a href="4_resources.html">リソース ツリー</a> へ追加可能なリソースの一覧が表示されます。いずれかを選択してその種類のリソースを作成すると、自動で対応するエディターが開かれ、ワークスペースのフォーカスが移動します。また、<b>開いているウィンドウ</b> をクリックすると、現在開いているウィンドウの一覧が表示されます。いずれかを選択して、ワークスペースのフォーカスをそのウィンドウまで移動させることができます。最後の <b>ジャンプ...</b> をクリックすると、次のウィンドウが表示されます: <img class="center" src="images/qs_goto.png" alt="ジャンプ ウィンドウ"></p>
 
-<p>This window permits you to see a list of every resource in your
-game and you can type in text at the top of the window to filter
-the results shown. For example, if you have 4 sprites all with the
-word "logo" somewhere in their name, like <tt>spr_Logo_One</tt>,
-then typing "logo" will show only those four sprites. Clicking on
-any of the resources shown on the list will open it in the current
-workspace or focus the workspace on it if it is already open. Note
-that you can also use the keyboard shortcut <img style=
-"vertical-align:middle" src="../../images/icon_ctrl.png"> /
-<img style="vertical-align:middle" src="../../images/icon_cmd.png">
-+ <tt>T</tt> to open the Goto window.</p>
+<p>このウィンドウでは、ゲーム内のすべてのリソースの一覧を見ることができ、またウィンドウ上部へ文字を入力することで、一覧をフィルタリングできます。例えば、<tt>spr_Logo_One</tt> のように、名前に "logo" を含んでいるスプライトが4つあったなら、"logo" と入力してその4つだけを表示させるようにすることができます。一覧に表示されているリソースをクリックして現在のワークスペースで開くか、すでに開いている場合はそのワークスペースまでフォーカスが移動します。ジャンプ ウィンドウは、キーボード ショートカット <img style="vertical-align:middle" src="../../images/icon_ctrl.png"> / <img style="vertical-align:middle" src="../../images/icon_cmd.png"> + <tt>T</tt> で開くこともできます。</p>
 
-<p>Another method for navigating the workspace is to use
-<b>Bookmarks</b>. You can add up to 9 "bookmarks" to IDE windows or
-sections of code in scripts or object events, and then you can
-quickly skip between them using the correct key combination. To add
-a bookmark, simply select the window or line of code that you wish
-to tag and then <img style="vertical-align:middle" src=
-"../../images/icon_ctrl.png"> / <img style="vertical-align:middle"
-src="../../images/icon_cmd.png"> + <img style=
-"vertical-align:middle" src="../../images/icon_shift.png"> +
-<tt>NumberKey[1 - 9]</tt>, and this will set the bookmark,
-labelling the item in the IDE as follows: <img class="center" src=
-"images/qs_bookmarkside.png" alt="IDE Bookmarks"></p>
+<p>ワークスペース内を自由に行き来するためのもうひとつの方法として、<b>ブックマーク</b> があります。最大で9個の "ブックマーク" を、IDE の各ウィンドウや、スクリプトまたはオブジェクト イベント中の任意のコード行へ追加することができ、キーボード ショートカットを使用して自在に行き来することができます。ブックマークを追加するには、目的のウィンドウまたはコード行を選択してから、<img style="vertical-align:middle" src="../../images/icon_ctrl.png"> / <img style="vertical-align:middle" src="../../images/icon_cmd.png"> + <img style="vertical-align:middle" src="../../images/icon_shift.png"> + <tt>1～9 の数字キー</tt> を押します。すると、次のようにブックマークが設定されたことを示すタグが表示されるようになります: <img class="center" src="images/qs_bookmarkside.png" alt="IDE のブックマーク"></p>
 
-<p>In the image above we have assigned bookmarks numbered 1, 2, and
-4 to different parts of the IDE, and we can now navigate away from
-these windows or even close them altogether, as the bookmark will
-permit us to go straight back to it again at any time later. This
-is done by pressing <img style="vertical-align:middle" src=
-"../../images/icon_ctrl.png"> / <img style="vertical-align:middle"
-src="../../images/icon_cmd.png"> + <tt>NumberKey[1 - 9]</tt>, and
-if the bookmarked item has been closed it will be opened, otherwise
-the workspace will pan to the selected bookmark.</p>
+<p>上の画像では、1、2、4のブックマークをそれぞれ IDE のいろいろな箇所へ割り当てています。ブックマーク済みのウィンドウへ移動したいときはもちろん、すでにそのウィンドウを閉じてしまっている場合でも再度開いて移動したりすることができます。キーボード ショートカット <img style="vertical-align:middle" src="../../images/icon_ctrl.png"> / <img style="vertical-align:middle" src="../../images/icon_cmd.png"> + <tt>1～9 の数字キー</tt> で、対応するブックマーク済みのウィンドウまでフォーカスを移動させ、もしそのウィンドウが閉じられている場合は再度開きます。</p>
 
-<div class="note"><b>IMPORTANT!</b> Bookmarks are <b>not</b> saved
-with with the project or when the IDE is closed. They are only
-valid for the session that they were created in.</div>
+<div class="note"><b>重要！</b> ブックマークはプロジェクトへ <b>保存されません</b>。IDE を閉じたときも同様です。ブックマークは、現在のセッションに対してのみ機能します。</div>
 
 <p><br>
-If you want to remove a bookmark, you simply need to select the
-bookmarked window or code line and then repeat the <img style=
-"vertical-align:middle" src="../../images/icon_ctrl.png"> +
-<img style="vertical-align:middle" src=
-"../../images/icon_shift.png"> + <tt>NumberKey[1 - 9]</tt> that you
-used to create it.</p>
+ブックマークを削除したい場合は、ブックマーク済みのウィンドウまたはコード行を選択した状態で再度 <img style="vertical-align:middle" src="../../images/icon_ctrl.png"> + <img style="vertical-align:middle" src="../../images/icon_shift.png"> + <tt>1～9 の数字キー</tt> を押すだけです。</p>
 
-<p>Other ways to navigate the workspace include using the keyboard
-shortcut <img style="vertical-align:middle" src=
-"../../images/icon_ctrl.png">/<img style="vertical-align:middle"
-src="../../images/icon_cmd.png"> + <img style=
-"vertical-align:middle" src="../../images/icon_alt.png"> +
-<tt>&lt;Arrow Keys&gt;</tt> to move between any open windows in the
-direction pressed, and by pressing and holding the middle mouse
-button <img style="vertical-align:middle" src=
-"../../images/icon_mmb.png"> then dragging the mouse you can pan
-around the workspace too.</p>
+<p>また、キーボード ショートカット <img style="vertical-align:middle" src="../../images/icon_ctrl.png">/<img style="vertical-align:middle" src="../../images/icon_cmd.png"> + <img style="vertical-align:middle" src="../../images/icon_alt.png"> + <tt>&lt;矢印キー&gt;</tt> を使用してその方向にある任意のウィンドウへ移動することもできますし、マウス ホイールをクリック <img style="vertical-align:middle" src="../../images/icon_mmb.png"> したままドラッグしてワークスペース内を自在に移動することもできます。</p>
 
-<p>When navigating around the various different workspaces and
-windows, you can use the right-mouse button <img style=
-"vertical-align:middle" src="../../images/icon_rmb.png"> on any
-text field to open a context menu which will have the following
-fields by default: <img class="center" src=
-"images/qs_rmbcontextmenu.png" alt="Default RMB Context Menu"></p>
+<p>ワークスペース上の様々なテキスト フィールド上で右クリック <img style="vertical-align:middle" src="../../images/icon_rmb.png"> すると、デフォルトでは次のようなコンテキスト メニューが開かれます: <img class="center" src="images/qs_rmbcontextmenu.png" alt="デフォルトの RMB コンテキスト メニュー"></p>
 
-<p>In some situations, these options may be expanded on, depending
-on the editor or window that is in focus.</p>
+<p>フォーカスしているエディターやウィンドウの種類によっては、これらの項目が増えることがあります。</p>
 
 <p><br>
 </p>
@@ -217,46 +94,24 @@ on the editor or window that is in focus.</p>
 <p><a name="docking" id="docking"></a>
 </p>
 
-<h2>Docking</h2>
+<h2>ドッキング</h2>
 
 <p><br>
 </p>
 
-<p>We mentioned briefly above that you can <b>dock</b> many windows
-into the current workspace window and you can <b>un-dock</b> those
-that are already docked. If you click <img style=
-"vertical-align:middle" src="../../images/icon_lmb.png"> on, for
-example, the Resource Tree tab at the top and drag it to the left
-of the current workspace, you will see that it becomes a free
-floating window.</p>
+<p>先ほど、ウィンドウを現在のワークスペース ウィンドウへ <b>ドッキング</b> させたり、あるいはすでにドッキングされているウィンドウの <b>ドッキングを解除</b> する方法について簡単に説明しました。おさらいしてみましょう。例えば、リソース ツリーのタブをクリック <img style="vertical-align:middle" src="../../images/icon_lmb.png"> して、現在のワークスペースへドラッグすると、独立したウィンドウになります。</p>
 
-<p><img class="center" src="images/qs_undocking.gif" alt=
-"Un-Docking">
+<p><img class="center" src="images/qs_undocking.gif" alt="ドッキングの解除">
 </p>
 
-<p>This converse is true and if you drag certain windows to the
-sides of the workspace (or the bottom) then they will be docked,
-meaning that it essentially becomes part of the IDE window overlay
-and is no longer independent. When doing this, you drag the window
-to the area you want to dock to and it will be highlighted to show
-that you can dock the window there:</p>
+<p>これとまったく逆の操作も可能です。任意のウィンドウを、ワークスペースの左右部または下部へドラッグしてドッキングできます。ドッキングされたウィンドウは IDE の一部として接続されます。このとき、ウィンドウをドッキングしたい場所へドラッグしてみると、ドッキング可能な位置が次のように強調表示されます:</p>
 
-<p><img class="center" src="images/qs_docking.gif" alt="Docking">
+<p><img class="center" src="images/qs_docking.gif" alt="ドッキング">
 </p>
 
-<p>In this way you can create a personalised IDE experience that
-fits your workflow and way of doing things. It's worth noting that
-all docked windows can be hidden/unhidden individually by clicking
-the button to the side of the docked items (highlighted in the
-image at the top of this page), or you can hide/unhide all docked
-items using the quickbutton <img style="vertical-align:middle" src=
-"images/qs_icon_docking.png"> at the top of the IDE, and note too
-that the IDE will remember docked windows between sessions.</p>
+<p>このようにして、自分のワークフローや作業スタイルに最適な環境を構築することができます。ドック横、または下のボタン (上の画像の最後で強調された部分) をクリックして、個別にドックの表示/非表示を切り替えられます。または、IDE 上部にあるクイック ボタン <img style="vertical-align:middle" src="images/qs_icon_docking.png"> を押すことで、すべてのウィンドウの表示/非表示を切り替えることもできます。IDE を再起動しても、ドッキング済みのウィンドウの情報は記憶されているので気をつけてください。</p>
 
-<div class="note"><b>NOTE</b>: Some windows will disappear from the
-dock when you change editors, like in the room editor. However when
-you return to the editor in question, they will be re-opened in the
-dock again.</div>
+<div class="note"><b>注</b>: ルーム エディターなどの一部のエディターへ変更を加えると、いくつかのウィンドウがドックから消えてしまうことがあります。こうしたケースでは、エディターへ戻ることで再度ドックが開かれます。</div>
 
 <p><br>
 </p>
@@ -264,170 +119,105 @@ dock again.</div>
 <p><a name="quick_butons" id="quick_butons"></a>
 </p>
 
-<h2>Quick Buttons</h2>
+<h2>クイック ボタン</h2>
 
 <p><br>
 </p>
 
-<p>Below we list the quick buttons that are available by default
-with <i>GameMaker Studio 2</i>. These buttons can be found at the
-top of the IDE and represent many of the most common commands that
-you'll be using while working in <i>GameMaker Studio 2</i> to make
-your workflow smoother (note most of these buttons have an
-equivalent <a href="menus/index.html">menu option</a> too):</p>
+<p>次に、<i>GameMaker Studio 2</i> で使用できるデフォルトのクイック ボタンの一覧を紹介します。ボタンは IDE 上部に配置されており、<i>GameMaker Studio 2</i> で使用される基本的なコマンドへ簡単にアクセスできるようにして、作業をよりスムーズにします (これらのボタンから使用できる機能のほとんどは <a href="menus/index.html">メニュー オプション</a> からもアクセスできます):</p>
 
 <table class="icons">
 <tr>
-<td class="icons"><img align="middle" src="images/qs_icon_home.png"
-alt="Home">
+<td class="icons"><img align="middle" src="images/qs_icon_home.png" alt="ホーム">
 </td>
-<td class="text">Opens the Start Page in a new workspace</td>
+<td class="text">新しいワークスペースでスタート ページを開きます。</td>
 </tr>
 
 <tr>
-<td class="icons"><img align="middle" src=
-"images/qs_icon_newproject.png" alt="New Project">
+<td class="icons"><img align="middle" src="images/qs_icon_newproject.png" alt="新規プロジェクト">
 </td>
-<td class="text">Create a new project.</td>
+<td class="text">新規プロジェクトを作成します。</td>
 </tr>
 
 <tr>
-<td class="icons"><img align="middle" src=
-"images/qs_icon_openproject.png" alt="Open Project">
+<td class="icons"><img align="middle" src="images/qs_icon_openproject.png" alt="プロジェクトを開く">
 </td>
-<td class="text">Open a previously created project.</td>
+<td class="text">既存のプロジェクトを開きます。</td>
 </tr>
 
 <tr>
-<td class="icons"><img align="middle" src="images/qs_icon_save.png"
-alt="Save Project">
+<td class="icons"><img align="middle" src="images/qs_icon_save.png" alt="プロジェクトの保存">
 </td>
-<td class="text">Save the current project. Note that by default
-<i>GameMaker Studio 2</i> will save your project automatically
-(depending on the <a href=
-"../1_getting_started/preferences/prefs_general.html#prefs_settings">
-Preferences</a> that you have set) and this button is simply so you
-can force a save at any time.</td>
+<td class="text">現在のプロジェクトを保存します。デフォルトでは、<i>GameMaker Studio 2</i> は自動的にプロジェクトを保存するようになっています (<a href="../1_getting_started/preferences/prefs_general.html#prefs_settings">環境設定</a> から変更できます)。このボタンは、明示的にプロジェクトを保存するためのものです。</td>
 </tr>
 
 <tr>
-<td class="icons"><img align="middle" src=
-"images/qs_icon_debug.png" alt="Debug">
+<td class="icons"><img align="middle" src="images/qs_icon_debug.png" alt="デバッグ">
 </td>
-<td class="text">Clicking this will test-run your current project
-along with the debug module. Use this to test and debug your game.
-You can find more about the debug module from the section on the
-<a href=
-"../../2_interface/2_extras/debugging.html">Debugger</a>.</td>
+<td class="text">ゲームのテストとデバッグに使用します。クリックすると、デバッグ モジュールを起動して現在のプロジェクトをテスト実行します。デバッグ モジュールの詳細については <a href="../../2_interface/2_extras/debugging.html">デバッガー</a> のセクションを参照してください。</td>
 </tr>
 
 <tr>
-<td class="icons"><img align="middle" src="images/qs_icon_play.png"
-alt="Play">
+<td class="icons"><img align="middle" src="images/qs_icon_play.png" alt="実行">
 </td>
-<td class="text">Clicking this will test-run your project on the
-chosen target platform.</td>
+<td class="text">現在選択しているターゲット プラットフォームでプロジェクトをテスト実行します。</td>
 </tr>
 
 <tr>
-<td class="icons"><img align="middle" src="images/qs_icon_stop.png"
-alt="Stop">
+<td class="icons"><img align="middle" src="images/qs_icon_stop.png" alt="停止">
 </td>
-<td class="text">This button can be used to cancel the compilation
-of your games to the target module, or (on certain targets only) to
-stop the game while it is running after it has been compiled.</td>
+<td class="text">ターゲット モジュールへのゲームのコンパイルをキャンセルしたり、一部のターゲットにおいては、コンパイルを終えて実行中のゲームを停止するために使用します。</td>
 </tr>
 
 <tr>
-<td class="icons"><img align="middle" src=
-"images/qs_icon_clean.png" alt="Clean">
+<td class="icons"><img align="middle" src="images/qs_icon_clean.png" alt="クリーン アップ">
 </td>
-<td class="text">Pressing this button will clear the current asset
-compiler cache. <i>GameMaker Studio 2</i> stores images, sounds,
-scripts etc... between use in a cache so as to save time when
-testing your game as it will only re-compile those things that have
-been changed before testing. However, this cache may become
-corrupted or "stale" over time, or you may wish to do a full test
-with no caching being done previously, in which case you can clear
-the cache by pressing this button.<br>
+<td class="text">現在のアセット コンパイラーのキャッシュが削除されます。<i>GameMaker Studio 2</i> は、画像やサウンド、スクリプトなどのアセットをキャッシュとして保存しています。これによって、変更を加えられたアセットだけが再コンパイルされるようになり、ゲーム テスト開始前の待ち時間を短縮できます。しかし、これらのキャッシュが時間の経過とともに破損してしまったり、いわゆる "溜まったゴミ" になってしまうこともあります。または、キャッシングを行っていない状態での完全なテストを望む場合もあるでしょう。そうしたケースでは、このボタンを押してキャッシュを削除できます。<br>
 <br>
 
-<div class="note"><b>IMPORTANT</b>: It is recommended that you
-always clear the cache before creating the executable for any
-target platform.</div></td>
+<div class="note"><b>重要</b>: ターゲット プラットフォーム向けの実行ファイルを作成する前には、かならずキャッシュをクリーン アップするようにしておくことをおすすめします。</div></td>
 </tr>
 
 <tr>
-<td class="icons"><img align="middle" src=
-"images/qs_icon_gameoptions.png" alt="Game Options">
+<td class="icons"><img align="middle" src="images/qs_icon_gameoptions.png" alt="ゲーム オプション">
 </td>
-<td class="text">Clicking this will open up the <a href=
-"../../2_interface/3_settings/game_options/index.html">Main Game
-Options Editor</a>. Note that this is only the main, general,
-options for the current project, but you may also have platform
-specific options being listed as a part of the <a href=
-"4_resources.html">Resource Tree</a>.</td>
+<td class="text"><a href="../../2_interface/3_settings/game_options/index.html">ゲーム オプション エディター</a> を開きます。通常、これはゲームにおける非常に基本的な設定のみを行うために使用されますが、<a href="4_resources.html">リソース ツリー</a> の一部として各プラットフォーム固有の設定が含まれている場合もあります。</td>
 </tr>
 
 <tr>
-<td class="icons"><img align="middle" src="images/qs_icon_help.png"
-alt="Help">
+<td class="icons"><img align="middle" src="images/qs_icon_help.png" alt="ヘルプ">
 </td>
-<td class="text">Click this to open the manual (or alternatively,
-press <img style="vertical-align:middle" src=
-"../../images/icon_f1.png">).</td>
+<td class="text">このマニュアルを開きます (かわりに <img style="vertical-align:middle" src="../../images/icon_f1.png"> キーも使用できます)。</td>
 </tr>
 
 <tr>
-<td class="icons"><img align="middle" src=
-"images/qs_icon_zoomout.png" alt="Help">
+<td class="icons"><img align="middle" src="images/qs_icon_zoomout.png" alt="縮小">
 </td>
-<td class="text">This will zoom the focused workspace out to make
-everything smaller (you can also achieve this holding down
-<img style="vertical-align:middle" src=
-"../../images/icon_ctrl.png">/<img style="vertical-align:middle"
-src="../../images/icon_cmd.png"> and using the mouse wheel
-<img style="vertical-align:middle" src=
-"../../images/icon_mmb.png">).</td>
+<td class="text">ワークスペースのフォーカスを縮小し、すべてのアイテムを小さくします (<img style="vertical-align:middle" src="../../images/icon_ctrl.png">/<img style="vertical-align:middle" src="../../images/icon_cmd.png"> とマウスホイール <img style="vertical-align:middle" src="../../images/icon_mmb.png"> でも代用できます)。</td>
 </tr>
 
 <tr>
-<td class="icons"><img align="middle" src=
-"images/qs_icon_zoomreset.png" alt="Help">
+<td class="icons"><img align="middle" src="images/qs_icon_zoomreset.png" alt="拡大率のリセット">
 </td>
-<td class="text">This will reset the focused workspace to be 1:1
-again.</td>
+<td class="text">ワークスペースのフォーカスを 1:1 にリセットします。</td>
 </tr>
 
 <tr>
-<td class="icons"><img align="middle" src=
-"images/qs_icon_zoomin.png" alt="Help">
+<td class="icons"><img align="middle" src="images/qs_icon_zoomin.png" alt="拡大">
 </td>
-<td class="text">This will zoom the focused workspace in to make
-everything larger (you can also achieve this holding down
-<img style="vertical-align:middle" src=
-"../../images/icon_ctrl.png">/<img style="vertical-align:middle"
-src="../../images/icon_cmd.png"> and using the mouse wheel
-<img style="vertical-align:middle" src=
-"../../images/icon_mmb.png">).</td>
+<td class="text">ワークスペースのフォーカスを拡大し、すべてのアイテムを大きくします (<img style="vertical-align:middle" src="../../images/icon_ctrl.png">/<img style="vertical-align:middle" src="../../images/icon_cmd.png"> とマウスホイール <img style="vertical-align:middle" src="../../images/icon_mmb.png"> でも代用できます)。</td>
 </tr>
 
 <tr>
-<td class="icons"><img align="middle" src=
-"images/qs_icon_docking.png" alt="Help">
+<td class="icons"><img align="middle" src="images/qs_icon_docking.png" alt="ドックの表示/非表示">
 </td>
-<td class="text">This will toggle all the docked elements between
-hidden and unhidden.</td>
+<td class="text">すべてのドックの表示/非表示を切り替えます。</td>
 </tr>
 
 <tr>
-<td class="icons"><img align="middle" src=
-"images/qs_icon_laptopmode.png" alt="Laptop Mode">
+<td class="icons"><img align="middle" src="images/qs_icon_laptopmode.png" alt="ノートパソコン モード">
 </td>
-<td class="text">This will toggle laptop mode on and off (This will
-only appear if you are currently using a laptop - see the section
-on <a href="../1_getting_started/8_input.html">IDE Input</a> for
-more details)</td>
+<td class="text">ノートパソコン モードのオン/オフを切り替えます (ノートパソコンを使用しているときにのみ表示されます。詳細は <a href="../1_getting_started/8_input.html">IDE の入力</a> を参照してください)。</td>
 </tr>
 </table>
 
@@ -438,11 +228,10 @@ more details)</td>
 <div class="footer">
 <div class="buttons">
 <div class="clear">
-<div style="float:left">Back: <a href="index.html">Quick Start
-Index</a></div>
+<div style="float:left">戻る: <a href="index.html">クイック スタートの目次</a></div>
 
-<div style="float:right">Next: <a href=
-"4_resources.html">Resources</a></div>
+<div style="float:right">進む: <a href=
+"4_resources.html">リソース</a></div>
 </div>
 </div>
 
