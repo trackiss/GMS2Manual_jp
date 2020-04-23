@@ -7,7 +7,7 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 
 <meta name="generator" content="chm2web Pro 2.85 (unicode)" />
-<title>Creating Sprites</title>
+<title>スプライトを作成する</title>
 <meta http-equiv="X-UA-Compatible" content="IE=9">
 
 <link rel="stylesheet" href="../../../../../files/helpindex.css"
@@ -30,136 +30,53 @@ if (window.name != "content")
 <script type="text/JavaScript">
  if( typeof(chmtop.helpStyle) != 'undefined' ) { var linkNodes = document.getElementsByTagName("link");  for( var i=0; i < linkNodes.length; ++i ) { var link = linkNodes[i];    if( link.href.endsWith("default.css")) {    var style = link.href.replace("default.css", chmtop.helpStyle); document.write('<link id="newstyleLink" rel="stylesheet" href=' + style + ' type="text/css">');    break; } } } 
 </script>
-<h2>Creating Sprites</h2>
+<h2>スプライトを作成する</h2>
 
 <div class="body-scroll">
 <p><br>
 </p>
 
-<p>We'll start this section of the Quick Start Guide by looking at
-<b>sprites</b> which are generally one of the first things you'll
-need when making any project in <i>GameMaker Studio 2</i>. As
-explained in the section on <a href=
-"../4_resources.html">Resources</a>, a sprite is an image that can
-be animated (although it doesn't have to be) and then drawn to the
-screen. In general a sprite will be associated with an object, but
-you can draw sprites on their own, either from code or in the room
-editor <b>Asset Layer</b> (more on this later). You can also create
-a sprite to be used as a <b>tile set</b>, but we'll explore that
-option later too.</p>
+<p>このセクションでは、<i>GameMaker Studio 2</i> のプロジェクト作成において最初に必要なもののひとつである <b>スプライト</b> について説明します。 <a href="../4_resources.html">リソース</a> のセクションでも説明したとおり、スプライトとは、(必要に応じて) アニメーション化して画面へ描画できる画像のことです。一般的に、スプライトはオブジェクトへ割り当てて使用されますが、ルームエディターの <b>アセット レイヤー</b> 、またはコードからスプライト単体で描画することもできます (詳細は後述)。また、<b>タイルセット</b> として使用するスプライトを作成することもできますが、これについてもあとで説明することにします。</p>
 
-<p><a name="sprite_editor" id="sprite_editor"></a> When you create
-a new project from the <a href="../2_start.html">Start Page</a>,
-your resource tree will only contain empty folders for the
-resources you may need, so you need to <i>right-click</i>
-<img style="vertical-align:middle" src=
-"../../../images/icon_rmb.png"> on the sprite resource folder and
-then select the option <i>Create</i>. This will create a new sprite
-and open the sprite editor for you (if the sprite editor does not
-open, simply double-click <img style="vertical-align:middle" src=
-"../../../images/icon_lmb.png"> on the new resource): <img class=
+<p><a name="sprite_editor" id="sprite_editor"></a> <a href="../2_start.html">スタート ページ</a> から新規プロジェクトを作成すると、(当然ですが) リソース ツリーには空のフォルダーが用意されているだけで、リソースはひとつもありません。まずは、スプライトのリソース フォルダーを <i>右クリック</i> <img style="vertical-align:middle" src="../../../images/icon_rmb.png"> して <i>作成</i> を選択しましょう。これで、新規スプライトが作成されスプライト エディターが開かれます。もしスプライト エディターが開かないときは、作成されたリソースをダブルクリック <img style="vertical-align:middle" src="../../../images/icon_lmb.png"> してください: <img class=
 "center" src="../images/qs_sprites_spriteeditor.png"></p>
 
-<p>As you can probably see, the top left of the window has a field
-for the "Name" of the sprite. All sprites (and all other resources)
-must have a name given to them so that you (and <i>GameMaker Studio
-2</i>) can identify them easily, although you should note that this
-name is really just a variable which holds an ID value that
-"points" to the resource, in this case a sprite. It's best to give
-each sprite a descriptive name so that you can identify at a glance
-whether a particular resource is a sprite or an object or anything
-else, and many people do this by prefixing or suffixing the
-resource with the letters "<i>spr</i>" - for example, "spr_Ball".
-Note that resource names are limited to using only letters, digits
-and the underscore symbol "_" in a name of a sprite (and any other
-resource) all resources must start with a letter, not a number.</p>
+<p>見てのとおり、ウィンドウの左上には、スプライトの "名前" のフィールドがあります。スプライトを含むすべてのリソースには、ユーザーおよび <i>GameMaker Studio 2</i> が識別できるようになんらかの名前をつける必要があります。この名前は、リソースを一意に "指し示す" ID を保持する変数として使用されることに注意してください。そのリソースがスプライトであるか、またはオブジェクトであるかなどをすぐに判別できるよう、各スプライトにわかりやすい名前をつけることをおすすめします。たいていの人は、スプライト リソースには "<i>spr</i>" という接頭辞または接尾辞 (例: "spr_Ball") をつけるようにしてこれを区別しています。スプライトを含むリソース名には、アルファベット、数字、アンダースコア "_" のみを使用することができます。また、リソース名の頭文字にはアルファベットのみ使用できることに注意してください。</p>
 
-<p><a name="image_editor" id="image_editor"></a> The other features
-of the sprite editor we'll discuss at the end of this section, but
-first we need to explain how to draw a sprite. This is done in the
-<b>Image Editor</b>. The image editor is a very powerful tool for
-creating the graphics in your game and is opened by clicking the
-Edit Image button. <img class="center" src=
-"../images/qs_sprites_imageeditor.png"> We won't go into too much
-depth about the tools available here - for that we have the
-<a href="../../../2_interface/1_editors/images.html">Image
-Editor</a> section of the manual - but briefly you have:</p>
+<p><a name="image_editor" id="image_editor"></a> スプライト エディターのほかの機能については最後に説明するとして、まずは <b>画像エディター</b> を使ってスプライトを描く方法について説明しましょう。画像エディターは、ゲームのグラフィックを作成するための非常に強力なツールです。画像の編集 をクリックすることで起動できます。 <img class="center" src=
+"../images/qs_sprites_imageeditor.png"> 画像エディターの詳細については <a href="../../../2_interface/1_editors/images.html">画像エディター</a> のセクションで掘り下げるとして、ここでは簡単な説明のみにとどめておきます:</p>
 
 <blockquote>
 <ul>
-<li>At the top left, the frame view - this shows the frame(s) of
-your sprite and can be resized using the magnifying glass
-icons.<br>
+<li>フレーム ビュー (左上) - スプライトのフレームを表示します。虫めがねのアイコンでサイズを変更できます。<br>
 <br></li>
 
-<li>In the centre we have the drawing canvas - this shows the
-currently selected frame ready for drawing and you can use the
-<i>middle mouse button</i> <img style="vertical-align:middle" src=
-"../../../images/icon_mmb.png"> to pan around and the <i>mouse
-wheel</i> <img style="vertical-align:middle" src=
-"../../../images/icon_mmb.png"> to zoom in and out<br>
+<li>描画キャンバス (中央) - 現在選択されているフレームの描画をします。<i>マウス ホイール</i> <img style="vertical-align:middle" src="../../../images/icon_mmb.png"> をドラッグしてフォーカスを移動させたり <i>マウス ホイール</i> <img style="vertical-align:middle" src="../../../images/icon_mmb.png"> を回転させて拡大・縮小できます。<br>
 <br></li>
 
-<li>At the top right we have the basic brushes - here you can pick
-the brush for drawing, and any custom brushes will also be added
-here<br>
+<li>基本ブラシ (右上) - ペイントに使用するブラシをここから選びます。カスタム ブラシもここへ追加されます。<br>
 <br></li>
 
-<li>At the middle right we have the colour picker - here we can
-choose the colour to use for the left and/or right mouse button,
-since you can draw on the canvas with one or the other buttons at
-the same time<br>
+<li>カラー ピッカー (中央右) - マウスの左または右クリックへ割り当てる色を選択します。これにより、同時に2つの色を使い分けることができます。<br>
 <br></li>
 
-<li>Just below the colour picker we have our tools - these are the
-different drawing tools, including the brush, flood fill, masking
-and shape tools. Note that some of the tools are split diagonally
-and will draw either outlined or filled shapes depending on which
-side of the line you click on to select them<br>
+<li>ツール (カラー ピッカーの真下) - ブラシや塗りつぶし、マスク、図形ツールなど、さまざまなペイント ツールが用意されています。なかには、枠のみ描くか、または塗りつぶして描くかによって、アイコンがななめに分割されているものもあることに注意してください。<br>
 <br></li>
 
-<li>At the bottom right we have the layers view - like many other
-drawing tools out there, you can create different layers to draw
-onto, permitting you to experiment with position and colour etc...
-without having to worry about destroying what's underneath</li>
+<li>レイヤー ビュー (右下) - ほかのペイント ソフトと同様に、ペイントに使用する複数のレイヤーを作成できます。たとえば、下のレイヤーへ影響を与えずに、描く位置や色などを試してみることができます。</li>
 </ul>
 </blockquote>
 
-<p>Draw something into the image editor and take some time to play
-with the options, then when you are ready close the workspace
-(which will save the image) to take you back to the workspace with
-the sprite editor in it. We'll discuss a few other features of the
-sprite editor that are important to know when just getting
-started...</p>
+<p>画像エディターでいろいろと描いてみて満足したら、現在のワークスペースを閉じ (画像は保存されます)、スプライト エディターが表示されているワークスペースへ戻りましょう。ここで、スプライト エディターを実際に使いはじめる前に知っておきたい、いくつかの機能について紹介したいと思います。</p>
 
-<p>The first thing you need know is how to set the <b>origin</b>
-for the sprite. The origin is simply the point that will be used to
-"anchor" our sprite within the room, and in this case we want to
-set it to the centre. So we click <img style=
-"vertical-align:middle" src="../../../images/icon_lmb.png"> on the
-from down menu for setting the origin and select "middle centre":
+<p>まずはじめに知っておいてもらいたいのは、スプライトの <b>原点</b> を指定する方法についてです。原点というのは、スプライトのルーム内における "アンカー" として使用される点のことです。試しに、原点をスプライトの中心に設定してみましょう。下のメニューをクリック <img style="vertical-align:middle" src="../../../images/icon_lmb.png"> して "中央" を選択してください:
 <img class="center" src="../images/qs_sprites_spriteorigin.png">
-You'll see the origin cross-hair in the preview image move to the
-centre of the sprite. Note that you can place the origin anywhere
-you wish by simply clicking <img style="vertical-align:middle" src=
-"../../../images/icon_lmb.png"> on the preview image, and you can
-also manually input the origin position by adding values into the
-x/y fields at the top.</p>
+画像のプレビューで、原点を示す十字がスプライトの中心に移動していることがわかると思います。なお、プレビューの任意の場所をクリック <img style="vertical-align:middle" src="../../../images/icon_lmb.png"> して、原点を配置することもできます。また、上部の X/Y フィールドへ座標を手動で入力することも可能です。</p>
 
-<p>Another important thing to do know is how to set the
-<b>collision mask</b> for the sprite. The collision mask is the
-area that <i>GameMaker Studio 2</i> will check to see if there has
-been a collision, and by default this is set to <i>rectangle</i>
-(which is also the fastest to resolve). Note that you can set the
-detection mode for the bounding box to be either automatic (the
-default value) or manual. If you choose manual you will be able to
-set the bounding box values left, right, top and bottom.
+<p>もうひとつ重要なこととして、スプライトの <b>当たり判定</b> を指定する方法について説明します。当たり判定は、スプライトの衝突が発生したかどうかを <i>GameMaker Studio 2</i> が判定するための領域です。デフォルトでは <i>矩形</i> (長方形) に設定されています (これが高速に処理できます)。ここで、バウンディング ボックスの検出方法を 自動 (デフォルト) または 手動 から選択できます。手動 に設定した場合、バウンディング ボックスの上下左右を自由に指定することができます。
 <img class="center" src="../images/qs_sprites_spritemask.png"></p>
 
-<p>Any type of collision mask other than rectangle will be slower
-to resolve, but when making a small, simple game it's not usually
-an issue. You can close the sprite editor now as we are going to
-move on to discuss <b>Tile Sets</b>.</p>
+<p>当たり判定の種類を矩形以外に設定すると処理が低速になりますが、小さくてシンプルなゲームではほとんど問題になりません。さて、スプライト エディターを閉じてください。次は <b>タイルセット</b> の説明に入ります。</p>
 
 <p><br>
 </p>
@@ -168,11 +85,10 @@ move on to discuss <b>Tile Sets</b>.</p>
 <div class="footer">
 <div class="buttons">
 <div class="clear">
-<div style="float:left">Back: <a href=
-"../5_workflow.html">Workflow</a></div>
+<div style="float:left">戻る: <a href=
+"../5_workflow.html">ワークフロー</a></div>
 
-<div style="float:right">Next: <a href="2_tilesets.html">Creating
-Tile sets</a></div>
+<div style="float:right">進む: <a href="2_tilesets.html">タイルセットを作成する</a></div>
 </div>
 </div>
 
