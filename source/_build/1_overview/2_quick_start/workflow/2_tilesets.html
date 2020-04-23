@@ -7,7 +7,7 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 
 <meta name="generator" content="chm2web Pro 2.85 (unicode)" />
-<title>Creating Tile Sets</title>
+<title>タイルセットを作成する</title>
 <meta http-equiv="X-UA-Compatible" content="IE=9">
 
 <link rel="stylesheet" href="../../../../../files/helpindex.css"
@@ -30,58 +30,22 @@ if (window.name != "content")
 <script type="text/JavaScript">
  if( typeof(chmtop.helpStyle) != 'undefined' ) { var linkNodes = document.getElementsByTagName("link");  for( var i=0; i < linkNodes.length; ++i ) { var link = linkNodes[i];    if( link.href.endsWith("default.css")) {    var style = link.href.replace("default.css", chmtop.helpStyle); document.write('<link id="newstyleLink" rel="stylesheet" href=' + style + ' type="text/css">');    break; } } } 
 </script>
-<h2>Creating Tile Sets</h2>
+<h2>タイルセットを作成する</h2>
 
 <div class="body-scroll">
 <p><br>
 </p>
 
-<p><b>Tile Sets</b> are created from sprites, but they are also
-classified as a separate resources since the way that <i>GameMaker
-Studio 2</i> handles them is a bit different to both sprites and
-objects. Essentially, a <i>tile</i> is simply a graphical resource
-that gets drawn to the screen with very little CPU/GPU overhead,
-making them ideal for designing any static items in levels, and a
-<i>tile set</i> is a collection of tiles created together in one
-sprite. Tiles can <b>only be rectangular</b> or <b>square</b> (if
-you want anything other than a this, then you'll need to create a
-regular sprite and use the <b>Asset Layer</b> in the room editor,
-which we'll discuss later). In this quick start guide, we'll look
-at a tile set for making walls in a top down game.</p>
+<p><b>タイルセット</b> はスプライトから作成されますが、<i>GameMaker Studio 2</i> においてはスプライトやオブジェクトとは少し異なる扱いをされているため、別のリソースとして分類されています。<i>タイル</i> は、CPU や GPU をほとんど使わずに描画できるグラフィック リソースであり、静的なアイテムのデザインに適しています。そして、複数のタイルをひとつのスプライトへ並べたものを <i>タイルセット</i> と呼びます。タイルは、<b>長方形</b> または <b>正方形でなければなりません</b>。これら以外のタイルが必要な場合は、通常どおりにスプライトを作成して、後述するルーム エディターの <b>アセット レイヤー</b> を使用します。今回のクイック スタート ガイドでは、例として、見下ろし型ゲームの壁を作るために使用するタイルセットについて説明していきます。</p>
 
-<p>To start with, we need to have a tile set image, which would be
-done in the sprite editor/image editor, and the final sprite would
-look something like this: <img class="center" src=
-"../images/qs_tileset_sprite.png" alt="Tile Set Sprite"></p>
+<p>まず、スプライト エディター/画像エディターを使ってタイルセットの画像を用意する必要があります。最終的には次のようになります: <img class="center" src="../images/qs_tileset_sprite.png" alt="タイルセットのスプライト"></p>
 
-<p>Notice that the very first tile is blank in that image. The way
-that the tilemap for the room is stored in <i>GameMaker Studio
-2</i> means that tile (0) will <i>always</i> need to be blank as
-it's essentially the "delete" tile or the "empty space" tile. So,
-when creating your maps the top left corner tile will always need
-to be empty in this way. Also note that while the image above shows
-a full wall tile set with 47 tiles, you may not need so many as you
-can rotate and flip tiles when placing them in the room editor
-later.</p>
+<p>ここで、最初のタイルが空になっていることに注目してください。<i>GameMaker Studio 2</i> におけるタイル (0) は、基本的に "削除" タイルまたは "空白" タイルとして使用されるため、<i>常に</i> 空である必要があります。したがって、タイルマップを作成するときは、左上端のタイルを空にしなければなりません。また、上のタイルセットでは計47枚のタイルを使用していますが、ルーム エディターにはタイルを回転または反転させて配置する機能が備わっているため、実際にはここまで多くのタイルを用意しなくてもいい場合があります。</p>
 
-<p>With a sprite created, we can go ahead and define the tile set,
-which means you have to first create a new tile set resource by
-right clicking <img style="vertical-align:middle" src=
-"../../../images/icon_rmb.png"> the Tile Set resource folder and
-selecting <i>Create</i>. This will open the <b>Tile Set Editor</b>
-where you can then add the sprite and set its properties:
-<img class="center" src="../images/qs_tileset_editor.png" alt=
-"Tile set Editor"></p>
+<p>スプライトが完成したので、ここからタイルセットを作成できます。まずタイルセット リソース フォルダーを右クリック <img style="vertical-align:middle" src="../../../images/icon_rmb.png"> して <i>作成</i> を選択し、新規タイルセット リソースを作成します。すると <b>タイルセット エディター</b> が起動するので、ここでスプライトを追加しプロパティを設定できます:
+<img class="center" src="../images/qs_tileset_editor.png" alt="タイルセット エディター"></p>
 
-<p>We have set tile set size to 32px, and we have left the rest of
-the values at their default, since we have no need of offsets or
-anything like that. You can now close the tile set editor, as you
-can use the tile set "as is" to create tilemap layers in the room
-editor. If you want to know more about the advanced functions of
-the Tile Set Editor, then see the <a href=
-"../../../2_interface/1_editors/tilesets.html">relevant section of
-the manual</a>. Now to move on to creating sound effects for your
-project...</p>
+<p>ここでは、各タイルセットのサイズを 32px に設定しています。オフセットなどの設定は必要ないため、そのほかの値はデフォルト値のままにしています。これで、ルーム エディターのタイルマップ レイヤーへタイルセットを "直接" 配置できるようになりました。タイルセット エディターを終了してください。タイルセット エディターのより高度な機能について、もっと詳細を知りたい場合は <a href="../../../2_interface/1_editors/tilesets.html">マニュアルの該当箇所</a> を参照してください。次回は、プロジェクトに使用する効果音を作成していきましょう...</p>
 
 <p><br>
 </p>
@@ -90,11 +54,10 @@ project...</p>
 <div class="footer">
 <div class="buttons">
 <div class="clear">
-<div style="float:left">Back: <a href=
-"../5_workflow.html">Workflow</a></div>
+<div style="float:left">戻る: <a href=
+"../5_workflow.html">ワークフロー</a></div>
 
-<div style="float:right">Next: <a href="3_sounds.html">Creating
-Sounds</a></div>
+<div style="float:right">進む: <a href="3_sounds.html">サウンドを作成する</a></div>
 </div>
 </div>
 
