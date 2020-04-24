@@ -7,7 +7,7 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 
 <meta name="generator" content="chm2web Pro 2.85 (unicode)" />
-<title>Creating Sounds</title>
+<title>サウンドを作成する</title>
 <meta http-equiv="X-UA-Compatible" content="IE=9">
 
 <link rel="stylesheet" href="../../../../../files/helpindex.css"
@@ -30,54 +30,21 @@ if (window.name != "content")
 <script type="text/JavaScript">
  if( typeof(chmtop.helpStyle) != 'undefined' ) { var linkNodes = document.getElementsByTagName("link");  for( var i=0; i < linkNodes.length; ++i ) { var link = linkNodes[i];    if( link.href.endsWith("default.css")) {    var style = link.href.replace("default.css", chmtop.helpStyle); document.write('<link id="newstyleLink" rel="stylesheet" href=' + style + ' type="text/css">');    break; } } } 
 </script>
-<h2>Creating Sounds</h2>
+<h2>サウンドを作成する</h2>
 
 <div class="body-scroll">
 <p><br>
 </p>
 
-<p>All games have to have sound effects, and most also have music,
-which means that you need to be able to add them to your game in
-<i>GameMaker Studio 2</i>. This is done through the <b>Sound
-Editor</b>, which is opened whenever you create a new Sound
-Resource. <img class="center" src=
-"../images/qs_soundeditor.png"></p>
+<p>あらゆるゲームには効果音が不可欠で、また音楽も重要な役割を果たしています。もちろん、<i>GameMaker Studio 2</i> でゲームにサウンドを追加する方法も知っておかなければなりません。新規サウンド リソースを作成するには <b>サウンド エディター</b> を使用します。 <img class="center" src="../images/qs_soundeditor.png"></p>
 
-<p>Sounds in <i>GameMaker Studio 2</i> can be uncompressed or
-compressed, with compressed sounds having additional options on how
-to deal with them at run time. Uncompressed sounds are those that
-have been saved as <tt>WAV</tt> format files, while compressed
-sounds can be either <tt>MP3</tt> or <tt>OGG</tt> format. In
-general you'll want small sound effects to be <tt>WAV</tt> and
-larger effects or music to be <tt>MP3</tt> or <tt>OGG</tt>. As with
-the other different resources, it is recommended that you name your
-sounds using an appropriate prefix like "snd_" so you can easily
-identify it later.</p>
+<p><i>GameMaker Studio 2</i> のサウンドには非圧縮形式と圧縮形式の両方が使え、圧縮形式の場合は実行時の処理方法について指定できます。非圧縮形式には <tt>WAV</tt> 形式のファイルが、圧縮形式には <tt>MP3</tt> と <tt>OGG</tt> 形式のファイルをサポートしています。一般的に、<tt>WAV</tt> は短い効果音に、<tt>MP3</tt> や <tt>OGG</tt> は長い効果音や音楽に使用されます。ほかのリソースと同様に、区別しやすいよう "snd_" のような接頭辞をサウンドの名前に付加することをおすすめします。</p>
 
-<p>Adding a sound is as simple as clicking the add sound button
-<img style="vertical-align:middle" src=
-"../images/icon_addsound.png"> and then browsing in the file
-explorer that opens to the file you want t use. Once you have
-selected one and loaded it in, you can then preview it using the
-playback controls shown as well as change certain attributes for
-how the file should be exported. if you aren't sure about this,
-then simply leave everything "as-is", although if you are adding
-music or <tt>MP3</tt> format sounds you should probably change to
-the <i>Compressed - Not Streamed</i> format. You can find further
-information on the sound editor <a href=
-"../../../2_interface/1_editors/sounds.html">here</a>.</p>
+<p>サウンドを追加するには、サウンドの追加 <img style="vertical-align:middle" src="../images/icon_addsound.png"> をクリックして、ファイル エクスプローラーからファイルを開くだけです。ファイルを読み込んだら、表示されている再生コントロールでプレビューしたり、ファイル出力時のプロパティを変更したりすることができます。よくわからない場合は "そのまま" にしておいてください。ただし、音楽や <tt>MP3</tt> 形式のサウンド ファイルを追加する場合は、属性を <i>圧縮 - ストリーミングなし</i> に変更する必要があります。サウンド エディターの詳細については <a href="../../../2_interface/1_editors/sounds.html">こちら</a> を参照してください。</p>
 
-<p>Note that sounds take up a lot of space on disk, so you should
-be careful when creating them for your game projects. Do you really
-need a 48KHz sound effect that only plays for a fraction of a
-second? Probably not so, think about reducing the sample rate here
-to 11025 or 22050 for effects, and for longer things like music or
-for looping effects think also about using a compressed format.
-Note too that if you plan on using 3D positional audio effects,
-then the initial sound file <i>must</i> be mono.</p>
+<p>サウンドはディスク サイズが大きくなるため、ゲーム プロジェクト向けにサウンドを作成するときには注意が必要です。ほんの一瞬しか再生されない効果音を、48KHz で作成する必要がどこにあるのでしょうか？ もしかしたらそうでなくてはならない理由があるのかもしれませんが... たとえば効果音のサンプリング レートを 11,025Hz か 22,050 Hz 程度に下げてみたり、音楽やループ音などには圧縮形式のファイルを使用することも検討するようにしてください。3D 位置オーディオ エフェクトを使用する場合は、追加するサウンド ファイルがモノラル <i>でなくてはならない</i> ことに注意してください。</p>
 
-<p>You can close the sound editor now and we can move on to
-creating Objects...</p>
+<p>それではサウンド エディターを閉じて、次はオブジェクトを作成してみましょう...</p>
 
 <p><br>
 </p>
@@ -86,11 +53,10 @@ creating Objects...</p>
 <div class="footer">
 <div class="buttons">
 <div class="clear">
-<div style="float:left">Back: <a href=
-"../5_workflow.html">Workflow</a></div>
+<div style="float:left">戻る: <a href=
+"../5_workflow.html">ワークフロー</a></div>
 
-<div style="float:right">Next: <a href="4_objects.html">Creating
-Objects</a></div>
+<div style="float:right">進む: <a href="4_objects.html">オブジェクトを作成する</a></div>
 </div>
 </div>
 
