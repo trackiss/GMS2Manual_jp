@@ -7,7 +7,7 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 
 <meta name="generator" content="chm2web Pro 2.85 (unicode)" />
-<title>Creating Objects</title>
+<title>オブジェクトを作成する</title>
 <meta http-equiv="X-UA-Compatible" content="IE=9">
 
 <link rel="stylesheet" href="../../../../../files/helpindex.css"
@@ -30,108 +30,37 @@ if (window.name != "content")
 <script type="text/JavaScript">
  if( typeof(chmtop.helpStyle) != 'undefined' ) { var linkNodes = document.getElementsByTagName("link");  for( var i=0; i < linkNodes.length; ++i ) { var link = linkNodes[i];    if( link.href.endsWith("default.css")) {    var style = link.href.replace("default.css", chmtop.helpStyle); document.write('<link id="newstyleLink" rel="stylesheet" href=' + style + ' type="text/css">');    break; } } } 
 </script>
-<h2>Creating Objects</h2>
+<h2>オブジェクトを作成する</h2>
 
 <div class="body-scroll">
 <p><br>
 </p>
 
-<p>With the resources you have seen so far you can add some nice
-images and sounds to the game resource tree, but they don't do
-anything in the game itself yet! For that we need the most
-important resource of <i>GameMaker Studio 2</i>, the <b>Object</b>
-resource. Objects are a special resource that we use to control
-aspects of a game and to do specific things. Most of the time they
-have a sprite associated with them so that you can see them in the
-game rooms, but sometimes they are used as a "behind the scenes"
-<i>controller</i> to do things related to the user or for timing,
-etc... They can be given behaviours and they can react to certain
-events as well as to each other, and most of the things you see in
-a game are based on objects and their interactions.</p>
+<p>これまでに、素敵な画像やサウンドをリソース ツリーへ追加する方法について見てきました。しかし、依然としてゲームの中ではなにもできません。状況を打破すべく、<i>GameMaker Studio 2</i> において最も重要なリソースである <b>オブジェクト</b> リソースを追加しましょう。オブジェクトは、ゲームのさまざまな部分をコントロールしたり、一連の物事を実行するために使用する特別なリソースです。ほとんどの場合、オブジェクトにはゲーム ルーム上で見えるようスプライトが割り当てられています。一方で、ユーザー操作やタイミングに関連する処理などを行うための "舞台裏" の <i>制御役</i> として使われることもあります。オブジェクトにはアクションを持たせることができ、特定のできごとに反応させるだけでなく、オブジェクトどうしがたがいに反応することも可能です。ゲーム中で目にするもののほとんどすべては、オブジェクトとその相互作用によって成り立っています。</p>
 
-<div class="note"><b>IMPORTANT!</b> In a game made with
-<i>GameMaker Studio 2</i>, the characters, monsters, balls, walls,
-etc... are all <b>instances</b> copied from a basic object template
-that is found in the resource tree and then placed in a room. So
-when we talk about something affecting or changing an
-<b>instance</b>, we mean that one particular copy of an object in a
-room is being affected while all the rest are not, but when we talk
-about affecting or changing an <b>object</b> we mean that anything
-we do to it will be reflected in all the instances created from
-that point on too. So, <b>the object is the template for the
-instance, and the instance is what we place in a room to make our
-game</b>.</div>
+<div class="note"><b>重要！</b> <i>GameMaker Studio 2</i> では、たとえばキャラクターや敵モンスター、ボール、壁などといったものが、リソース ツリーにあるベース オブジェクトのコピーである <b>インスタンス</b> としてルームへ配置されます。ここで、<b>インスタンス</b> へ影響を与える、または変更を加えるというような文脈のときは、あくまでルーム上に配置されているオブジェクトのコピーのうちのひとつのことを指しており、それ以外のインスタンスには影響はないことを示します。一方、<b>オブジェクト</b> への影響または変更という文脈で話す場合は、そこから生成されるすべてのインスタンスにも反映されるという意味になります。いわば <b>オブジェクトとはインスタンスの雛形のようなものであって、ゲームを作るために実際にルーム上へ配置されるのはインスタンスです</b>。</div>
 
-<p>To create a new object resource, it's the same as for every
-other resource and you simply right click <img style=
-"vertical-align:middle" src="../../../images/icon_rmb.png"> on the
-Objects resource folder and selecting <i>Create</i>. <img class=
+<p>新規オブジェクト リソースを作成するには、ほかのリソースと同様、オブジェクト リソース フォルダーを右クリック <img style="vertical-align:middle" src="../../../images/icon_rmb.png"> して <i>作成</i> を選択します。 <img class=
 "center" src="../images/qs_objecteditor.png"></p>
 
-<p>This is the object editor window and shows the current
-properties, and the first thing you should do is name the object,
-again using a prefix like "obj_" or some other identifier. In
-general, or an object to draw anything and register collisions with
-instances of other objects it needs to have a sprite which is added
-using the <img style="vertical-align:middle" src=
-"../images/icon_addsound.png"> button. This will open the <b>Asset
-Explorer</b> where you can select the sprite to use: <img class=
+<p>これがオブジェクト エディターのウィンドウです。現在のオブジェクトのプロパティが表示されています。まず取りかかるべきは、このオブジェクトに名前をつけることです。ここでも、"obj_" のようななんらかの識別子を用いるとよいでしょう。一般に、なにかを描画し、かつ ほかのオブジェクト インスタンスとの衝突を想定するオブジェクトには、<img style="vertical-align:middle" src="../images/icon_addsound.png"> をクリックしてスプライトを追加します。<b>アセット エクスプローラー</b> が開くので、そこから使用するスプライトを選択します: <img class=
 "center" src="../images/qs_assetexplorer.png"></p>
 
-<p>If you do not have an appropriate sprite yet, you can click
-<img style="vertical-align:middle" src=
-"../../../images/icon_lmb.png"> on the New Sprite button
-<img style="vertical-align:middle" src=
-"../images/icon_newsprite.png"> to create a new sprite resource and
-edit it as you wish, just as if you had created the resource
-through the standard resource create options, only now it will
-automatically be assigned to the object that you had open when you
-started to create it. Once you select a resource you can also click
-<img style="vertical-align:middle" src=
-"../../../images/icon_lmb.png"> on the Edit Sprite <img style=
-"vertical-align:middle" src="../images/icon_editsprite.png"> or
-Edit Image <img style="vertical-align:middle" src=
-"../images/icon_editimage.png"> buttons to edit either the image
-itself or the sprite resource. This can be faster than first
-finding the resource in the list of resources and then indicating
-you want to edit it.</p>
+<p>割り当てるスプライトがまだ作られていない場合は、新規スプライト <img style="vertical-align:middle" src="../images/icon_newsprite.png"> をクリック <img style="vertical-align:middle" src="../../../images/icon_lmb.png"> して新規スプライト リソースを作成し、編集できます。作成されたスプライトが自動的に現在のオブジェクトへ割り当てられるという点をのぞけば、通常のスプライト作成時と同じ操作が可能です。選択したリソースは、スプライトの編集 <img style="vertical-align:middle" src="../images/icon_editsprite.png"> や 画像の編集 <img style="vertical-align:middle" src="../images/icon_editimage.png"> をクリック <img style="vertical-align:middle" src="../../../images/icon_lmb.png"> して編集することができます。リソースの一覧からリソースを探し出すよりも、この方法を使えばすぐに編集できます。</p>
 
-<p>Once selected the sprite you can change a few other properties
-like whether it should be visible or not - for example - or what
-kind of collision mask it should have. For simple games you
-probably don't need to change anything here and can now go on to
-add <b>Events</b> to the object. Basically, events are discreet
-moments in the game loop where things are made to happen based on
-what you have programmed for them. <i>GameMaker Studio 2</i> works
-with cycles of these events - from the moment a room is started to
-the moment it is finished there is a game loop running where every
-step (a step is a moment in game time, governed by the game speed
-setting) a series of events are run, and you can choose to place
-code or DnD™ actions in your instances that respond to these
-events.</p>
+<p>スプライトを選択し終えたら、たとえばオブジェクトを表示するか非表示にするか、またはどのような当たり判定を設定するかなど、その他さまざまなプロパティを変更できます。単純なゲームなら、ここでなにか変更を加える必要はないでしょう。次にオブジェクトへ <b>イベント</b> を追加していきます。ひとつのゲーム ループに含まれるいくつかの段階の中で、イベントはあなたが指定した特定のプログラムに基づいてアクションを起こします。<i>GameMaker Studio 2</i> では、ルームが開始する瞬間と終了する瞬間の間をゲーム ループと呼び、その間のすべてのステップ (1ゲーム時間のこと。ゲーム速度の設定によって制御されます) ごとにイベントが実行されています。そして、各インスタンスの各イベントによって呼び出される任意のコードまたは DnD™ アクションを指定することができます。</p>
 
-<p>To add an event you click <img style="vertical-align:middle"
-src="../../../images/icon_lmb.png"> on the <i>Add Event</i> button:
+<p>イベントを追加するには、<i>イベントの追加</i> をクリック <img style="vertical-align:middle"src="../../../images/icon_lmb.png"> します:
 <img class="center" src="../images/qs_objecteditor_events.png"></p>
 
-<p>Above you can see all the different <b>Event Categories</b>,
-some of which contain other sub-categories. We won't go through all
-the events here, but we will cover the five most important ones
-briefly:</p>
+<p>上の画像には、すべての <b>イベント カテゴリー</b> が表示されており、その一部はさらにサブカテゴリーへ派生しています。ここではすべてのイベントについて細かく説明することはせず、最も重要な5つのイベントについて簡単に紹介していきます:</p>
 
 <table class="icons">
 <tr>
-<td class="icons"><img align="middle" src=
-"../images/qs_event_create.png" alt="Create Event">
+<td class="icons"><img align="middle" src="../images/qs_event_create.png" alt="生成イベント">
 </td>
-<td class="icons">Create Event</td>
-<td class="text">This event happens when an instance of the object
-is first created, and is the very first thing that happens within
-an instance that has been placed in the room through the room
-editor when a room is entered. This means that this event is the
-ideal place to initialize variables, start Timelines, set paths
-etc... and do anything else that generally only needs to be done
-once or only when an instance first appears in the room.</td>
+<td class="icons">生成イベント</td>
+<td class="text">オブジェクト インスタンスが生成された最初の瞬間に発生します。ルーム エディターからルームに配置されたインスタンスのなかでは、これが最も早く発生するイベントになります。このイベントは、たとえば、変数の初期化やタイムラインの開始処理、パスの設定といった、インスタンスがルームへ登場した最初の一度だけ実行したい処理を行うために最適です。</td>
 </tr>
 
 <tr>
@@ -140,19 +69,10 @@ once or only when an instance first appears in the room.</td>
 </tr>
 
 <tr>
-<td class="icons"><img align="middle" src=
-"../images/qs_event_step.png" alt="Step Event">
+<td class="icons"><img align="middle" src="../images/qs_event_step.png" alt="ステップ イベント">
 </td>
-<td class="icons">Step Event</td>
-<td class="text"><i>GameMaker Studio 2</i> splits game time into
-<i>steps</i> with the game speed defining how many of these steps
-there are supposed to be per second. A step, is basically the loop
-that runs constantly with all the events being checked and
-triggered as necessary while the game runs, so as you can imagine,
-the Step Event is an event that is checked every single step of the
-game while the instance exists. Note that the Step Event category
-has three sub-categories to "fine tune" timing within the instance,
-but in general you will use the main Step Event most.</td>
+<td class="icons">ステップ イベント</td>
+<td class="text"><i>GameMaker Studio 2</i> では、1秒間を複数の <i>ステップ</i> へ分割して処理を行っています。ここで、1秒あたりのステップ数を定義する値をゲーム速度と呼びます。ステップは、ゲームが実行されているあいだに常に実行されているループであり、必要に応じてすべてのイベントがチェック、トリガーされます。しかるにステップ イベントとは、存在しているすべてのインスタンスで常にチェックされるイベントのことを指します。ステップ イベント カテゴリーには、インスタンスの前後のタイミングを "微調整" するための3つのカテゴリーが用意されており、通常はメインのステップ イベントが最も頻繁に使用されます。</td>
 </tr>
 
 <tr>
@@ -161,17 +81,10 @@ but in general you will use the main Step Event most.</td>
 </tr>
 
 <tr>
-<td class="icons"><img align="middle" src=
-"../images/qs_event_collision.png" alt="Collision Event">
+<td class="icons"><img align="middle" src="../images/qs_event_collision.png" alt="衝突イベント">
 </td>
-<td class="icons">Collision Event</td>
-<td class="text">Obviously when making a game, it is very important
-that you know when two (or more) instances of an object have
-collided, and for that we have the collision event. This is an
-event that you place in an object and then specify against which
-other object you should be checking for collisions. Once you have
-added the event and chosen the object to check for you can add code
-or DnD™ to resolve the collision.</td>
+<td class="icons">衝突イベント</td>
+<td class="text">ゲームの作成において、2つ (またはそれ以上) のインスタンスがいつ衝突したかを知ることはきわめて重要な意味を持ちます。そのため、衝突イベントが用意されています。このイベントをオブジェクトに追加し、ほかのどのオブジェクトとの衝突を判定するかを指定します。イベントを追加して判定するオブジェクトを設定したら、衝突を解決するためのコードおよび DnD™ を追加できます。</td>
 </tr>
 
 <tr>
@@ -180,25 +93,10 @@ or DnD™ to resolve the collision.</td>
 </tr>
 
 <tr>
-<td class="icons"><img align="middle" src=
-"../images/qs_event_draw.png" alt="Draw Event">
+<td class="icons"><img align="middle" src="../images/qs_event_draw.png" alt="描画イベント">
 </td>
-<td class="icons">Draw Event</td>
-<td class="text">There are multiple different Draw Events within
-the draw event category, but the one you use most is the one at the
-top simply called "Draw". This general draw event will be caled,
-like the step event, every game frame, but it works in two
-different ways. The first is when you <i>don't</i> add any code or
-DnD™ to the event, in which case it will "default draw" the sprite
-assigned, using any transforms that have been applied elsewhere in
-the object (like to change its size or alpha blending). The second
-way it works is when you add code or DnD™ to it. Adding something
-to the event tells <i>GameMaker Studio 2</i> "I want to control
-what you draw for instances of this object" and it completely
-over-rides the default draw. This means that you can have an object
-with a sprite assigned, then set the draw event to draw text and
-the sprite will not be drawn as you have not told <i>GameMaker
-Studio 2</i> to draw it, although the text will be.</td>
+<td class="icons">描画イベント</td>
+<td class="text">描画イベントのサブカテゴリーには、いくつかの異なる描画イベントが用意されていますが、最も頻繁に使用されるのは単に "描画" と書かれている一番上のイベントです。この標準的な描画イベントは、ゲーム フレームごとに呼び出されるという点においてはステップ イベントと同じですが、2つのケースによって動作が異なります。1つめは、イベントにコードまたは DnD™ を追加 <i>していない</i> ケースです。このケースでは、オブジェクトの変化 (サイズやアルファ ブレンディングが変更されたときなど) に応じて、割り当てられているスプライトが "デフォルトで描画" されます。2つめは、イベントにコードまたは DnD™ を追加しているケースです。イベントになんらかのアクションを追加すると、<i>GameMaker Studio 2</i> へ "このオブジェクト インスタンスの描画を制御する" と伝え、デフォルトの描画をオーバーライドします。たとえば、なんらかのスプライトが割り当てられているオブジェクトがあったとして、そこへ描画イベントを追加したとします。そして、文字を表示するアクションを描画イベントへ追加するとどうなるでしょうか？ <i>GameMaker Studio 2</i> は、(描画イベントがオーバーライドされているため) 文字を表示するという指示は受け取っていても、スプライトを描画するという指示は受け取っていません。したがって、文字のみが表示され、スプライトは描画されません。</td>
 </tr>
 
 <tr>
@@ -207,63 +105,46 @@ Studio 2</i> to draw it, although the text will be.</td>
 </tr>
 
 <tr>
-<td class="icons"><img align="middle" src=
-"../images/qs_event_destroy.png" alt="Destroy Event">
+<td class="icons"><img align="middle" src="../images/qs_event_destroy.png" alt="破棄イベント">
 </td>
-<td class="icons">Destroy Event</td>
-<td class="text">This event is the very last event to be executed
-when an instance is destroyed. It is often overlooked when adding
-behaviours to objects, but it can be very useful - for example, for
-creating explosion or particle effects when an enemy is killed, or
-for re-spawning a new instance of the object in another part of the
-room, or even for adding points onto a score.</td>
+<td class="icons">破棄イベント</td>
+<td class="text">インスタンスが破棄されたときに実行される、最後のイベントです。たとえば敵が倒されたとき、爆発やパーティクル エフェクトを表示したり、ルーム上の別の場所へ新しいインスタンスを生成させたり、スコアへ得点を追加したり... このイベントの存在はなにかと見落とされがちですが、使いこなせると非常に便利です。</td>
 </tr>
 </table>
 
-<p>For further information on all the different events, please see
-<a href=
-"../../../2_interface/1_editors/events/index.html">here</a>.</p>
+<p>その他さまざまなイベントの詳細については、<a href="../../../2_interface/1_editors/events/index.html">こちら</a> を参照してください。</p>
 
-<p>Adding an event will open either the code editor or the Drag and
-Drop editor, depending what type of project you are creating. In
-this window you can now add the code or actions that you wish to be
-performed each time that event is triggered within the game loop. A
-typical object with events and code will look like this:
+<p>イベントが追加されると、プロジェクトの種類に応じて、コード エディターまたは Drag and Drop エディターが開きます。このウィンドウでは、ゲーム ループ中にイベントがトリガーされるたびに呼び出すコードまたはアクションを追加できます。イベントとコードを持つ典型的なオブジェクトの例を次に示します:
 <img class="center" src="../images/qs_objecteditor_chain.png"></p>
 
-<p>Using DnD™ or code to program the game is outside of the scope
-of this basic Quick Start guide, but you can find more information
-from the two pages given below:</p>
+<p>DnD™ およびコードを用いてゲーム プログラミングを行う方法については、このクイック スタート ガイドでは取り扱いません。より詳細な情報が知りたい場合は、次の2つのページを参照してください:</p>
 
 <blockquote>
 <ol>
 <li><a href=
 "../../../3_scripting/1_drag_and_drop_overview/index.html"><span class="list_link">
-Drag and Drop™ Overview</span></a>
+Drag and Drop™ の概要</span></a>
 </li>
 
 <li><a href=
 "../../../3_scripting/3_gml_overview/index.html"><span class=
-"list_link">GameMaker Language Overview</span></a>
+"list_link">GameMaker Language の概要</span></a>
 </li>
 </ol>
 </blockquote>
 
-<p>And you can find a full explanation of all the different parts
-of the <b>Object Editor</b> here:</p>
+<p>加えて、<b>オブジェクト エディター</b> の詳細な説明についてはこちらを参照してください:</p>
 
 <blockquote>
 <ol>
 <li><a href=
 "../../../2_interface/1_editors/objects.html"><span class=
-"list_link">Editors: The Object Editor</span></a>
+"list_link">エディター: オブジェクト エディター</span></a>
 </li>
 </ol>
 </blockquote>
 
-<p>The next part of this guide will look at the <b>Room Editor</b>,
-where everything you've learned so far comes together to make your
-projects into games...</p>
+<p>次のガイドでは <b>ルーム エディター</b> について説明します。ルーム エディターのセクションでは、これまでに学んできたすべてを統合して、プロジェクトをゲームに変化させます...</p>
 
 <p><br>
 </p>
@@ -272,11 +153,10 @@ projects into games...</p>
 <div class="footer">
 <div class="buttons">
 <div class="clear">
-<div style="float:left">Back: <a href=
-"../5_workflow.html">Workflow</a></div>
+<div style="float:left">戻る: <a href=
+"../5_workflow.html">ワークフロー</a></div>
 
-<div style="float:right">Next: <a href="5_rooms.html">Creating
-Rooms</a></div>
+<div style="float:right">進む: <a href="5_rooms.html">ルームを作成する</a></div>
 </div>
 </div>
 
