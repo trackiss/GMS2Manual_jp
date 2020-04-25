@@ -52,8 +52,8 @@ GMS2 そのものが独特で遠まわしな表現を使う傾向にあり、明
       - [x] Introduction
       - [x] Start
       - [x] Workspaces
-      - [ ] Resources
-      - [ ] Workflow
+      - [x] Resources
+      - [x] Workflow
       - [ ] Compiling
       - [ ] Debugging
       - [ ] Shortcuts
@@ -68,11 +68,11 @@ GMS2 そのものが独特で遠まわしな表現を使う傾向にあり、明
         - [ ] Help
         - [ ] Layouts
       - [ ] **Workflow** 
-        - [ ] *index*
-        - [ ] Sprites
-        - [ ] Tile Sets
-        - [ ] Sounds
-        - [ ] Objects
+        - [x] *index*
+        - [x] Sprites
+        - [x] Tile Sets
+        - [x] Sounds
+        - [x] Objects
         - [ ] Rooms
     - [ ] **Additional Information**
       - [ ] *index*
