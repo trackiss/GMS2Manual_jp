@@ -70,10 +70,10 @@ type="checkbox">
 <p>各ターゲット プラットフォームには、ひとつまたは複数の出力形式が用意されています。主な出力形式は次のとおりです:</p>
 
 <ul>
-<li><b>VM</b>: VM (仮想マシン) ターゲットでは、各プラットフォーム向けの汎用 <i>ランナー</i> がゲーム コードを解釈して実行します。このオプションはビルドが高速であるため、通常はテストに使用されます。ただし、一部のケースで使用できる YYC オプションのような高いパフォーマンスは望めません。パフォーマンスを気にする必要のない小さなゲームであれば、このオプションを使用しても問題ないでしょう。<br>
+<li><b>VM</b>: VM (仮想マシン) ターゲットでは、各プラットフォーム向けの汎用 <i>ランナー</i> がゲーム コードを解釈して実行します。このオプションはビルドが高速であるため、テストなどに使用されます。反面、YYC オプションのような高いパフォーマンスは望めません。パフォーマンスを気にする必要のない小さなゲームであれば、このオプションを使用しても問題ないでしょう。<br>
 <br></li>
 
-<li><b>YYC</b>: YYC (YoYo Compiler) は、<i>GameMaker Studio 2</i> の出力をターゲット プラットフォームの <i>ネイティブ</i> コードにコンパイルします。このとき、不要な関数を "排除" するなどの最適化をほどこして、より軽量でパフォーマンスに優れる実行ファイルを作成します。これによって、ゲーム パフォーマンスは少なくとも2～3倍に向上し、特にロジックが多く複雑なゲームではより顕著に効果が現れるでしょう。したがって、このオプションは CPU を多用する大規模なゲームに適しています。ただし、コンパイルにかかる時間が長くなることがあり、また、ターゲット プラットフォーム向けの最終的なアセット パッケージをビルドする前にはかならずコンパイラー キャッシュを削除する必要があります。YYC ターゲットは、選択したプラットフォームに応じて追加のツールをインストールしなければ動作しない場合があります。詳細については、<a href="http://help.yoyogames.com/entries/91625158-SDK-Version-Support" target="_blank">YoYo Games ヘルプ センター</a> またはこのマニュアルに記載されている各ターゲットの <a href="../../2_interface/3_settings/preferences.html">環境設定</a> ページを参照してください。<br>
+<li><b>YYC</b>: YYC (YoYo Compiler) は、<i>GameMaker Studio 2</i> の出力を受け取って、ターゲット プラットフォームの <i>ネイティブ</i> コードにコンパイルします。このとき、不要な関数を "排除" するなどの最適化をほどこして、より軽量でパフォーマンスに優れる実行ファイルを作成できます。これによって、ゲーム パフォーマンスは少なくとも2～3倍に向上し、特にロジックが多く複雑なゲームではより顕著に効果が現れるでしょう。したがって、このオプションは CPU を多用する大規模なゲームに適しています。ただし、コンパイルにかかる時間が長くなることがあるという欠点があります。また、ターゲット プラットフォーム向けの最終的なアセット パッケージをビルドする前には、かならずコンパイラー キャッシュを削除する必要があります。YYC ターゲットでは、選択したプラットフォームに応じて追加のツールをインストールしなければならない場合があります。詳細については、<a href="http://help.yoyogames.com/entries/91625158-SDK-Version-Support" target="_blank">YoYo Games ヘルプ センター</a> またはこのマニュアルに記載されている各ターゲットの <a href="../../2_interface/3_settings/preferences.html">環境設定</a> ページを参照してください。<br>
 <br></li>
 
 <li><b>JavaScript</b>: JavaScript ターゲットは、HTML5 ターゲットなどの一部のターゲットにおいてのみ使用できます。このオプションでは、ゲームを純粋な JavaScript コードへコンパイルします。</li>
@@ -87,7 +87,7 @@ type="checkbox">
 <p>iOS や Android などの一部のプラットフォームでは、<i>GameMaker Studio 2</i> へ特定の端末を登録し、そのデバイス向けにゲームをコンパイルすることができます。初期状態ではデバイスの一覧は空になっているため、鉛筆 アイコン <img style="vertical-align:middle" src="images/qs_icon_pencil.png"> をクリック <img style="vertical-align:middle" src="../../images/icon_lmb.png"> して <b>デバイス エディター</b> を開く必要があります: <img class="center" src=
 "images/qs_deviceeditor.png" alt="デバイス マネージャー"></p>
 
-<p>ここでは、新規デバイスを追加したり、<i>GameMaker Studio 2</i> へ接続されている可能性があるデバイスへの接続テストをすることができます。このウィンドウの内容は、プラットフォームによって異なります。各プラットフォームでの正確な情報については、<a href="../../2_interface/2_extras/device_manager.html">デバイス マネージャー</a> のセクションを参照してください。デバイスが追加されたり見つかったりした場合は、次のようなウィンドウが表示されます (これは Android の例です): <img class="center" src=
+<p>ここでは、新規デバイスを追加したり、<i>GameMaker Studio 2</i> へ接続されている可能性があるデバイスへの接続テストをすることができます。このウィンドウの内容は、プラットフォームによって異なります。各プラットフォームでの正確な情報については、<a href="../../2_interface/2_extras/device_manager.html">デバイス マネージャー</a> のセクションを参照してください。デバイスが追加されたり見つかったりした場合は、次のようなウィンドウが表示されます (これは Android での例です): <img class="center" src=
 "images/qs_adddevice.png" alt="デバイスの追加"></p>
 
 <p>デバイスのセットアップやトラブルシューティングについての正確な手順や必要な要件は、<a href="http://help.yoyogames.com/hc/en-us/categories/204246668-GameMaker-Studio-2" target="_blank">GameMaker Studio 2 ナレッジ ベース</a> の該当するセクションを参照してください。</p>
@@ -97,7 +97,7 @@ type="checkbox">
 "collapse" for="four">構成</label> <input id="four" type=
 "checkbox">
 <div class="index_list">
-<p><a href="../../2_interface/3_settings/configurations.html">構成</a> のセクションでも説明しているとおり、ゲームをコンパイルするための特定のオプションは <b>構成</b> として保存しておくことができます。ターゲット ウィンドウのこのセクションでは、<i>GameMaker Studio 2</i> が任意のターゲット プラットフォームで使用する構成を自動的に選択させることができます。</p>
+<p><a href="../../2_interface/3_settings/configurations.html">構成</a> のセクションでも説明しているとおり、ゲームをコンパイルするときのプラットフォーム固有のオプションを <b>構成</b> として保存しておくことができます。ターゲット ウィンドウのこのセクションでは、<i>GameMaker Studio 2</i> が任意のターゲット プラットフォームで使用する構成を自動的に選択させることができます。</p>
 </div></blockquote>
 
 <p><br>
@@ -108,19 +108,19 @@ type="checkbox">
 <p><br>
 </p>
 
-<p>ゲーム プロジェクトを任意のターゲット プラットフォームへコンパイルするには、適したビルド ツールをセットアップして (<a href="../1_getting_started/5_required_sdks.html">こちら</a> を参照) <a href=
-"../../2_interface/3_settings/preferences.html">プラットフォームの環境設定</a> を設定する必要があります。IDE の <b>実行ファイルの作成</b> アイコン <img style="vertical-align:middle" src="images/qs_icon_compile.png"> をクリックするか、<a href="menus/build_menu.html">ビルド メニュー</a> から <b>実行ファイルの作成</b> を選択してコンパイラーによるビルドを開始します。いずれの場合でもファイル エクスプローラー ウィンドウが開くので、そこで最終的なゲーム パッケージ名を指定してから <i>保存</i> をクリックすると、コンパイルとビルドが開始されます。このプロセスを経て必要なファイルが生成されたら、自由に配布できるようになります。</p>
+<p>ゲーム プロジェクトを任意のターゲット プラットフォームへコンパイルするには、適したビルド ツールをセットアップして (<a href="../1_getting_started/5_required_sdks.html">こちら</a> を参照してください)、<a href=
+"../../2_interface/3_settings/preferences.html">プラットフォームの環境設定</a> を設定する必要があります。IDE の <b>実行ファイルの作成</b> アイコン <img style="vertical-align:middle" src="images/qs_icon_compile.png"> をクリックするか、<a href="menus/build_menu.html">ビルド メニュー</a> から <b>実行ファイルの作成</b> を選択して、コンパイラーによるビルドを開始します。いずれの場合でもファイル エクスプローラー ウィンドウが開くので、そこで最終的なゲーム パッケージ名を指定してから <i>保存</i> をクリックすると、コンパイルとビルドのプロセスが開始されます。このプロセスを経て必要なファイルが生成されたら、自由に配布できるようになります。</p>
 
 <div class="note"><b>重要</b>: 無料の <b>30日間試用ライセンス</b> を使用している場合は、最終的な実行ファイルを作成することはできません。配布用にゲームをコンパイルするには、いずれかの有料のライセンスへアップグレードする必要があります。</div>
 
 <div class="note"><b>注</b>: リリース向けにプロジェクトの最終ビルドを行う前に、かならず IDE 上部の "ほうき" アイコン <img style="vertical-align:middle" src="images/qs_icon_clean.png"> をクリックして <b>アセット コンパイラーのキャッシュ</b> を削除してください。古いキャッシュが原因となりゲームが破損する危険性を回避するために、すべてのキャッシュ ファイルを再生成する必要があります。</div>
 
 <p><br>
-各ターゲット オプションでは、次に示すようなプラットフォーム固有の形式で保存されます:</p>
+各ターゲット オプションに応じて、次に示すようなプラットフォーム固有の形式で保存されます:</p>
 
 <ul>
 <li><b>Windows</b> - 一般的な Windows OS 向けにコンパイルをしようとすると、はじめに <i>インストーラー</i> と <i>ZIP</i> パッケージのどちらを作成するかを尋ねられます。インストーラーは、ゲームをインストールすることのできる単一の実行ファイルです。ZIP パッケージは、すべてのゲーム ファイルが格納されている ZIP 形式の圧縮ファイルであり、ゲームを実行するためにはファイルを展開する必要があります。
-<img class="center" src="images/qs_windows_compile_options.png" alt="Windows コンパイル オプション"> ここで、<i>パッケージ オプションを記憶しますか？</i> のチェックボックスをオンにすると、<i>GameMaker Studio 2</i> は今後のすべてのコンパイルにおいて、選択した内容を記憶します。この設定は、<a href="../../2_interface/3_settings/preferences.html">Windows の環境設定</a> からリセットまたは変更することができます。詳細については <a href="http://help.yoyogames.com/hc/en-us/sections/207157668" target="_blank">YoYo Games ヘルプ センター</a> を参照してください。<br>
+<img class="center" src="images/qs_windows_compile_options.png" alt="Windows コンパイル オプション"> ここで、<i>パッケージ オプションを記憶しますか？</i> のチェックボックスをオンにすると、<i>GameMaker Studio 2</i> は選択された内容を記憶し、今後のすべてのコンパイルにおいて自動的に選択します。この設定は、<a href="../../2_interface/3_settings/preferences.html">Windows の環境設定</a> からリセットまたは変更することができます。詳細については <a href="http://help.yoyogames.com/hc/en-us/sections/207157668" target="_blank">YoYo Games ヘルプ センター</a> を参照してください。<br>
 <br></li>
 
 <li><b>Ubuntu (Linux)</b> - Ubuntu (Linux) のアプリケーションは、<tt>*.zip</tt> ファイルとしてコンパイルされます。詳細については <a href=
@@ -134,10 +134,10 @@ type="checkbox">
 <li><b>Android</b> - Android 端末向けにビルドする場合は、ゲームを保存するときに表示されるウィンドウから、<tt>*.apk</tt> と <tt>*.aab</tt> (Android App Bundle) ファイルのどちらの形式を使用するかを選択することができます: <img class="center" src="images/qs_androidfileselector.png" alt="Andoird APK か AAB ファイルかを選択"> 選択するファイルの種類は、ターゲットとするストアによって異なります。<tt>*.aab</tt> ファイルは Google Play ストアで必要な形式であり、<tt>*.apk</tt> ファイルはその他のすべてのストアで使用できる形式です。詳細については <a href="http://help.yoyogames.com/hc/en-us/articles/115001368727" target="_blank">YoYo Games ヘルプ センター</a> を参照してください。<br>
 <br></li>
 
-<li><b>iOS</b> - iOS の場合は、Xtools で最終的な iOS パッケージを作成するために使用する <tt>xcarchive</tt> ファイルを作成します。iOS 向けにコンパイルをするためには、<b>OS X 以降の Apple Mac コンピューター</b> と、関連する証明書と権限が必要になることに注意してください。詳細については <a href="http://help.yoyogames.com/hc/en-us/articles/115001368747" target="_blank">YoYo Games ヘルプ センター</a> を参照してください。<br>
+<li><b>iOS</b> - iOS の場合は、Xtools で最終的な iOS パッケージを作成するために使用する <tt>xcarchive</tt> ファイルを作成します。iOS 向けにコンパイルをするためには、<b>OS X 以降の Apple Mac コンピューター</b> と、関連する証明書および権限が必要になることに注意してください。詳細については <a href="http://help.yoyogames.com/hc/en-us/articles/115001368747" target="_blank">YoYo Games ヘルプ センター</a> を参照してください。<br>
 <br></li>
 
-<li><b>macOS</b> - macOS ターゲットの場合は、Mac App Store へアップロードするかどうかに応じて、<tt>*.app</tt> ファイルまたは <tt>*.pkg</tt> ファイルへビルドします。iOS と同様、<b>OS X 以降の Apple Mac コンピューター</b> と、関連する証明書と権限が必要になることに注意してください。詳細については <a href="http://help.yoyogames.com/hc/en-us/articles/235186128" target="_blank">YoYo Games ヘルプ</a> を参照してください。<br>
+<li><b>macOS</b> - macOS ターゲットの場合は、Mac App Store へアップロードするかどうかに応じて、<tt>*.app</tt> ファイルまたは <tt>*.pkg</tt> ファイルへビルドします。iOS と同様、<b>OS X 以降の Apple Mac コンピューター</b> と、関連する証明書および権限が必要になることに注意してください。詳細については <a href="http://help.yoyogames.com/hc/en-us/articles/235186128" target="_blank">YoYo Games ヘルプ</a> を参照してください。<br>
 <br></li>
 
 <li><b>Windows UWP</b> - Windows UWP の場合は、<tt>*.appx</tt> パッケージを作成して Microsoft Store へアップロードすることができます。実行ファイルの作成 をクリックすると、パッケージの種類 (ARM、x64、x86 のいずれか) を選択する画面が表示されます。サポートするデバイスをもとに、ターゲットとするパッケージの種類を選択してください: <img class="center" src="images/qs_uwp_compile_options.png" alt="UWP コンパイル オプション"> ここで、<b>Store へアップロードするパッケージ</b> のチェックボックスをオンにすると、作成されるパッケージが <tt>.appxupload</tt> ファイルになります。このファイルは、<a href="https://docs.microsoft.com/en-us/windows/uwp/publish/upload-app-packages" target="_blank">ここ</a> でも説明しているとおり、Microsoft Store へアプリを提出するときに定められている形式です。また、<a href="../../2_interface/3_settings/preferences.html">UWP の環境設定</a> からデフォルトのパッケージ オプションを指定しておけば、自動でオプションが選択されるようになり、このウィンドウも表示されなくなります。UWP プラットフォームのセットアップとコンパイルについての詳細は <a href="http://help.yoyogames.com/hc/en-us/sections/115000309028" target="_blank">YoYo Games ヘルプ センター</a> を参照してください。</li>
@@ -145,7 +145,7 @@ type="checkbox">
 
 <p>実行可能なアセット パッケージを作成したら、そのファイルをほかの人へ渡したり、自分のウェブサイトからダウンロードできるようにしたり、個人へ配布するためになんらかのホスティング サービスへアップロードしたり、不特定多数への配布または商業目的のためにオンライン ストア (Google Play、iTunes、Microsoft Store など) へアップロードしたりすることができます。</p>
 
-<p><i>GameMaker Studio 2</i> で制作したゲームは、商業利用を含めて自由に配布することができます。ただし、当然ながら、制作に使用したスプライトや画像、サウンドなどのすべてのアセットに関して、配布および販売が可能な法的権利をクリアしていることが前提となっています。また、<i>GameMaker Studio 2</i> の EULA (エンド ユーザー利用許諾契約) にも準拠していなければなりません。<i>GameMaker Studio 2</i> のインストール フォルダーから、利用許諾契約を確認することができます (通常は "<tt>C:\Program Files\GameMaker Studio 2\Licence.txt</tt>")。</p>
+<p><i>GameMaker Studio 2</i> で制作したゲームは、商業利用を含めて自由に配布することができます。ただし、当然ながら、制作に使用したスプライトや画像、サウンドなどのすべてのアセットに関して、配布および販売が可能な法的権利をクリアしていることが前提となっています。また、<i>GameMaker Studio 2</i> の EULA (エンド ユーザー利用許諾契約) にも準拠していなければなりません。<i>GameMaker Studio 2</i> のインストール フォルダーから、利用許諾契約を確認することができます (通常は "<tt>C:\Program Files\GameMaker Studio 2\Licence.txt</tt>" にあります)。</p>
 
 <p><br>
 </p>
