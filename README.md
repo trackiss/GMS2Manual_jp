@@ -54,7 +54,7 @@ GMS2 そのものが独特で遠まわしな表現を使う傾向にあり、明
       - [x] Workspaces
       - [x] Resources
       - [x] Workflow
-      - [ ] Compiling
+      - [x] Compiling
       - [ ] Debugging
       - [ ] Shortcuts
       - [ ] **Menus**
@@ -640,3 +640,22 @@ GMS2 そのものが独特で遠まわしな表現を使う傾向にあり、明
   - 誤字。"fo rall" -> "for all"
 - アセット レイヤー
   - 誤字。"paramters" -> "parameters"
+
+#### QS コンパイル
+
+- ターゲット ウィンドウ
+  - 現在のバージョンでは「ワーカー」と「プラットフォーム」の行の配置が逆になっている
+- editor なのか manager なのかはっきりしろ
+- iOS ターゲット
+  - Xtools という聞き慣れない単語がでてきた
+    - 調べてみたところ、Xcode IDE や iOS シミュレーターなど、iOS 開発ツールを総称して "Xtools" と言っている書籍があった。おそらくこの意味で合ってるのだろうが、それ以外の情報がまったくでてこないのが気にかかる
+    - "Apple's Objective-C, Cocoa Touch, and Xtools Model" と書かれていたので、かつての Apple がそのように提唱していたのか？ しかし、それならばもっとたくさん情報がでてきてもいいはずだ
+  - xarchive
+    - 翻訳者の記憶が確かなら、xcarchive の間違いではないか？ これは Xcode のアーカイブ形式なのだが、どうやら同様のタイポは多いらしい
+    - 直しておく
+- UWP ターゲット
+  - Windows Store
+    - Windows Store および Windows ストアは、現在は Microsoft Store (日本語名も統一) になっている
+    - と思ったら、あとから MS Store という単語がでてきた。せっかくなので統一しておく
+  - 謎の `)` がある
+- iTunes でゲームを配布する...？ App Store でいいのでは。そのままにしておくけど

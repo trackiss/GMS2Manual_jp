@@ -7,7 +7,7 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 
 <meta name="generator" content="chm2web Pro 2.85 (unicode)" />
-<title>Compiling</title>
+<title>コンパイル</title>
 <meta http-equiv="X-UA-Compatible" content="IE=9">
 
 <link rel="stylesheet" href="../../../../files/helpindex.css" type=
@@ -30,318 +30,122 @@ if (window.name != "content")
 <script type="text/JavaScript">
  if( typeof(chmtop.helpStyle) != 'undefined' ) { var linkNodes = document.getElementsByTagName("link");  for( var i=0; i < linkNodes.length; ++i ) { var link = linkNodes[i];    if( link.href.endsWith("default.css")) {    var style = link.href.replace("default.css", chmtop.helpStyle); document.write('<link id="newstyleLink" rel="stylesheet" href=' + style + ' type="text/css">');    break; } } } 
 </script>
-<h2>Compiling</h2>
+<h2>コンパイル</h2>
 
 <div class="body-scroll">
 <p><br>
 </p>
 
-<p>Compiling your game can mean one of two things: compiling it for
-testing, or compiling it to create an <i>asset package</i> for a
-specific target platform. Testing your game can be done by simply
-pressing the Play button <img style="vertical-align:middle" src=
-"images/qs_icon_play.png"> at the top of the IDE, which will launch
-the game for testing using the specified target. You can also run
-the game in <b>Debug Mode</b> by testing using the Debug button
-<img style="vertical-align:middle" src="images/qs_icon_debug.png">.
-This will run the game, but also open up the <b>Debug Window</b>,
-where you can monitor how your game performs and debug any issues
-(see the section on <a href="7_debugging.html">Debugging</a> for
-more information).</p>
+<p>ゲームをコンパイルする、というのは、ゲームをテスト用にコンパイルすることと、または特定のターゲット プラットフォーム用の <i>アセット パッケージ</i> を作成するためにコンパイルすることのどちらかを指します。IDE 上部の 再生 アイコン <img style="vertical-align:middle" src="images/qs_icon_play.png"> をクリックすると、現在指定されているターゲットでゲームを実行し、テストをすることができます。また、デバッグ <img style="vertical-align:middle" src="images/qs_icon_debug.png"> をクリックして、<b>デバッグ モード</b> でゲームをテストできます。デバッグ モードでは、ゲームを実行するだけでなく <b>デバッグ ウィンドウ</b> からゲーム パフォーマンスを監視したり、バグや不具合をデバッグしたりすることができます (詳細については <a href="7_debugging.html">デバッグ</a> のセクションを参照してください)。</p>
 
-<p>By default <i>GameMaker Studio 2</i> will run and debug using
-the built in VM (virtual machine), which is more or less the same
-as running on the desktop OS being used. However <i>GameMaker
-Studio 2</i> is a <b>cross platform engine</b> and you can test,
-debug and compile asset packages of your projects on a number of
-different target platforms (the exact platforms available will
-depend on the details of your licence). To change the current
-target platform you can click on the <b>Targets</b> button
-<img style="vertical-align:middle" src=
-"images/qs_icon_targets.png"> to open the <b>Targets Window</b>,
-which will look something like this (exact details will vary based
-on your licence type): <img class="center" src=
-"images/qs_targetlist.png" alt="Targets Window"></p>
+<p>デフォルトでは、<i>GameMaker Studio 2</i> は内蔵の VM (仮想マシン) を使用してゲームを実行およびデバッグします。これは、あなたが使用しているデスクトップ OS での実行とほとんど同じように動作します。それだけでなく、<i>GameMaker Studio 2</i> は <b>クロス プラットフォームなエンジン</b> であるため、プロジェクトのアセット パッケージをさまざまなターゲット プラットフォームへ向けてテスト、デバッグ、およびコンパイルすることができます。このとき、利用可能なプラットフォームはライセンスによって異なります。現在のターゲット プラットフォームを変更するには、<b>ターゲット</b> アイコン <img style="vertical-align:middle" src="images/qs_icon_targets.png"> をクリックして <b>ターゲット ウィンドウ</b> を開きます (この内容もライセンスによって異なります): <img class="center" src="images/qs_targetlist.png" alt="ターゲット ウィンドウ"></p>
 
-<p>At the top, beside the Targets button, you have the current
-settings which tells you the platform and the specific settings
-actually being used, and then the rest of the window is taken up
-with the details and options for all the available targets which
-you can select to use instead. Each section of this window is
-explained below:</p>
+<p>上部の ターゲット アイコンの横には、現在設定されているプラットフォームなどの情報が表示されています。その下には、利用可能なすべてのターゲットの詳細とそのオプションが表示されており、ここから使用するターゲットを選ぶことができます。ウィンドウ各部の説明を次に示します:</p>
 
 <blockquote><a name="compile_remote" id="compile_remote"></a>
-<label class="collapse" for="five">Worker</label> <input id="five"
+<label class="collapse" for="five">ワーカー</label> <input id="five"
 type="checkbox">
 <div class="index_list">
-<p>The first column of the Target Manager is dedicated to the
-<b>Remote Workers</b> that you have available. To begin with, you
-will only have a single "Local" machine listed here, which is the
-machine that <i>GameMaker Studio 2</i> is installed on, but you can
-also configure a Remote Worker to use. When a Remote Worker has
-been configured, you will then be able to select it from the list
-here, and have <i>it</i> build your projects rather than use the
-host machine where <i>GameMaker Studio 2</i> is installed.</p>
+<p>ターゲット マネージャーの最初の列は、利用可能な <b>リモート ワーカー</b> を示しています。通常は、<i>GameMaker Studio 2</i> がインストールされているマシンを示す "ローカル" のみが表示されています。ここで、別のリモート ワーカーを使用するように構成することもできます。リモート ワーカーを構成すると、一覧にリモート ワーカーが表示されるようになります。それを選択して、<i>GameMaker Studio 2</i> がインストールされているホスト マシンではなく、<i>リモート ワーカー</i> 上でプロジェクトをビルドさせるようにすることができます。</p>
 
-<p>For more information on how to set up and use Remote Workers,
-please see the section below:</p>
+<p>リモート ワーカーのセットアップと使用方法についての詳細は、次のセクションを参照してください:</p>
 
 <ul>
-<li><a href="../../2_interface/2_extras/remote_worker.html">Remote
-Workers</a>
+<li><a href="../../2_interface/2_extras/remote_worker.html">リモート ワーカー</a>
 </li>
 </ul>
 </div>
 <br>
 <a name="compile_platform" id="compile_platform"></a> <label class=
-"collapse" for="one">Platform</label> <input id="one" type=
+"collapse" for="one">プラットフォーム</label> <input id="one" type=
 "checkbox">
 <div class="index_list">
-<p>This section lists all the available target platforms. The
-contents of this list will vary depending on the licence that you
-have, but will always have at least the "Test" target. To select a
-target, simply click <img style="vertical-align:middle" src=
-"../../images/icon_lmb.png"> on it. This will then update the rest
-of the options windows to show different details depending on the
-platform selected.</p>
+<p>このセクションには、利用可能なすべてのターゲット プラットフォームの一覧が表示されます。この内容はあなたが所持しているライセンスによって異なりますが、少なくとも "テスト" ターゲットはライセンスにかかわらず表示されています。各ターゲットをクリック <img style="vertical-align:middle" src="../../images/icon_lmb.png"> して、ターゲットを選択します。ターゲットが選択されると、それに応じてウィンドウの残りのオプションの内容が更新されます。</p>
 </div>
 <br>
 <a name="compile_output" id="compile_output"></a> <label class=
-"collapse" for="two">Output</label> <input id="two" type=
+"collapse" for="two"出力</label> <input id="two" type=
 "checkbox">
 <div class="index_list">
-<p>Each target platform can have one or more output formats, the
-main ones being:</p>
+<p>各ターゲット プラットフォームには、ひとつまたは複数の出力形式が用意されています。主な出力形式は次のとおりです:</p>
 
 <ul>
-<li><b>VM</b>: The VM (Virtual Machine) target uses a generic
-<i>runner</i> for each platform and then interprets the code for
-your game. In general this option is used for testing due to its
-faster build times, but it does not offer the same performance
-boost that using the YYC option (if available) offers. You can use
-this to compile smaller game or games where performance is not ever
-going to be an issue, however.<br>
+<li><b>VM</b>: VM (仮想マシン) ターゲットでは、各プラットフォーム向けの汎用 <i>ランナー</i> がゲーム コードを解釈して実行します。このオプションはビルドが高速であるため、通常はテストに使用されます。ただし、一部のケースで使用できる YYC オプションのような高いパフォーマンスは望めません。パフォーマンスを気にする必要のない小さなゲームであれば、このオプションを使用しても問題ないでしょう。<br>
 <br></li>
 
-<li><b>YYC</b>: The YYC (YoYo Compiler) takes the normal
-<i>GameMaker Studio 2</i> output and compiles it into <i>native</i>
-code for the target platform, "stripping out" unneeded functions
-and performing a host of other optimisation techniques to create a
-smaller and performance enhanced executable. This can increase your
-games performance by at least two or three times, especially on
-logic-heavy games, ideal for those larger or CPU intensive games.
-Compile times may take longer and you should always clear the
-compiler cache before building any final complete asset package for
-a target platform. Note that the YYC target may require extra tools
-to be installed for the platform selected, otherwise it will not
-work - you can find further information about this from the
-<a href="http://help.yoyogames.com/entries/91625158-SDK-Version-Support"
-target="_blank">YoYo Games Help Center</a> as well as on the
-individual target <a href=
-"../../2_interface/3_settings/preferences.html">Preferences</a>
-pages detailed in this manual.<br>
+<li><b>YYC</b>: YYC (YoYo Compiler) は、<i>GameMaker Studio 2</i> の出力をターゲット プラットフォームの <i>ネイティブ</i> コードにコンパイルします。このとき、不要な関数を "排除" するなどの最適化をほどこして、より軽量でパフォーマンスに優れる実行ファイルを作成します。これによって、ゲーム パフォーマンスは少なくとも2～3倍に向上し、特にロジックが多く複雑なゲームではより顕著に効果が現れるでしょう。したがって、このオプションは CPU を多用する大規模なゲームに適しています。ただし、コンパイルにかかる時間が長くなることがあり、また、ターゲット プラットフォーム向けの最終的なアセット パッケージをビルドする前にはかならずコンパイラー キャッシュを削除する必要があります。YYC ターゲットは、選択したプラットフォームに応じて追加のツールをインストールしなければ動作しない場合があります。詳細については、<a href="http://help.yoyogames.com/entries/91625158-SDK-Version-Support" target="_blank">YoYo Games ヘルプ センター</a> またはこのマニュアルに記載されている各ターゲットの <a href="../../2_interface/3_settings/preferences.html">環境設定</a> ページを参照してください。<br>
 <br></li>
 
-<li><b>JavaScript</b>: The JavaScript target will only be available
-for a few targets, like the HTML5 target, and sets the game to be
-compiled to pure JavaScript.</li>
+<li><b>JavaScript</b>: JavaScript ターゲットは、HTML5 ターゲットなどの一部のターゲットにおいてのみ使用できます。このオプションでは、ゲームを純粋な JavaScript コードへコンパイルします。</li>
 </ul>
 </div>
 <br>
 <a name="compile_device" id="compile_device"></a> <label class=
-"collapse" for="three">Device</label> <input id="three" type=
+"collapse" for="three">デバイス</label> <input id="three" type=
 "checkbox">
 <div class="index_list">
-<p>Certain platforms (like iOS or Android) permit you to associate
-one or more devices with <i>GameMaker Studio 2</i> so that games
-can selectively compile to them. Initially, the device list will be
-empty and you need to click <img style="vertical-align:middle" src=
-"../../images/icon_lmb.png"> on the Pencil icon <img style=
-"vertical-align:middle" src="images/qs_icon_pencil.png"> to open
-the <b>Device Editor</b>: <img class="center" src=
-"images/qs_deviceeditor.png" alt="Device Manager"></p>
+<p>iOS や Android などの一部のプラットフォームでは、<i>GameMaker Studio 2</i> へ特定の端末を登録し、そのデバイス向けにゲームをコンパイルすることができます。初期状態ではデバイスの一覧は空になっているため、鉛筆 アイコン <img style="vertical-align:middle" src="images/qs_icon_pencil.png"> をクリック <img style="vertical-align:middle" src="../../images/icon_lmb.png"> して <b>デバイス エディター</b> を開く必要があります: <img class="center" src=
+"images/qs_deviceeditor.png" alt="デバイス マネージャー"></p>
 
-<p>Here you can add new devices as well as have <i>GameMaker Studio
-2</i> test for a connection to any device(s) that may be connected.
-The exact contents of this window will depend on the platform
-specifics (see the section on the <a href=
-"../../2_interface/2_extras/device_manager.html">Device Manager</a>
-for exact details for any given platform). Once a device has been
-found or added, it will then be shown in this window, like in this
-example image for Android: <img class="center" src=
-"images/qs_adddevice.png" alt="Add Device"></p>
+<p>ここでは、新規デバイスを追加したり、<i>GameMaker Studio 2</i> へ接続されている可能性があるデバイスへの接続テストをすることができます。このウィンドウの内容は、プラットフォームによって異なります。各プラットフォームでの正確な情報については、<a href="../../2_interface/2_extras/device_manager.html">デバイス マネージャー</a> のセクションを参照してください。デバイスが追加されたり見つかったりした場合は、次のようなウィンドウが表示されます (これは Android の例です): <img class="center" src=
+"images/qs_adddevice.png" alt="デバイスの追加"></p>
 
-<p>The exact procedure and requirements for setting up devices and
-troubleshooting issues can be found in the appropriate section of
-the <a href=
-"http://help.yoyogames.com/hc/en-us/categories/204246668-GameMaker-Studio-2"
-target="_blank">GameMaker Studio 2 Knowledge Base</a>.</p>
+<p>デバイスのセットアップやトラブルシューティングについての正確な手順や必要な要件は、<a href="http://help.yoyogames.com/hc/en-us/categories/204246668-GameMaker-Studio-2" target="_blank">GameMaker Studio 2 ナレッジ ベース</a> の該当するセクションを参照してください。</p>
 </div>
 <br>
 <a name="compile_config" id="compile_config"></a> <label class=
-"collapse" for="four">Config</label> <input id="four" type=
+"collapse" for="four">構成</label> <input id="four" type=
 "checkbox">
 <div class="index_list">
-<p>As explained in the section on <a href=
-"../../2_interface/3_settings/configurations.html">Configurations</a>,
-you can store certain details for compiling your game as
-<b>Configs</b>. This section of the Targets window permits you to
-have <i>GameMaker Studio 2</i> automatically select a specific
-configuration for a specific target platform.</p>
+<p><a href="../../2_interface/3_settings/configurations.html">構成</a> のセクションでも説明しているとおり、ゲームをコンパイルするための特定のオプションは <b>構成</b> として保存しておくことができます。ターゲット ウィンドウのこのセクションでは、<i>GameMaker Studio 2</i> が任意のターゲット プラットフォームで使用する構成を自動的に選択させることができます。</p>
 </div></blockquote>
 
 <p><br>
 </p>
 
-<h2>Creating A Final Executable Package</h2>
+<h2>最終実行ファイルの作成</h2>
 
 <p><br>
 </p>
 
-<p>Compiling your game project to any target platform will require
-that you have set up the correct build tools (see <a href=
-"../1_getting_started/5_required_sdks.html">here</a>) and also
-filled in the appropriate <a href=
-"../../2_interface/3_settings/preferences.html">Platform
-Preferences</a>. Once you have done that you can simply click the
-<b>Create Executable</b> button <img style="vertical-align:middle"
-src="images/qs_icon_compile.png"> in the IDE to start the compiler
-build or select <b>Create Executable</b> from the <a href=
-"menus/build_menu.html">Build Menu</a>. Either option will open a
-file explorer window where you can give the final name that you
-wish to use for your game package before clicking <i>Save</i> to
-start the compile and build process. Once you have done this, the
-necessary files will be generated so that you can distribute it as
-you wish.</p>
+<p>ゲーム プロジェクトを任意のターゲット プラットフォームへコンパイルするには、適したビルド ツールをセットアップして (<a href="../1_getting_started/5_required_sdks.html">こちら</a> を参照) <a href=
+"../../2_interface/3_settings/preferences.html">プラットフォームの環境設定</a> を設定する必要があります。IDE の <b>実行ファイルの作成</b> アイコン <img style="vertical-align:middle" src="images/qs_icon_compile.png"> をクリックするか、<a href="menus/build_menu.html">ビルド メニュー</a> から <b>実行ファイルの作成</b> を選択してコンパイラーによるビルドを開始します。いずれの場合でもファイル エクスプローラー ウィンドウが開くので、そこで最終的なゲーム パッケージ名を指定してから <i>保存</i> をクリックすると、コンパイルとビルドが開始されます。このプロセスを経て必要なファイルが生成されたら、自由に配布できるようになります。</p>
 
-<div class="note"><b>IMPORTANT</b>: If you have the free <b>30 Day
-Trial Licence</b>, then compiling a final executable will not be
-available, and you will be required to upgrade to one of the paid
-licences to compile your game for distribution.</div>
+<div class="note"><b>重要</b>: 無料の <b>30日間試用ライセンス</b> を使用している場合は、最終的な実行ファイルを作成することはできません。配布用にゲームをコンパイルするには、いずれかの有料のライセンスへアップグレードする必要があります。</div>
 
-<div class="note"><b>NOTE</b>: Before doing a final build of your
-project for release, you should always clear the <b>Asset Compiler
-Cache</b> (using the "broom" icon <img style=
-"vertical-align:middle" src="images/qs_icon_clean.png"> at the top
-of the IDE) to ensure that all cached files are recreated and no
-stale files corrupt your final game.</div>
+<div class="note"><b>注</b>: リリース向けにプロジェクトの最終ビルドを行う前に、かならず IDE 上部の "ほうき" アイコン <img style="vertical-align:middle" src="images/qs_icon_clean.png"> をクリックして <b>アセット コンパイラーのキャッシュ</b> を削除してください。古いキャッシュが原因となりゲームが破損する危険性を回避するために、すべてのキャッシュ ファイルを再生成する必要があります。</div>
 
 <p><br>
-Each target option saves to a platform specific format, listed
-below:</p>
+各ターゲット オプションでは、次に示すようなプラットフォーム固有の形式で保存されます:</p>
 
 <ul>
-<li><b>Windows</b> - Compiling for the general Windows OS will
-first request that you choose between creating an <i>Installer</i>
-or a <i>Zip</i> package, where the installer will be a single
-executable that will install your game, and the Zip file will be a
-single zip format compressed file with all your game files stored
-within (the files will need extracted for the game to run).
-<img class="center" src="images/qs_windows_compile_options.png"
-alt="Windows Compile Options"> If you check the box marked
-<i>Remember Packaging Option</i> then <i>GameMaker Studio 2</i>
-will remember the choice for all future compiles (this can be reset
-or changed from the <a href=
-"../../2_interface/3_settings/preferences.html">Windows
-Preferences</a>). You can find out more from the <a href=
-"http://help.yoyogames.com/hc/en-us/sections/207157668" target=
-"_blank">YoYo Games Help Center</a><br>
+<li><b>Windows</b> - 一般的な Windows OS 向けにコンパイルをしようとすると、はじめに <i>インストーラー</i> と <i>ZIP</i> パッケージのどちらを作成するかを尋ねられます。インストーラーは、ゲームをインストールすることのできる単一の実行ファイルです。ZIP パッケージは、すべてのゲーム ファイルが格納されている ZIP 形式の圧縮ファイルであり、ゲームを実行するためにはファイルを展開する必要があります。
+<img class="center" src="images/qs_windows_compile_options.png" alt="Windows コンパイル オプション"> ここで、<i>パッケージ オプションを記憶しますか？</i> のチェックボックスをオンにすると、<i>GameMaker Studio 2</i> は今後のすべてのコンパイルにおいて、選択した内容を記憶します。この設定は、<a href="../../2_interface/3_settings/preferences.html">Windows の環境設定</a> からリセットまたは変更することができます。詳細については <a href="http://help.yoyogames.com/hc/en-us/sections/207157668" target="_blank">YoYo Games ヘルプ センター</a> を参照してください。<br>
 <br></li>
 
-<li><b>Ubuntu (Linux)</b> - Ubuntu (Linux) apps can be compiled as
-<tt>*.zip</tt> files. You can find out more from the <a href=
+<li><b>Ubuntu (Linux)</b> - Ubuntu (Linux) のアプリケーションは、<tt>*.zip</tt> ファイルとしてコンパイルされます。詳細については <a href=
 "http://help.yoyogames.com/hc/en-us/articles/235186168" target=
-"_blank">YoYo Games Help Center</a>.<br>
+"_blank">YoYo Games ヘルプ センター</a> を参照してください。<br>
 <br></li>
 
-<li><b>HTML5</b> - If you have chosen to build HTML5, then an
-<tt>index.html</tt> file (this is the default name, but you can
-give your own name too in the Platform Preferences) along with a
-folder containing your games files will be created and saved to the
-specified location. For your game to work you will need <i>both</i>
-of these to be uploaded to a server. The <tt>index.html</tt> can
-also be customised to show your game with a different background
-colour, or at a different position etc... but a knowledge of HTML
-is necessary for this, and you can also specify your own custom
-index file when you build the package (see the <a href=
-"../../2_interface/3_settings/game_options/options_html5.html">HTML5
-Game Options</a>). You can find out more from the <a href=
-"http://help.yoyogames.com/hc/en-us/sections/115000309008" target=
-"_blank">YoYo Games Help Center</a>.<br>
+<li><b>HTML5</b> - HTML5 向けにビルドする場合は、<tt>index.html</tt> ファイル (これはデフォルトの名前であり、プラットフォームの環境設定から変更できます) とゲーム ファイルを含むフォルダーを、指定した場所へ保存します。ゲームを実行できるようにするためには、これらの <i>両方</i> をサーバーへアップロードする必要があります。あなたに HTML に関する知識があるのなら、たとえばゲームの背景色を変更したり、通常とは異なる位置へ表示させるなど、<tt>index.html</tt> を自由にカスタマイズすることができます。また、<a href="../../2_interface/3_settings/game_options/options_html5.html">HTML5 ゲーム オプション</a> から、ビルド時に使用する独自のカスタム index ファイルを指定することもできます。詳細については <a href="http://help.yoyogames.com/hc/en-us/sections/115000309008" target="_blank">YoYo Games ヘルプ センター</a> を参照してください。<br>
 <br></li>
 
-<li><b>Android</b> - For Android devices, you can choose to build
-an <tt>*.apk</tt> or an <tt>*.aab</tt> (Android App Bundle) file
-from the window that is shown for saving the game: <img class=
-"center" src="images/qs_androidfileselector.png" alt=
-"Andoird APK or AAB File Selector"> The type of file you choose
-will depend on the store that you wish to target, with the
-<tt>*.aab</tt> file being required for Google Play, while the
-<tt>*.apk</tt> file can be used on all other stores. You can find
-out more from the <a href=
-"http://help.yoyogames.com/hc/en-us/articles/115001368727" target=
-"_blank">YoYo Games Help Center</a>.<br>
+<li><b>Android</b> - Android 端末向けにビルドする場合は、ゲームを保存するときに表示されるウィンドウから、<tt>*.apk</tt> と <tt>*.aab</tt> (Android App Bundle) ファイルのどちらの形式を使用するかを選択することができます: <img class="center" src="images/qs_androidfileselector.png" alt="Andoird APK か AAB ファイルかを選択"> 選択するファイルの種類は、ターゲットとするストアによって異なります。<tt>*.aab</tt> ファイルは Google Play ストアで必要な形式であり、<tt>*.apk</tt> ファイルはその他のすべてのストアで使用できる形式です。詳細については <a href="http://help.yoyogames.com/hc/en-us/articles/115001368727" target="_blank">YoYo Games ヘルプ センター</a> を参照してください。<br>
 <br></li>
 
-<li><b>iOS</b> - Compiling to iOS will create an <tt>xarchive</tt>
-file which is then used in Xtools to create the final iOS package.
-Note that to compile for iOS <b>you will require an Apple Mac
-computer running OSX or higher</b> as well as the relevant
-certificates and permissions. You can find out more from the
-<a href="http://help.yoyogames.com/hc/en-us/articles/115001368747"
-target="_blank">YoYo Games Help Center</a>.<br>
+<li><b>iOS</b> - iOS の場合は、Xtools で最終的な iOS パッケージを作成するために使用する <tt>xcarchive</tt> ファイルを作成します。iOS 向けにコンパイルをするためには、<b>OS X 以降の Apple Mac コンピューター</b> と、関連する証明書と権限が必要になることに注意してください。詳細については <a href="http://help.yoyogames.com/hc/en-us/articles/115001368747" target="_blank">YoYo Games ヘルプ センター</a> を参照してください。<br>
 <br></li>
 
-<li><b>macOS</b> - The macOS target will build either an
-<tt>*.app</tt> file or a <tt>*.pkg</tt> file, depending on whether
-you want to later upload it to the Mac App Store or not. As with
-iOS <b>you will require an Apple Mac computer running OSX or
-higher</b> as well as the relevant certificates and permissions.
-You can find out more from the <a href=
-"http://help.yoyogames.com/hc/en-us/articles/235186128" target=
-"_blank">YoYo Games Help Center</a>.<br>
+<li><b>macOS</b> - macOS ターゲットの場合は、Mac App Store へアップロードするかどうかに応じて、<tt>*.app</tt> ファイルまたは <tt>*.pkg</tt> ファイルへビルドします。iOS と同様、<b>OS X 以降の Apple Mac コンピューター</b> と、関連する証明書と権限が必要になることに注意してください。詳細については <a href="http://help.yoyogames.com/hc/en-us/articles/235186128" target="_blank">YoYo Games ヘルプ</a> を参照してください。<br>
 <br></li>
 
-<li><b>Windows UWP</b> - For Windows UWP, <i>GameMaker Studio 2</i>
-will create an <tt>*.appx</tt> package which can then be uploaded
-to the Windows Store. When you click the Create Executable button
-you will be prompted to tell <i>GameMaker Studio 2</i> which type
-of package you would like to create (can be either for ARM, x64 or
-x86 architectures), and you should choose that which targets the
-devices your game will be supported on: <img class="center" src=
-"images/qs_uwp_compile_options.png" alt="UWP Compile Options"> If
-you check the box marked <b>Package For Store Upload</b>, then the
-final package created will be an <tt>.appxupload</tt> file, which
-is what Microsoft specifies should be used for submitting apps to
-their store, as explained in this article <a href=
-"https://docs.microsoft.com/en-us/windows/uwp/publish/upload-app-packages"
-target="_blank">here</a>. Also note that you can set the default
-Packaging Option from the <a href=
-"../../2_interface/3_settings/preferences.html">UWP
-Preferences</a>) so that <i>GameMaker Studio 2</i> remembers the
-choice for all future compiles (meaning this options window will
-not be shown). You can find out more about setting up and compiling
-to UWP platform from the <a href=
-"http://help.yoyogames.com/hc/en-us/sections/115000309028" target=
-"_blank">YoYo Games Help Center</a>.</li>
+<li><b>Windows UWP</b> - Windows UWP の場合は、<tt>*.appx</tt> パッケージを作成して Microsoft Store へアップロードすることができます。実行ファイルの作成 をクリックすると、パッケージの種類 (ARM、x64、x86 のいずれか) を選択する画面が表示されます。サポートするデバイスをもとに、ターゲットとするパッケージの種類を選択してください: <img class="center" src="images/qs_uwp_compile_options.png" alt="UWP コンパイル オプション"> ここで、<b>Store へアップロードするパッケージ</b> のチェックボックスをオンにすると、作成されるパッケージが <tt>.appxupload</tt> ファイルになります。このファイルは、<a href="https://docs.microsoft.com/en-us/windows/uwp/publish/upload-app-packages" target="_blank">ここ</a> でも説明しているとおり、Microsoft Store へアプリを提出するときに定められている形式です。また、<a href="../../2_interface/3_settings/preferences.html">UWP の環境設定</a> からデフォルトのパッケージ オプションを指定しておけば、自動でオプションが選択されるようになり、このウィンドウも表示されなくなります。UWP プラットフォームのセットアップとコンパイルについての詳細は <a href="http://help.yoyogames.com/hc/en-us/sections/115000309028" target="_blank">YoYo Games ヘルプ センター</a> を参照してください。</li>
 </ul>
 
-<p>Once you have created your executable asset package you can then
-give the file to other people or place it on your website to
-download, or upload these files to the different hosting services
-for individual distribution or even to online stores (like Google
-Play, iTunes or the MS Store) for general distribution and
-retail.</p>
+<p>実行可能なアセット パッケージを作成したら、そのファイルをほかの人へ渡したり、自分のウェブサイトからダウンロードできるようにしたり、個人へ配布するためになんらかのホスティング サービスへアップロードしたり、不特定多数への配布または商業目的のためにオンライン ストア (Google Play、iTunes、Microsoft Store など) へアップロードしたりすることができます。</p>
 
-<p>Note that you are free to distribute the games you create with
-<i>GameMaker Studio 2</i> in any way you like, including selling
-them. Of course, this assumes that the sprites, images, and sounds
-you used to make it can be distributed or sold as well and that you
-have the legal rights to all assets, and it also assumes that the
-game complies with the YoYo Games EULA for <i>GameMaker Studio
-2</i>. You can find the licence agreement in the install folder for
-<i>GameMaker Studio 2</i>, typically "<tt>C:\Program
-Files\GameMaker Studio 2\Licence.txt</tt>".</p>
+<p><i>GameMaker Studio 2</i> で制作したゲームは、商業利用を含めて自由に配布することができます。ただし、当然ながら、制作に使用したスプライトや画像、サウンドなどのすべてのアセットに関して、配布および販売が可能な法的権利をクリアしていることが前提となっています。また、<i>GameMaker Studio 2</i> の EULA (エンド ユーザー利用許諾契約) にも準拠していなければなりません。<i>GameMaker Studio 2</i> のインストール フォルダーから、利用許諾契約を確認することができます (通常は "<tt>C:\Program Files\GameMaker Studio 2\Licence.txt</tt>")。</p>
 
 <p><br>
 </p>
@@ -350,11 +154,10 @@ Files\GameMaker Studio 2\Licence.txt</tt>".</p>
 <div class="footer">
 <div class="buttons">
 <div class="clear">
-<div style="float:left">Back: <a href="index.html">Quick Start
-Index</a></div>
+<div style="float:left">戻る: <a href="index.html">クイック スタートの目次</a></div>
 
-<div style="float:right">Next: <a href=
-"7_debugging.html">Debugging</a></div>
+<div style="float:right">進む: <a href=
+"7_debugging.html">デバッグ</a></div>
 </div>
 </div>
 
