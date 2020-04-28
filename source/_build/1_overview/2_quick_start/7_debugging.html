@@ -7,7 +7,7 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 
 <meta name="generator" content="chm2web Pro 2.85 (unicode)" />
-<title>Debugging</title>
+<title>デバッグ</title>
 <meta http-equiv="X-UA-Compatible" content="IE=9">
 
 <link rel="stylesheet" href="../../../../files/helpindex.css" type=
@@ -30,228 +30,100 @@ if (window.name != "content")
 <script type="text/JavaScript">
  if( typeof(chmtop.helpStyle) != 'undefined' ) { var linkNodes = document.getElementsByTagName("link");  for( var i=0; i < linkNodes.length; ++i ) { var link = linkNodes[i];    if( link.href.endsWith("default.css")) {    var style = link.href.replace("default.css", chmtop.helpStyle); document.write('<link id="newstyleLink" rel="stylesheet" href=' + style + ' type="text/css">');    break; } } } 
 </script>
-<h2>Debugging</h2>
+<h2>デバッグ</h2>
 
 <div class="body-scroll">
 <p><br>
 </p>
 
-<p>When programming your game, whether using code or Drag and Drop,
-it can be very easy to make mistakes - using the wrong variables,
-passing the wrong arguments, or using the wrong functions are just
-some of the most common errors we all make - and these mistakes are
-not always detected by the syntax checker that is included with the
-script/action editor. That means that these mistakes will only
-become apparent when you actually run or compile your game, and
-even then it can sometimes be difficult to know exactly what is
-going wrong. It can therefore be of vital importance to know how
-your game is performing on the chosen device, as well as see what
-instances are in the room, what global variables have been created
-and a whole host of other details.</p>
+<p>ゲームのプログラミングを行うとき、コードを使うにしても Drag and Drop を使うにしても、人間はいとも簡単に間違える生き物です。間違った変数を使用してしまったり、間違った引数を渡してしまったり、間違った関数を使用してしまったり... 誰にだって起こり得るありふれたエラーです。こうした間違いは、スクリプト/アクション エディターのシンタックス チェッカーが必ずしも検出してくれるとは限りません。実際にゲームをコンパイルしたり実行してみることで、初めて明らかになるエラーも少なくはないということです。しかしそれでも、何が原因なのかを正確に知ることがむずかしい場合は往々にしてあります。選択したデバイス上でゲームがどのように動作しているかを把握し、現在はどんなインスタンスがルームに存在しているか、どんなグローバル変数が作成されているかなどといったホスト全体の情報を確認しておくことはとても重要なのです。</p>
 
-<p>Now, you can check a lot of these things yourself by adding in
-so-called "debug code" to your games to display on the screen the
-information you require, or you can have it that it shows messages
-when there is an error, but this is often a lot of work and if you
-aren't sure where the problem is in the first place then it can be
-a time consuming case of trial and error to track down your bug.
-For that, <i>GameMaker Studio 2</i> has a special test mode called
-<b>Debug Mode</b> which will start the <i>Debug Module</i>, and
-there is also a comprehensive error reporting system which displays
-messages at run time to help you track down any problems with your
-game.</p>
+<p>そこで、いわゆる "デバッグ コード" をゲームに追加して、たとえば必要な情報を画面へ表示させたり、エラー発生時にメッセージを表示させたり... その多くは自力で解決することもできます。しかし、これらはかなりの労力を伴うケースが多く、そのうえ、そもそもどの部分に問題があるのかがわからない場合は、バグの追跡に多大な試行錯誤と時間を費やさなければならないかもしれません。そのために、<i>GameMaker Studio 2</i> には <b>デバッグ モード</b> と呼ばれる特別なテスト モードが用意されています。このデバッグ モードでは、テストと同時に <i>デバッグ モジュール</i> が起動します。また、ゲームの実行時に問題が発生したときに、原因の追跡に役立つメッセージを表示させられる包括的なエラー報告システムも用意されています。</p>
 
-<p>The sections below cover the different ways that you can debug
-your game:</p>
+<p>次のセクションでは、ゲームをデバッグするさまざまな方法を説明します:</p>
 
-<blockquote><label class="collapse" for="one">Error
-Reporting</label> <input id="one" type="checkbox">
+<blockquote><label class="collapse" for="one">エラー報告</label> <input id="one" type="checkbox">
 <div class="index_list">
-<p>When an error occurs during the compiling and execution of a
-project this is reported with a message in the <b>Compile
-Errors</b> <a href="../../2_interface/2_extras/output.html">Output
-Window</a>, much like the one shown below: <img class="center" src=
-"images/qs_debug_compileerror.png" alt="Compile Errors"></p>
+<p>プロジェクトのコンパイル中や実行中にエラーが発生すると、次のように <b>コンパイル エラー</b> の <a href="../../2_interface/2_extras/output.html">出力ウィンドウ</a> へメッセージが出力されます: <img class="center" src="images/qs_debug_compileerror.png" alt="コンパイル エラー"></p>
 
-<p>Most compiler error messages follow the same outline, with a
-message stating the object that the error has occurred in, then the
-Event along with the line number, and then finally a short
-description of the error itself. This type of information being
-provided by the error reporting is very important as it detects and
-reports the syntax and language related bugs that are going to
-cause your finished game to crash, but it won't report more subtle
-bugs, nor does it give feedback on performance. For those types of
-things you should use <b>Debug Mode</b> (explained below).</p>
+<p>ほとんどのコンパイラー エラー メッセージは、同じフォーマットに従って出力されます。はじめに、エラーが発生したオブジェクトの説明、続いて、該当するイベントおよび行番号、エラーそのものの簡単な説明が表示されます。ゲームのクラッシュを引きおこす直接的な原因となるおそれがあるため、言語やシンタックスに関するバグの情報をエラー報告によって収集することは非常に重要です。ただし、緻密で捉えがたい微妙なバグであったり、パフォーマンスに関するフィードバックなどを得ることはできません。そういったケースでは <b>デバッグ モード</b> (次に説明します) を使用しましょう。</p>
 
-<p>Apart from these compile errors, you can also get syntax errors.
-These will be detected as you add your DnD™ actions or code and are
-shown in the <b>Syntax Errors</b> <a href=
-"../../2_interface/2_extras/output.html">Output Window</a>, similar
-to the image shown below: <img class="center" src=
-"images/qs_debug_syntaxerror.png" alt="Syntax Errors"></p>
+<p>これらのコンパイル エラーのほかに、<b>シンタックス エラー</b> が発生することもあります。シンタックス エラーは、DnD™ アクションおよびコードを追加しているときに検出され、次のようにシンタックス エラー <a href="../../2_interface/2_extras/output.html">出力ウィンドウ</a> へ出力されます: <img class="center" src="images/qs_debug_syntaxerror.png" alt="シンタックス エラー"></p>
 
-<p>As with the compiler errors, the syntax errors window will
-direct you to the object, the event and the specific lines that are
-giving the issue, and will often be shown with a brief explanation
-of what the error is.</p>
+<p>シンタックス エラー ウィンドウでは、コンパイラー エラーと同様、オブジェクト、問題の原因となっているイベントおよび行、エラーに関する簡単な説明が表示されることがほとんどです。</p>
 </div>
 <br>
-<label class="collapse" for="two">Debug Mode</label> <input id=
+<label class="collapse" for="two">デバッグ モード</label> <input id=
 "two" type="checkbox">
 <div class="index_list">
-<p>If you need to check things more carefully, you can run the game
-in <b>Debug Mode</b> by clicking the debug run button <img style=
-"vertical-align:middle" src="images/qs_icon_debug.png">. When you
-do, the <b>Debug Module</b> will open along with your game. This
-module permits you to monitor how everything is working in your
-game, from the global performance, right down to the values of
-individual variables in individual instances. You can find out
-further information about the Debug Module and its possibilities
-and how to use it from the following page:</p>
+<p>より慎重に不具合を探したい場合は、デバッグ実行 <img style="vertical-align:middle" src="images/qs_icon_debug.png"> をクリックして <b>デバッグ モード</b> でゲームを実行します。すると、ゲームと同時に <b>デバッグ モジュール</b> が起動します。このモジュールでは、全体のパフォーマンスから個々のインスタンス内の変数の値まで、ゲーム内のあらゆる部分がどのようにして動作しているかを関しすることができます。デバッグ モジュールの機能とその使い方については、次のページで詳しく説明します:</p>
 
 <blockquote>
 <ol>
-<li><a href="../../2_interface/2_extras/debugging.html">The Debug
-Module</a><br>
+<li><a href="../../2_interface/2_extras/debugging.html">デバッグ モジュール</a><br>
 </li>
 </ol>
 </blockquote>
 
-<p>Note that when you use the Debug Module, you can also add
-<b>Breakpoints</b> to your code or DnD™. A breakpoint is a point in
-the game loop where you want the debug module to pause and let you
-step through the actual game code a line at a time. You can add
-breakpoints using the key "<tt>F9</tt>", and they will be shown in
-the <a href="../../2_interface/2_extras/output.html">Output
-Window</a> where you can enable/disable them as required.</p>
+<p>なお、デバッグ モジュールを使用して、コードおよび DnD™ へ <b>ブレークポイント</b> を追加することもできます。ブレークポイントとは、ゲーム コード中に一行単位で設定できる、ゲーム ループ上の一点です。これによって、デバッグ モジュールを一時停止させながらステップ実行することができるようになります。ブレークポイントを追加するには、任意の行で "<tt>F9</tt>" キーを押します。設定されているブレークポイントは <a href="../../2_interface/2_extras/output.html">出力ウィンドウ</a> へ表示され、必要に応じてオン/オフを切り替えることができます。</p>
 </div>
 <br>
-<label class="collapse" for="three">Checking Performance</label>
+<label class="collapse" for="three">パフォーマンスの検証</label>
 <input id="three" type="checkbox">
 <div class="index_list">
-<p>When running a game for debugging, you can also see how your
-game performs and get an overview of how everything is working
-together by using the <b>Profile</b> option in the <b>Debug
-Module</b>. This will give very detailed information on how a game
-is performing and how long it takes to perform specific function
-calls or events (see the section on <a href=
-"../../2_interface/2_extras/debugging.html">The Debug Module</a>
-for further details). However this requires that the debug module
-is running which may not be what you want, especially if you wish
-to test final executables on devices etc...</p>
+<p>デバッグをするためにゲームを実行しているとき、<b>デバッグ モジュール</b> の <b>プロファイル</b> オプションを使用することで、ゲームのパフォーマンスや、全体がどのように連携しているかの概要を確認することができます。たとえば、ゲームがどのように実行されているか、任意の関数の呼び出しやイベントの実行にどれくらいの時間がかかっているかなどについて、非常に詳細な情報を知ることができます (この詳細については <a href="../../2_interface/2_extras/debugging.html">デバッグ モジュール</a> のセクションを参照してください)。ただし、デバッグ モジュールが実行されていなければパフォーマンスを確認することはできないため、たとえばなんらかのデバイス上で実行ファイルをテストしたい場合などには適さないかもしれません...</p>
 
-<p>In these cases, and as a compliment to the profiler, you can
-display the <b>debug bar</b> in your game, which will display much
-memory, CPU power and GPU power your game is using.</p>
+<p>こうしたケースであったり、視覚的に情報を表示させたい場合は、ゲーム内に <b>デバッグ バー</b> を表示させることができます。デバッグ バーには、CPU や GPU、メモリの使用量が表示されます。</p>
 
-<p><img class="center" src="images/qs_debug_bar.png" alt=
-"Debug Bar">
+<p><img class="center" src="images/qs_debug_bar.png" alt="デバッグ バー">
 </p>
 
-<p>This Debug Bar shows in a helpful graphic of CPU/GPU usage in
-the actual game window itself, and this can be toggled on and off
-in your game using the function <a href=
-"../../3_scripting/4_gml_reference/debugging/show_debug_overlay.html">
-<tt>show_debug_overlay()</tt></a>. This bar is split into sections,
-with each section being 1/60th of a second. As you can see from the
-image below, the bar is made up of various colours, with each one
-signifying a different aspect of the games performance, where the
-larger the bar, the more time that aspect requires and the larger
-the performance hit from it:</p>
+<p>デバッグ バーは、実際のゲーム ウィンドウの CPU/GPU 使用率をグラフィカルに表示します。<a href="../../3_scripting/4_gml_reference/debugging/show_debug_overlay.html"><tt>show_debug_overlay()</tt></a> 関数を使用して、ゲーム内からオン/オフを切り替えることも可能です。このバーはいくつかのセクションに区切られており、各セクション間は1/60秒を指しています。上の画像からもわかるように、バーはさまざまな色から構成されており、ゲームにおけるさまざまな面のパフォーマンスを表しています。バーが長ければ長いほど、その処理にはより多くの時間が必要で、結果としてパフォーマンスが低下していることを示しています:</p>
 
 <ul>
-<li><b style="color:lime;">Green</b> - Input / Output processing
-(ie: keyboard, mouse, gamepad, networking etc...)<br>
+<li><b style="color:lime;">緑色</b> - 入出力処理 (例: キーボード、マウス、ゲームパッド、インターネット接続 など...)<br>
 <br></li>
 
-<li><b style="color:red;">Red</b> - The update speed of the step
-event<br>
+<li><b style="color:red;">赤色</b> - ステップ イベントの更新速度<br>
 <br></li>
 
-<li><b style="color:yellow;">Yellow</b> - The time required for the
-draw event<br>
+<li><b style="color:yellow;">黄色</b> - 描画イベントにかかる時間<br>
 <br></li>
 
-<li><b style="color:orange;">Orange</b> - Debug update time, which
-is only normally visible when you use the debug module<br>
+<li><b style="color:orange;">橙色</b> - デバッグの更新速度 (デバッグ モジュール使用時にのみ表示されます)<br>
 <br></li>
 
-<li><b style="color:white;">White</b> - GPU left over time, which
-is the time spent waiting for the GPU to finish the rendering of
-the frame before the next one can start<br>
+<li><b style="color:white;">白色</b> - GPU 残り時間 (GPU がフレームのレンダリングを完了してから、次のフレームに取りかかることができるまでの待機時間)<br>
 <br></li>
 
-<li><b style="color:aqua;">Cyan</b> - The text rendering time<br>
+<li><b style="color:aqua;">水色</b> - テキストのレンダリング時間<br>
 <br></li>
 
-<li><b style="color:silver;">Grey</b> - The time required to clear
-screen each draw step<br>
+<li><b style="color:silver;">灰色</b> - 各描画ステップでの画面のクリアにかかる時間<br>
 <br></li>
 
-<li><b style="color:crimson;">Dark Red</b> - The GPU flush, which
-is how long the GPU takes to clear images from memory</li>
+<li><b style="color:crimson;">暗い赤色</b> - GPU フラッシュ (GPU がメモリから画像をクリアするのにかかる時間)</li>
 </ul>
 
-<p>Apart from the coloured bars, there are also a few values at the
-top. These values represent the following:</p>
+<p>色つきのバーとは別に、上部にはいくつかの値が表示されています。これらの値は、次のような意味を持ちます:</p>
 
 <ul>
-<li><b>FPS</b> - This is the "Frames per Second" of your game, and
-basically shows how fast your game is running. This value is
-<i>not</i> clamped to the game speed of your game, and so shows you
-how much "overhead" you have to play with. The larger this value
-compared to your game speed, the smoother your game will run and
-the more overhead you have for adding further things. Note that
-this value may vary a lot during a session, but when you close your
-game, the compiler output window within <i>GameMaker Studio 2</i>
-will show you the minimum and maximum as well as the average values
-for this (note that the minimum value <i>can</i> be negative! This
-is not a bug, but due to the startup times and the way that the
-game is processed when initialised).<br>
+<li><b>FPS</b> - これは、あなたのゲームの "1秒あたりのフレーム数" の値で、あなたのゲームがどれだけ速く動いているかをおおまかに表しています。この値は、ゲームのゲーム速度に <i>制限されておらず</i>、プレイ時にどれくらいの "オーバーヘッド" が生じているのかを示します。この値がゲーム速度よりも大きければ大きいほど、ゲームはよりスムーズに実行され、追加のオーバーヘッドも大きくなります。この値は、セッション中に大きく変動することがありますが、ゲームを終了すると、<i>GameMaker Studio 2</i> の出力ウィンドウへ FPS の最大値と最小値および平均値が表示されます (最小値がマイナスになる <i>ことがあります</i> が、これはバグではなく、起動時および初期化時の処理によるものです)。<br>
 <br></li>
 
-<li><b>Texture Swaps</b> - This number shows how many times your
-game is swapping textures per game frame (the time it takes
-<i>GameMaker Studio 2</i> to run all events is a game tick, and the
-number of game ticks per second is set by the room speed). Textures
-(sprites and backgrounds) are stored on texture pages, and if you
-have a lot of image assets in your game, then <i>GameMaker Studio
-2</i> has to swap between texture pages to draw them all, therefore
-if this value is high (over 20, for example) you really should look
-into ways to optimise this as it will affect the performance of
-your game, especially on mobile platforms.<br>
+<li><b>テクスチャー スワップ</b> - この値は、1ゲーム フレームのあいだにテクスチャーを入れ替える回数を示しています (<i>GameMaker Studio 2</i> がすべてのイベントを実行するのにかかる時間をゲーム ティックと呼びます。1秒あたりのゲーム ティック数は、ルーム速度として指定します)。テクスチャー (スプライトと背景) は、テクスチャー ページとして保存されています。ゲーム内のイメージ アセットが多い場合、 <i>GameMaker Studio 2</i> はそれらをすべて描画するためにテクスチャー ページを頻繁に入れ替える必要があります。もしこの値が大きいとき (たとえば 20 以上) は、特にモバイル プラットフォームでのゲーム パフォーマンスへ影響を与える可能性があるため、最適化の方法を模索する必要があります。<br>
 <br></li>
 
-<li><b>Vertex Batches</b> - This is how many times the game is
-sending off texture batches to the GPU per game frame, and (as with
-Texture Swaps) you want this to be as low as possible. Texture
-batches, are basically bundles of data that are sent all at once to
-the GPU for rendering. The batch is "broken" when you change a
-font, a colour, a blend mode, or any other draw status that affects
-how things are drawn on a global scale, so you should try to limit
-these things to as few objects as possible since a high number of
-batches will adversely affect your games performance.<br>
+<li><b>頂点バッチ</b> - これは、1ゲーム フレームのあいだに、ゲームが GPU へテクスチャーを送信する回数を示しています。テクスチャー スワップと同様に、この値はなるべく小さくなることが望ましいです。テクスチャー バッチとは、レンダリングのために GPU へ一度に送信されるデータ群のことを指します。フォントや色、ブレンド モードなどを変更するといったような、広範囲の描画方法へ影響を与えかねない変更を加えると、バッチが "壊れて" しまいます。バッチの送信数が多くなるとゲーム パフォーマンスへ影響を与える可能性があるため、これらの変更はなるべく一部のオブジェクトのみに留めるよう意識してください。<br>
 <br></li>
 </ul>
 
-<div class="alt"><b>NOTE:</b> texture swaps and vertex batches will
-never be zero and will normally show values of 2 or 3, since even
-with an empty room an no objects <i>GameMaker Studio 2</i> still
-has to draw and batch things.</div>
+<div class="alt"><b>注:</b> テクスチャー スワップと頂点バッチの値は0になることはなく、通常は2または3程度の値を示します。仮にルームが空でオブジェクトがなにもない状態でも、依然として <i>GameMaker Studio 2</i> が描画およびバッチ処理を続けているためです。</div>
 
-<p>With these tools you can see how well your game is performing
-and what areas need "tweaked" to increase this performance. You can
-find out more information on performance issues and ways to
-optimise your game on the <b>YoYo Games Help Center</b> - <a href=
-"http://help.yoyogames.com/entries/27617403" target=
-"_blank">Optimising Your Games</a>.</p>
+<p>これらのツールを使用することで、ゲーム パフォーマンスがどの程度であるかを確認できるほか、パフォーマンスを向上させるためにはどの部分を "微調整" しなければならないのかを知ることができます。パフォーマンス上の問題およびゲームの最適化についての詳細は、<b>YoYo Games ヘルプ センター</b> - <a href="http://help.yoyogames.com/entries/27617403" target="_blank">ゲームを最適化するには</a> を参照してください。</p>
 </div></blockquote>
 
-<p>As an additional tool for debugging compiled games, there are
-certain <b>command line parameters</b> that can be used when you
-run the final game package on Window. For information on how this
-works please see <a href=
-"../3_additional_information/command_line.html">here</a>.</p>
+<p>コンパイル済みの最終的なゲーム パッケージをウィンドウ上で実行するとき、デバッグをするために使用できる <b>コマンド ライン パラメーター</b> が提供されています。どのように動作するのかについては、<a href="../3_additional_information/command_line.html">こちら</a> を参照してください。</p>
 
 <p><br>
 </p>
@@ -260,11 +132,10 @@ works please see <a href=
 <div class="footer">
 <div class="buttons">
 <div class="clear">
-<div style="float:left">Back: <a href="index.html">Quick Start
-Index</a></div>
+<div style="float:left">戻る: <a href="index.html">クイック スタートの目次</a></div>
 
-<div style="float:right">Next: <a href=
-"8_shortcuts.html">Shortcuts</a></div>
+<div style="float:right">進む: <a href=
+"8_shortcuts.html">ショートカット</a></div>
 </div>
 </div>
 
