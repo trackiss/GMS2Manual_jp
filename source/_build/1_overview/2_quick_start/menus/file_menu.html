@@ -7,7 +7,7 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 
 <meta name="generator" content="chm2web Pro 2.85 (unicode)" />
-<title>The File Menu</title>
+<title>ファイル メニュー</title>
 <meta http-equiv="X-UA-Compatible" content="IE=9">
 
 <link rel="stylesheet" href="../../../../../files/helpindex.css"
@@ -30,7 +30,7 @@ if (window.name != "content")
 <script type="text/JavaScript">
  if( typeof(chmtop.helpStyle) != 'undefined' ) { var linkNodes = document.getElementsByTagName("link");  for( var i=0; i < linkNodes.length; ++i ) { var link = linkNodes[i];    if( link.href.endsWith("default.css")) {    var style = link.href.replace("default.css", chmtop.helpStyle); document.write('<link id="newstyleLink" rel="stylesheet" href=' + style + ' type="text/css">');    break; } } } 
 </script>
-<h2>The File Menu</h2>
+<h2>ファイル メニュー</h2>
 
 <div class="body-scroll">
 <p><br>
@@ -39,130 +39,70 @@ if (window.name != "content")
 <p><img class="center" src="images/file_menu.png" alt="File Menu">
 </p>
 
-<p>The file menu is where you can choose to change, save or import
-projects as well as set the GameMaker Studio 2 IDE preferences. The
-available options are:</p>
+<p>ファイル メニューでは、プロジェクトの変更や保存、インポートのほか、GameMaker Studio 2 IDE の環境設定を行うことができます。利用可能なオプションは次のとおりです:</p>
 
 <blockquote>
 <ul>
-<li><b>New Project</b> - This is for creating a new project from
-scratch in <i>GameMaker Studio 2</i>. It will open the "Save"
-dialogue and prompt you to choose a location to save the new
-project to. Once you have given a name to the project and a
-location to save it, you will be taken to a new, blank, <a href=
-"../3_workspaces.html">workspace</a> to start working on it.
-Project files are saved with the <tt>*.yyp</tt> file
-extension.</li>
+<li><b>新規プロジェクト</b> - <i>GameMaker Studio 2</i> で、ゼロの状態から新規プロジェクトを作成します。選択すると "保存" ダイアログが開き、新規プロジェクトの保存場所を選択するよう求められます。プロジェクト名と保存場所を指定し終えると、新しい空の <a href="../3_workspaces.html">ワークスペース</a> が表示されて作業を開始できます。プロジェクト ファイルは <tt>*.yyp</tt> という拡張子で保存されます。</li>
 
 <li style="list-style: none"><br>
 </li>
 
-<li><b>Open Project</b> - This will open the <i>GameMaker Studio
-2</i> file explorer for you to select a previously created
-<tt>*.yyp</tt> project file for loading.</li>
+<li><b>プロジェクトを開く</b> - <i>GameMaker Studio 2</i> のファイル エクスプローラーが開き、既存の <tt>*.yyp</tt> プロジェクト ファイルを選択して読み込むことができます。</li>
 
 <li style="list-style: none"><br>
 </li>
 
-<li><b>Import Project</b> - If you have a project made with the
-<b><i>GameMaker: Studio</i> 1.4</b> software from YoYo Games, you
-can select this option to import either the <tt>*.gmx</tt> or the
-<tt>*.gmz</tt> file.<br>
+<li><b>プロジェクトのインポート</b> - YoYo Games <b><i>GameMaker: Studio</i> 1.4</b> で作成したプロジェクトがある場合は、このオプションを選択して <tt>*.gmx</tt> および <tt>*.gmz</tt> ファイルをインポートすることができます。<br>
 <br>
 
-<div class="note"><b>NOTE:</b> To import a previous GameMaker
-project into GameMaker Studio 2 it must have been created using the
-1.4 version, and even then <b>it may not work directly on
-import</b>. A great many things are different between GameMaker
-Studio 2 and GameMaker: Studio 1.4, and so your older projects may
-need some tweaking for them to work. Please see the article
-<a href="https://help.yoyogames.com/hc/en-us/articles/231719468"
-target="_blank">Porting A GM:S 1.4 Game To GameMaker Studio 2</a>
-on the YoYo Games Knowledge Base and the section of the manual that
-covers <a href=
-"../../3_additional_information/obsolete_functions.html">Obsolete
-Functions and Compatibility Scripts</a>.</div>
+<div class="note"><b>注:</b> GameMaker Studio 2 へインポートするレガシー GameMaker プロジェクトは、バージョン 1.4 で作成されたものでなければなりません。また、<b>インポートしてもそのままでは動作しない</b> ケースがあります。GameMaker: Studio 1.4 から GameMaker Studio 2 のあいだには非常に多くの変更点があるため、古いプロジェクトを動作させるためにいくつかの微調整をしなければならない場合があります。YoYo Games ナレッジ ベースの <a href="https://help.yoyogames.com/hc/en-us/articles/231719468" target="_blank">GMS 1.4 プロジェクトを GameMaker Studio 2 へ移行する</a> およびマニュアルの <a href="../../3_additional_information/obsolete_functions.html">廃止された関数と互換スクリプト</a> のセクションを参照してください。</div>
 
-<div class="note"><b>IMPORTANT!</b> Importing a YYZ project that
-contains font resources may require you to "regenerate" the fonts
-by removing/re-adding them, or by changing the font in the font
-editor and then setting it back again. This is because the existing
-font information is retained by the YYZ when it is exported, and,
-on import later or on another machine, the project may not have the
-required fonts installed already (or may have a different font of
-the same name). This should only be done if you are seeing issues
-with how the font renders after import.</div>
+<div class="note"><b>重要！</b> フォント リソースを含んでいる YYZ プロジェクトをインポートするとき、いったんフォントを削除および再度追加するか、またはフォント エディターから再度セットアップし直すかして、フォントを "再生成" しなければならないケースがあります。YYZ ファイルのエクスポート時にはフォント情報も一緒に保存されますが、これをあとから (およびほかのマシンで) インポートするとき、必要なフォントがインストールされていない (または同名の別のフォントがインストールされている) 可能性があるためです。この操作は、フォントのレンダリングに問題が生じたときにのみ行ってください。</div>
 
 <p><br>
 </p></li>
 
-<li><b>Recent Projects</b> - You can use this option to view
-recently used projects. Selecting it will re-open the <a href=
-"../2_start.html">Start Page</a> (should you have closed it) and
-you can select a recently used project from the list found
-there.</li>
+<li><b>最近使用したプロジェクト</b> - 最近使用したプロジェクトを表示します。このオプションを選択すると、<a href="../2_start.html">スタートページ</a> (should you have closed it) が再度開き、そこから最近使用したプロジェクトの一覧へアクセスできます。</li>
 
 <li style="list-style: none"><br>
 </li>
 
-<li><b>Save Project</b> - This will save your game to the same
-location as you defined when you created the project (or where you
-opened it from).</li>
+<li><b>プロジェクトの保存</b> - プロジェクト作成時に指定した (またはプロジェクトを開いた) 場所へゲームを保存します。</li>
 
 <li style="list-style: none"><br>
 </li>
 
-<li><b>Save Project As</b> - Same as above, only you specify the
-location and the new name of the project.</li>
+<li><b>名前をつけてプロジェクトを保存</b> - 新しい場所とプロジェクト名を指定することを除けば、上のオプションと同じです。</li>
 
 <li style="list-style: none"><br>
 </li>
 
-<li><b>Export Project</b> - This will export the project as a
-single <tt>*.yyz</tt> file. Very useful for sending copies to
-people or for saving backups.</li>
+<li><b>プロジェクトのエクスポート</b> - プロジェクトを単一の <tt>*.yyz</tt> ファイルへエクスポートします。プロジェクトのコピーをほかの人へ渡したり、バックアップを保存しておくのに便利です。</li>
 
 <li style="list-style: none"><br>
 </li>
 
-<li><b>Preferences</b> - Selecting this will take you to the
-<a href=
-"../../../1_overview/1_getting_started/7_preferences.html">Preferences
-Windows</a> where you can set up how <i>GameMaker Studio 2</i>looks
-and feel.</li>
+<li><b>環境設定</b> - <a href="../../../1_overview/1_getting_started/7_preferences.html">環境設定ウィンドウ</a> を開いて、<i>GameMaker Studio 2</i> の外観や操作感を設定することができます。</li>
 
 <li style="list-style: none"><br>
 </li>
 
-<li><b>New IDE</b> - When you select this a new instance of the IDE
-will be opened for you to use (it will open on the Start
-Page).</li>
+<li><b>新規 IDE</b> - 別の新しい IDE を、スタート ページを開いた状態で起動します。</li>
 
 <li style="list-style: none"><br>
 </li>
 
-<li><b>My Account</b> - This option will open your default web
-browser and take you to your YoYo Account page.</li>
+<li><b>マイ アカウント</b> - 既定のブラウザーで YoYo Account ページを開きます。</li>
 
 <li style="list-style: none"><br>
 </li>
 
-<li><b>Logout</b> - Selecting this will log you out of <i>GameMaker
-Studio 2</i>. You will need to <a href=
-"../../../1_overview/1_getting_started/6_licensing.html">log in
-again</a> with the same licence (or any other) to be able to use
-the product later.
+<li><b>ログアウト</b> - <i>GameMaker Studio 2</i> からログアウトします。製品を再び使用可能にするためには、同じ (もしくはそれ以外の有効な) ライセンスで <a href="../../../1_overview/1_getting_started/6_licensing.html">ログインしなおす</a> 必要があります。
 
-<div class="note"><b>IMPORTANT!</b> If you have been using a Trial
-Licence for <i>GameMaker Studio 2</i> and then buy one of the other
-licences (Desktop, Mobile, UWP, Web or Console) then you <b>may</b>
-need to log out of the IDE and then restart <i>GameMaker Studio
-2</i> and log back in again to make sure that the new licence is
-applied correctly (although this should happen
-automatically).</div></li>
+<div class="note"><b>重要！</b> それまでは <i>GameMaker Studio 2</i> の Trial ライセンスを使用しており、その後ほかのライセンス (Desktop、Mobile、UWP、Web、Console) を購入したというケースがあったとします。通常であれば自動的にライセンスが適用されるはずですが、そうでない場合は、新しいライセンスを正常に適用させるために、いったん IDE からログアウトして <i>GameMaker Studio 2</i> を再起動後、再度ログインしなおす必要がある <b>場合があります</b>。</div></li>
 
-<li><b>Exit</b> - Exit <i>GameMaker Studio 2</i> to the
-desktop.</li>
+<li><b>終了</b> - <i>GameMaker Studio 2</i> を終了してデスクトップへ戻ります。</li>
 </ul>
 </blockquote>
 
@@ -173,11 +113,9 @@ desktop.</li>
 <div class="footer">
 <div class="buttons">
 <div class="clear">
-<div style="float:left">Back: <a href="../2_start.html">The Start
-Page</a></div>
+<div style="float:left">戻る: <a href="../2_start.html">スタート ページ</a></div>
 
-<div style="float:right">Next: <a href="edit_menu.html">The Edit
-Menu</a></div>
+<div style="float:right">進む: <a href="edit_menu.html">編集 メニュー</a></div>
 </div>
 </div>
 

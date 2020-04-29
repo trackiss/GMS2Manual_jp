@@ -59,7 +59,7 @@ GMS2 そのものが独特で遠まわしな表現を使う傾向にあり、明
       - [x] Shortcuts
       - [ ] **Menus**
         - [x] *index*
-        - [ ] File
+        - [x] File
         - [ ] Edit
         - [ ] Build
         - [ ] Windows
@@ -704,3 +704,8 @@ GMS2 そのものが独特で遠まわしな表現を使う傾向にあり、明
 - スプライト エディター
   - 選択されているフレームの切り取り
     - macOS のほうが "Ctrl + V" になってる。もうめちゃくちゃ
+
+#### MN ファイル
+
+- 環境設定
+  - スペース抜け。"Game Maker 2looks and feels"
