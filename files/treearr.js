@@ -1602,7 +1602,7 @@ var TITEMS = [
      ["ystart", "source/_build/3_scripting/4_gml_reference/instances/instance_variables/ystart.html", "11"]
     ]
    ],
-   ["数学系関数", "source/_build/3_scripting/4_gml_reference/maths/index.html", "1",
+   ["数学", "source/_build/3_scripting/4_gml_reference/maths/index.html", "1",
     ["日付&時刻", "source/_build/3_scripting/4_gml_reference/maths/date and time/index.html", "1",
      ["current_day", "source/_build/3_scripting/4_gml_reference/maths/date and time/current_day.html", "11"],
      ["current_hour", "source/_build/3_scripting/4_gml_reference/maths/date and time/current_hour.html", "11"],
