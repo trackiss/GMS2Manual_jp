@@ -7,7 +7,7 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 
 <meta name="generator" content="chm2web Pro 2.85 (unicode)" />
-<title>The Build Menu</title>
+<title>ビルド メニュー</title>
 <meta http-equiv="X-UA-Compatible" content="IE=9">
 
 <link rel="stylesheet" href="../../../../../files/helpindex.css"
@@ -30,7 +30,7 @@ if (window.name != "content")
 <script type="text/JavaScript">
  if( typeof(chmtop.helpStyle) != 'undefined' ) { var linkNodes = document.getElementsByTagName("link");  for( var i=0; i < linkNodes.length; ++i ) { var link = linkNodes[i];    if( link.href.endsWith("default.css")) {    var style = link.href.replace("default.css", chmtop.helpStyle); document.write('<link id="newstyleLink" rel="stylesheet" href=' + style + ' type="text/css">');    break; } } } 
 </script>
-<h2>The Build Menu</h2>
+<h2>ビルド メニュー</h2>
 
 <div class="body-scroll">
 <p><br>
@@ -40,59 +40,23 @@ if (window.name != "content")
 "Build Menu">
 </p>
 
-<p>The build menu is where you can choose to build your project
-either for testing, debugging or as a final executable. The
-available options are:</p>
+<p>ビルド メニューでは、テストやデバッグ、あるいは最終的な実行ファイルとしてプロジェクトをビルドしたろすることができます。利用可能なオプションは次のとおりです:</p>
 
 <blockquote>
 <ul>
-<li><b>Run</b> - Run your current project on the chosen target
-platform for testing. For the different compile options available
-when compiling please see the section on <a href=
-"../../../1_overview/2_quick_start/6_compiling.html">Compiling</a>.
-Note that this command is the same as pressing the <b>Run</b>
-button <img style="vertical-align:middle" src=
-"../../../images/icon_run.png"> in the IDE.<br>
+<li><b>実行</b> - 選択したターゲット プラットフォーム上で、現在のプロジェクトを実行し、テストします。コンパイル時に使用できるさまざまなコンパイル オプションについては、<a href="../../../1_overview/2_quick_start/6_compiling.html">コンパイル</a> のセクションを参照してください。また、このコマンドは IDE 上で <b>実行</b> <img style="vertical-align:middle" src="../../../images/icon_run.png"> を押した場合と同様に機能します。<br>
 <br></li>
 
-<li><b>Debug</b> - Run your current project for testing with the
-debugger so that you can see detailed performance information and
-debug any errors or issues you may have. For more information on
-debugging, please see the section <a href=
-"../../2_quick_start/7_debugging.html">Debugging</a>. Note that
-this command is the same as pressing the <b>Debug</b> button
-<img style="vertical-align:middle" src=
-"../../../images/icon_debug.png"> in the IDE.<br>
+<li><b>デバッグ</b> - 現在のプロジェクトを、デバッガーを使用してテスト用に実行します。ここで、パフォーマンスを詳細に確認したり、エラーや不具合をデバッグしたりすることができます。この詳細にすいては <a href="../../2_quick_start/7_debugging.html">デバッグ</a> を参照してください。また、このコマンドは IDE 上で <b>デバッグ</b> <img style="vertical-align:middle" src="../../../images/icon_debug.png"> を押した場合と同様に機能します。<br>
 <br></li>
 
-<li><b>Clean</b> - <i>GameMaker Studio 2</i> keeps a cache of files
-to help speed up compile time when testing. However sometimes a
-"stale" cache can lead to odd and unexpected errors in your game,
-in which case the first thing you should do is clean the cache from
-here and re-test. It is also a good idea to clean the cache before
-you create a final executable for the target platform. Note that
-this command is the same as pressing the <b>Clean Cache</b> button
-<img style="vertical-align:middle" src=
-"../../../images/icon_clean.png"> in the IDE.<br>
+<li><b>クリーン アップ</b> - <i>GameMaker Studio 2</i> では、テスト時のコンパイル時間を短縮するためにファイル キャッシュを保持しています。ここで、"古くなった" キャッシュが、ゲーム内で予期できない不明なエラーを引き起こす原因となるケースがあります。もしこういった奇妙なエラーに遭遇したときは、まずはキャッシュを削除して再テストすることを試みてください。また、ターゲット プラットフォームの最終的な実行ファイルを作成する前にも、キャッシュをクリーン アップすることをおすすめします。このコマンドは、IDE 上で <b>キャッシュのクリーン アップ</b> <img style="vertical-align:middle" src="../../../images/icon_clean.png"> を押した場合と同様に機能します。<br>
 <br></li>
 
-<li><b>Create Executable</b> - This will compile the current
-project and create an executable file (or files) for the target
-platform. It will first open the file explorer so that you can
-select where you want to save the project and then compile the
-game. See the section on <a href=
-"../../../1_overview/2_quick_start/6_compiling.html">Compiling</a>
-for more information on setting up the compile targets. Note that
-this command is the same as pressing the <b>Create Executable</b>
-button <img style="vertical-align:middle" src=
-"../../../images/icon_compile.png"> in the IDE.<br>
+<li><b>実行ファイルの作成</b> - 現在のプロジェクトをコンパイルし、ターゲット プラットフォーム向けの実行ファイルを作成します。はじめにファイル エクスプローラーが開くので、プロジェクトの保存場所を指定し、その後ゲームをコンパイルします。コンパイル ターゲット設定の詳細については <a href="../../../1_overview/2_quick_start/6_compiling.html">コンパイル</a> のセクションを参照してください。また、このコマンドは IDE 上で <b>実行ファイルの作成</b> <img style="vertical-align:middle" src="../../../images/icon_compile.png"> を押した場合と同様に機能します。<br>
 <br></li>
 
-<li><b>Show Remote Worker Installer</b> - This will open a file
-explorer window on the location of the installer for the Remote
-Worker tool (see <a href=
-"../../../2_interface/2_extras/remote_worker.html">here</a> for
-more information on Remote Workers).<br>
+<li><b>リモート ワーカーのインストーラーを開く</b> - リモート ワーカー ツール (リモート ワーカーの詳細については <a href="../../../2_interface/2_extras/remote_worker.html">こちら</a> を参照してください) のインストーラーの場所を、ファイル エクスプローラー ウィンドウで開きます。<br>
 <br></li>
 </ul>
 </blockquote>
@@ -104,11 +68,9 @@ more information on Remote Workers).<br>
 <div class="footer">
 <div class="buttons">
 <div class="clear">
-<div style="float:left">Back: <a href="../2_start.html">The Start
-Page</a></div>
+<div style="float:left">戻る: <a href="../2_start.html">スタート ページ</a></div>
 
-<div style="float:right">Next: <a href="windows_menu.html">The
-Windows Menu</a></div>
+<div style="float:right">進む: <a href="windows_menu.html">ウィンドウ メニュー</a></div>
 </div>
 </div>
 
