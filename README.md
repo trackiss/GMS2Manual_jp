@@ -56,9 +56,9 @@ GMS2 そのものが独特で遠まわしな表現を使う傾向にあり、明
       - [x] Workflow
       - [x] Compiling
       - [x] Debugging
-      - [ ] Shortcuts
+      - [x] Shortcuts
       - [ ] **Menus**
-        - [ ] *index*
+        - [x] *index*
         - [ ] File
         - [ ] Edit
         - [ ] Build
