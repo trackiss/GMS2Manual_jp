@@ -58,7 +58,7 @@ var TITEMS = [
    ["ルーム", "source/_build/1_overview/2_quick_start/workflow/5_rooms.html", "11"]
   ]
  ],
- ["その他の情報", "source/_build/1_overview/3_additional_information/index.html", "1",
+ ["追加情報", "source/_build/1_overview/3_additional_information/index.html", "1",
   ["ビット演算子", "source/_build/1_overview/3_additional_information/bitwise_operators.html", "11"],
   ["コマンド ライン", "source/_build/1_overview/3_additional_information/command_line.html", "11"],
   ["エラー", "source/_build/1_overview/3_additional_information/errors.html", "11"],
